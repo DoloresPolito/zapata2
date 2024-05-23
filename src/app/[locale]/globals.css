@@ -12,3 +12,27 @@ body {
   margin:0px
 }
 
+
+/* globals.css */
+
+/* Define las variables para las familias de fuentes */
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+/* Aplica Inter a todo el cuerpo por defecto */
+body {
+  font-family: var(--font-inter);
+}
+
+/* Clases específicas para diferentes grosores de Montserrat */
+.montserratnormal {
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+}
+
+.montserratbold {
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+}
