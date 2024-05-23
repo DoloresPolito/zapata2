@@ -12,10 +12,15 @@ export default function Index() {
   return (
     <div className={styles.section}>
       <div className={styles.container}>
+   
+        
+  
         <div className={styles.logocontainer}>
-
+        <Link href="/">
           <Image src={logo} alt="image" className={styles.logo}/>
+          </Link>
         </div>
+  
         <div className={styles.linkscontainer}>
           <Link href="/">
             <p className={styles.text}>{t("common:nav_home")}</p>
