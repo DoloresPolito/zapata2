@@ -1,8 +1,10 @@
+
 import styles from "./page.module.css";
 import Header from "../../components/Header";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import HomeSection from "../../sections/HomeSection";
+
 const i18nNamespaces = ["home", "common"];
 
 export default async function Home({ params: { locale } }) {
@@ -15,6 +17,9 @@ export default async function Home({ params: { locale } }) {
     // Añade otras traducciones necesarias aquí
   };
 
+
+ 
+
   return (
     <TranslationsProvider
       resources={resources}
@@ -22,8 +27,8 @@ export default async function Home({ params: { locale } }) {
       namespaces={i18nNamespaces}
     >
       <div className={styles.main}>
-        <Header />
-        <h2>{t("title")}</h2>
+        <Header locale={locale}  />
+    
         <HomeSection translations={translations}/>
       </div>
     </TranslationsProvider>

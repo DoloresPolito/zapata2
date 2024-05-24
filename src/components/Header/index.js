@@ -1,45 +1,49 @@
 "use client";
-
 import { useTranslation } from "react-i18next";
 import styles from "./style.module.css";
 import Link from "next/link";
 import LanguageChanger from "@/components/LanguageChanger";
 import Image from "next/image";
-import logo from "../../../public/assets/logo-name.png"
+import logo from "../../../public/assets/logo-name.png";
+import StyledLink from "../StyledLink";
+
 
 export default function Index() {
-  const { t } = useTranslation("common");
+ 
+  const { t, i18n } = useTranslation("common");
+
+  const locale = i18n.language;
+
+  console.log("locale", locale)
+
   return (
     <div className={styles.section}>
       <div className={styles.container}>
-   
-        
-  
         <div className={styles.logocontainer}>
-        <Link href="/">
-          <Image src={logo} alt="image" className={styles.logo}/>
+          <Link href="/">
+            <Image src={logo} alt="image" className={styles.logo} />
           </Link>
         </div>
-  
+
         <div className={styles.linkscontainer}>
-          <Link href="/">
-            <p className={styles.text}>{t("common:nav_home")}</p>
-          </Link>
-          <Link href="/about">
-            <p className={styles.text}>{t("common:nav_about")}</p>
-          </Link>
-          <Link href="/procedures">
-            <p className={styles.text}>{t("common:nav_procedures")}</p>
-          </Link>
-          <Link href="/space">
-            <p className={styles.text}>{t("common:nav_space")}</p>
-          </Link>
-          <Link href="/testimonials">
+          <StyledLink link="/">
+            <p className={styles.text}>Home</p>
+          </StyledLink>
+          <StyledLink link="/about">
+            <p className={styles.text}>{locale === 'es' ? "Nosotros" : "About"}</p>
+          </StyledLink>
+          <StyledLink link="/procedures">
+            <p className={styles.text}>{locale === 'es' ? "Tratamientos" : "Procedures"}</p>
+          </StyledLink>
+          <StyledLink link="/faqs">
+            <p className={styles.text}>FAQs</p>
+          </StyledLink>
+          <StyledLink link="/testimonials">
             <p className={styles.text}>{t("common:nav_testimonials")}</p>
-          </Link>
-          <Link href="/contact">
+          </StyledLink>
+          <StyledLink link="/contact">
             <p className={styles.text}>{t("common:nav_contact")}</p>
-          </Link>
+            </StyledLink>
           <LanguageChanger />
         </div>
       </div>

@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body className={`${inter.className} ${montserrat.className}`}>
-        {/* <Header/> */}
+
         {children}</body>
     </html>
   );
