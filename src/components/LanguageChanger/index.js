@@ -1,19 +1,21 @@
 'use client';
 
+import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import i18nConfig from '../../../i18nConfig';
+import styles from "./style.module.css";
 
 export default function LanguageChanger() {
   const { i18n } = useTranslation();
   const currentLocale = i18n.language;
   const router = useRouter();
   const currentPathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  const selectorRef = useRef(null);
 
-  const handleChange = e => {
-    const newLocale = e.target.value;
-
+  const handleChange = (newLocale) => {
     // set cookie for next-i18n-router
     const days = 30;
     const date = new Date();
@@ -34,13 +36,48 @@ export default function LanguageChanger() {
     }
 
     router.refresh();
+    setIsOpen(false);
   };
 
-  return (
-    <select onChange={handleChange} value={currentLocale} >
-      <option value="en">EN</option>
-      <option value="es">SP</option>
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
-    </select>
+  const handleClickOutside = (event) => {
+    if (selectorRef.current && !selectorRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div className={styles.selectorcontainer} ref={selectorRef}>
+      <div
+        className={styles.customselector}
+        onClick={toggleDropdown}
+      >
+        {currentLocale.toUpperCase()}
+      </div>
+      <div className={`${styles.customoptions} ${isOpen ? styles.show : ''}`}>
+        <div
+          className={styles.customoption}
+          onClick={() => handleChange('en')}
+        >
+          EN
+        </div>
+        <div
+          className={styles.customoption}
+          onClick={() => handleChange('es')}
+        >
+          ES
+        </div>
+      </div>
+    </div>
   );
 }

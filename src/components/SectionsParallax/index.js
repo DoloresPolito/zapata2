@@ -26,20 +26,33 @@ export default function SectionParallax() {
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 1.1]);
 
+  // useEffect(() => {
+  //   const lenis = new Lenis();
+
+  //   const raf = (time) => {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   };
+
+  //   const resize = () => {
+  //     setDimension({ width: window.innerWidth, height: window.innerHeight });
+  //   };
+
+  //   window.addEventListener("resize", resize);
+  //   requestAnimationFrame(raf);
+  //   resize();
+
+  //   return () => {
+  //     window.removeEventListener("resize", resize);
+  //   };
+  // }, []);
+
   useEffect(() => {
-    const lenis = new Lenis();
-
-    const raf = (time) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-
     const resize = () => {
       setDimension({ width: window.innerWidth, height: window.innerHeight });
     };
 
     window.addEventListener("resize", resize);
-    requestAnimationFrame(raf);
     resize();
 
     return () => {
