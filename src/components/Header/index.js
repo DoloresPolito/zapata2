@@ -1,52 +1,53 @@
 "use client";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 import Link from "next/link";
-import LanguageChanger from "@/components/LanguageChanger";
-import Image from "next/image";
-
-import StyledLink from "../StyledLink";
-
+import { AnimatePresence } from "framer-motion";
+import Mask from "./Nav";
+import LanguageChanger from "../LanguageChanger";
 
 export default function Index() {
- 
   const { t, i18n } = useTranslation("common");
-
-  const locale = i18n.language;
-
-  console.log("locale", locale)
+  // const locale = i18n.language;
+  const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className={styles.section}>
-      <div className={styles.container}>
-        <div className={styles.logocontainer}>
-          <Link href="/">
-          
-          </Link>
-        </div>
+    <>
+      <div className={styles.header}>
+        <div className={styles.container}>
 
-        <div className={styles.linkscontainer}>
-          <StyledLink link="/">
-            <p className={styles.text}>Home</p>
-          </StyledLink>
-          <StyledLink link="/about">
-            <p className={styles.text}>{locale === 'es' ? "Nosotros" : "About"}</p>
-          </StyledLink>
-          <StyledLink link="/procedures">
-            <p className={styles.text}>{locale === 'es' ? "Tratamientos" : "Procedures"}</p>
-          </StyledLink>
-          <StyledLink link="/faqs">
-            <p className={styles.text}>FAQs</p>
-          </StyledLink>
-          <StyledLink link="/testimonials">
-            <p className={styles.text}>{t("common:nav_testimonials")}</p>
-          </StyledLink>
-          <StyledLink link="/contact">
-            <p className={styles.text}>{t("common:nav_contact")}</p>
-            </StyledLink>
-          <LanguageChanger />
+        <LanguageChanger />
+     
+          <div className={styles.logo}>
+            <Link href="/">
+              <div className={styles.name}>Dr. Federico Zapata</div>
+            </Link>
+          </div>
+
+          <div className={styles.logo}>
+            <Link href="/">
+             
+            </Link>
+          </div>
+
+          <div className={styles.headerButtonContainerMobile}>
+            <button
+              onClick={() => {
+                setIsActive(!isActive);
+              }}
+              className={`${styles.button}`}
+            >
+              <div
+                className={`${styles.burger} ${
+                  isActive ? styles.burgerActive : ""
+                }`}
+              ></div>
+            </button>
+          </div>
+          <AnimatePresence mode="wait">{isActive && <Mask />}</AnimatePresence>
         </div>
       </div>
-    </div>
+    </>
   );
 }

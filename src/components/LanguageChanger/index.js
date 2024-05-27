@@ -39,45 +39,21 @@ export default function LanguageChanger() {
     setIsOpen(false);
   };
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleClickOutside = (event) => {
-    if (selectorRef.current && !selectorRef.current.contains(event.target)) {
-      setIsOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
-
   return (
     <div className={styles.selectorcontainer} ref={selectorRef}>
-      <div
-        className={styles.customselector}
-        onClick={toggleDropdown}
+     
+      <button
+        className={`${styles.custombutton} ${currentLocale === 'es' ? styles.selected : ''}`}
+        onClick={() => handleChange('es')}
       >
-        {currentLocale.toUpperCase()}
-      </div>
-      <div className={`${styles.customoptions} ${isOpen ? styles.show : ''}`}>
-        <div
-          className={styles.customoption}
-          onClick={() => handleChange('en')}
-        >
-          EN
-        </div>
-        <div
-          className={styles.customoption}
-          onClick={() => handleChange('es')}
-        >
-          ES
-        </div>
-      </div>
+        ES
+      </button>
+      <button
+        className={`${styles.custombutton} ${currentLocale === 'en' ? styles.selected : ''}`}
+        onClick={() => handleChange('en')}
+      >
+        EN
+      </button>
     </div>
   );
 }
