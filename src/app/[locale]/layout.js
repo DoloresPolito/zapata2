@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weights: ["100", "200", "300
 
 
 export const metadata = {
-  title: "Capillarie",
+  title: "Federico Zapata",
   description: ".",
 };
 

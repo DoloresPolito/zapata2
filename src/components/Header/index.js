@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import LanguageChanger from "@/components/LanguageChanger";
 import Image from "next/image";
-import logo from "../../../public/assets/logo-name.png";
+
 import StyledLink from "../StyledLink";
 
 
@@ -21,7 +21,7 @@ export default function Index() {
       <div className={styles.container}>
         <div className={styles.logocontainer}>
           <Link href="/">
-            <Image src={logo} alt="image" className={styles.logo} />
+          
           </Link>
         </div>
 
