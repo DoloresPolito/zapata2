@@ -25,11 +25,11 @@ export default function Index() {
             </Link>
           </div>
 
-          <div className={styles.logo}>
+          {/* <div className={styles.logo}>
             <Link href="/">
              
             </Link>
-          </div>
+          </div> */}
 
           <div className={styles.headerButtonContainerMobile}>
             <button

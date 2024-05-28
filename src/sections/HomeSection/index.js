@@ -1,12 +1,7 @@
 "use client";
 import styles from "./style.module.scss";
 import Image from "next/image";
-import background from "../../../public/assets/images/background.png";
-import logo1 from "../../../public/assets/images/logo.1.png";
-import logo2 from "../../../public/assets/images/logo.2.png";
-import logo3 from "../../../public/assets/images/logo.3.png";
-import logo4 from "../../../public/assets/images/logo.4.png";
-import cv from "../../../public/assets/images/cv.png";
+import background from "../../../public/assets/images/back.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
@@ -15,6 +10,9 @@ import Dr from "../../home/Dr";
 import Contact from "@/home/Contact";
 import Treatments from "@/home/Treatments";
 import Reviews from "@/home/Reviews";
+import Cv from "@/home/Cv";
+import LinkButton from "@/components/LinkButton";
+import whitearrow from "../../../public/assets/arrows/small-white.svg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,42 +58,30 @@ export default function Index({
           />
         </div>
 
-        <h2 className={styles.title} ref={titleRef}>
-          {translations.title}
-        </h2>
+        <div className={styles.textcontainer}>
+          <h2 className={styles.title} ref={titleRef}>
+            {translations.title}
+          </h2>
 
-        <div className={styles.button}>
-          <p>{translations.reserva}</p>
+          <div className={styles.bottom}>
+            <div className={styles.button}>
+              <p>{translations.reserva}</p>
+              <Image src={whitearrow} alt="arrow"/>
+            </div>
+            <LinkButton
+              text="International patients"
+              color="white"
+              link="/international"
+            />
+          </div>
         </div>
       </div>
 
       <Dr dr_translations={dr_translations} />
       <Process process_translations={process_translations} />
-
-      <div className={styles.logossection}>
-        <div className={styles.logos}>
-          <Image src={logo1} alt="logo1" />
-          <Image src={logo2} alt="logo2" />
-          <Image src={logo3} alt="logo3" />
-          <Image src={logo4} alt="logo4" />
-        </div>
-      </div>
-
-      <div className={styles.cv}>
-        <div className={styles.containercv}>
-          <div className={styles.textcontainer}>
-            <h2>Curriculum Vitae</h2>
-
-            <p>{translations.cv_text}</p>
-          </div>
-          <div className={styles.imagecontainer}>
-            <Image src={cv} alt="cv" />
-          </div>
-        </div>
-      </div>
-
+      <Cv />
       <Treatments />
-<Reviews/>
+      <Reviews />
 
       <Contact />
       {/* 
