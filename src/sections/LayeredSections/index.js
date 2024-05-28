@@ -1,10 +1,13 @@
-import React from 'react';
-import styles from './style.module.css';
+import React from "react";
+import styles from "./style.module.css";
+import Header from "../../components/Header";
 
 const LayeredSections = () => {
   return (
     <div className={styles.container}>
       <div className={`${styles.section} ${styles.section1}`}>
+
+
         <h1>Section 1</h1>
       </div>
       <div className={`${styles.section} ${styles.section2}`}>

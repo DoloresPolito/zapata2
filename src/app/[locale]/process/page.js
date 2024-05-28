@@ -1,8 +1,9 @@
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 import Header from "../../../components/Header";
 import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import FaqsSection from "@/sections/FaqsSection";
+
 const i18nNamespaces = ["procedures", "common"];
 
 
@@ -22,6 +23,7 @@ export default async function Procedures({ params: { locale } }) {
         <p>
           {locale === "es" ? "TEXTO EN PROCEDIMIENTOS" : "TEXT IN PROCEDURES"}
         </p>
+ 
       
 <FaqsSection/>
         <p>locale: {locale}</p>
