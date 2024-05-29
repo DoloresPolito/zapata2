@@ -2,7 +2,6 @@ import { Inter, Montserrat, Plus_Jakarta_Sans } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 const plusjaku = Plus_Jakarta_Sans({subsets: ["latin"], weights: ["100", "200", "300", "400", "500", "700"]})
