@@ -1,5 +1,11 @@
 "use client";
 import styles from "./style.module.scss";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 // import Carousel from "react-elastic-carousel";
 
 export default function Reviews() {
@@ -99,9 +105,9 @@ export default function Reviews() {
     textAlign: "center",
   };
 
-  return (
-    <div className={styles.testimonios}>
-      <div className={styles.carouselcontainer} style={carouselStyles}>
+  // return (
+  //   <div className={styles.testimonios}>
+  //     <div className={styles.carouselcontainer} style={carouselStyles}>
         {/* <Carousel
           renderArrow={({ type, onClick, isEdge }) => {
             const pointer = type === "PREV" ? "<" : ">";
@@ -128,6 +134,34 @@ export default function Reviews() {
             </div>
           ))}
         </Carousel> */}
+      {/* </div>
+    </div>
+  ); */}
+
+
+  return (
+    <div className={styles.testimonios}>
+      <div className={styles.carouselcontainer}>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          // scrollbar={{ draggable: true }}
+        >
+          {items.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div style={itemWrapperStyles}>
+                <h3 style={itemName}>
+                  {item.name} - {item.time}
+                </h3>
+                <h3 style={itemStars}>{item.stars}</h3>
+                <p style={itemText}>{item.text}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

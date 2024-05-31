@@ -13,6 +13,7 @@ import Reviews from "@/home/Reviews";
 import Cv from "@/home/Cv";
 import LinkButton from "@/components/LinkButton";
 import whitearrow from "../../../public/assets/arrows/small-white.svg"
+import ContactButtons from "../../home/ContactButtons"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -77,12 +78,13 @@ export default function Index({
         </div>
       </div>
 
+      <ContactButtons/>
+
       <Dr dr_translations={dr_translations} />
       <Process process_translations={process_translations} />
       <Cv />
       <Treatments />
       <Reviews />
-
       <Contact />
       {/* 
       <div>
