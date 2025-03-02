@@ -1,0 +1,28 @@
+@import "./base/variables";
+@import './base/typography';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  // background-color: $background-color;
+  font-family: $font-inter;
+}
+
+// Estilos de fuentes
+.montserrat-normal {
+  font-family: $font-montserrat;
+  font-weight: 400;
+}
+
+.montserrat-bold {
+  font-family: $font-montserrat;
+  font-weight: 700;
+}

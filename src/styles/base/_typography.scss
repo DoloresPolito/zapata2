@@ -1,0 +1,21 @@
+@import './variables'; 
+
+body {
+    font-family: $font-inter;
+    // color: $text-color;
+    // background-color: $background-color;
+  }
+  
+  h1 {
+    font-size: $h1-size;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: $h2-size;
+  }
+  
+  p {
+    font-size: $p-size;
+    line-height: 1.5;
+  }

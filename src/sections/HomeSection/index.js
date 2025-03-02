@@ -4,7 +4,7 @@ import Image from "next/image";
 import background from "../../../public/assets/images/back.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Process from "../../home/Process";
 import Dr from "../../home/Dr";
 import Contact from "@/home/Contact";
@@ -12,8 +12,13 @@ import Treatments from "@/home/Treatments";
 import Reviews from "@/home/Reviews";
 import Cv from "@/home/Cv";
 import LinkButton from "@/components/LinkButton";
-import whitearrow from "../../../public/assets/arrows/small-white.svg"
-import ContactButtons from "../../home/ContactButtons"
+import whitearrow from "../../../public/assets/arrows/small-white.svg";
+import ContactButtons from "../../home/ContactButtons";
+
+import Hero from "@/sections/home/Hero";
+import Description from "@/sections/home/Description";
+
+import RoundedButton from "@/components/RoundedButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,36 +54,8 @@ export default function Index({
 
   return (
     <>
-      <div className={styles.home}>
-        <div className={styles.imagecontainer} ref={imageRef}>
-          <Image
-            src={background}
-            alt="background"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-
-        <div className={styles.textcontainer}>
-          <h2 className={styles.title} ref={titleRef}>
-            {translations.title}
-          </h2>
-
-          <div className={styles.bottom}>
-            <div className={styles.button}>
-              <p>{translations.reserva}</p>
-              <Image src={whitearrow} alt="arrow"/>
-            </div>
-            <LinkButton
-              text="International patients"
-              color="white"
-              link="/international"
-            />
-          </div>
-        </div>
-      </div>
-
-      <ContactButtons/>
+      <Hero title={translations.title} reserva={translations.reserva} />
+      <Description />
 
       <Dr dr_translations={dr_translations} />
       <Process process_translations={process_translations} />
@@ -86,10 +63,15 @@ export default function Index({
       <Treatments />
       <Reviews />
       <Contact />
-      {/* 
-      <div>
-        <SectionParallax />
-      </div> */}
+
+      <div className={styles.buttoncontainer}>
+        <RoundedButton
+          text="Contactanos"
+          color="#281A0F"
+          background="#bcc090"
+          border="#bcc090"
+        />
+      </div>
     </>
   );
 }

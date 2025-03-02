@@ -1,0 +1,77 @@
+@import "@/styles/base/_variables.scss";
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+
+  .motionDiv {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
+    position: relative;
+    background-color: $background-color-foot;
+    overflow: hidden;
+
+
+    .imagecontainer {
+      height: calc(100vh - 10vh);
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      z-index: 1;
+
+      img {
+        object-fit: cover;
+        height: calc(100vh - 10vh);
+        width: 100%;
+      }
+    }
+
+    .textcontainer {
+      display: flex;
+      flex-direction: column;
+      padding: 0vh 5vh;
+      z-index: 100;
+      align-items: flex-start;
+
+      h2 {
+        font-family: $font-inter;
+        color: $font-color-white;
+        font-size: $font-size-Agp-big;
+        font-weight: 300;
+        max-width: 100vh;
+
+      }
+
+      .bottom {
+        display: flex;
+        height: 20vh;
+        width: 32%;
+        align-items: center;
+        justify-content: space-between;
+  
+      }
+
+      
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    height: auto;
+  }
+}

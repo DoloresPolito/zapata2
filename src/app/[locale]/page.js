@@ -1,9 +1,11 @@
+
+"use client"
 import styles from "./page.module.css";
 import Header from "../../components/Header";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import HomeSection from "../../sections/HomeSection";
-import LayeredSections from "@/sections/LayeredSections";
+
 const i18nNamespaces = ["home", "common"];
 
 export default async function Home({ params: { locale } }) {
@@ -44,6 +46,10 @@ export default async function Home({ params: { locale } }) {
     dr_button: t("dr_button"),
 
   }
+
+
+
+
   return (
     <TranslationsProvider
       resources={resources}
@@ -53,8 +59,11 @@ export default async function Home({ params: { locale } }) {
       <div className={styles.main}>
         <Header locale={locale} />
 
+  
+
         <HomeSection translations={translations} process_translations={process_translations} dr_translations={dr_translations}/>
-        {/* <LayeredSections/> */}
+
+
       </div>
     </TranslationsProvider>
   );

@@ -1,0 +1,29 @@
+@import "@/styles/base/_variables.scss";
+
+.description {
+  width: 100vw;
+    height: 60vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color-foot;
+  
+    @media only screen and (max-width: 1000px) {
+      padding-left: 1vw;
+      padding-right: 1vw;
+    }
+
+    h2{
+      font-family: $font-inter;
+      color: $font-color-black1;
+      font-size: $font-size-Agp-big;
+      font-weight: 300;
+    }
+
+  
+}

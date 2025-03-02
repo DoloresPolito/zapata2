@@ -1,9 +1,7 @@
 "use client";
 import styles from "./style.module.scss";
 import Link from "next/link";
-
 import Image from "next/image";
-
 import plus from "../../../public/assets/arrows/plus.png"
 
 export default function ContactButtons() {
@@ -41,19 +39,7 @@ export default function ContactButtons() {
   );
 }
 
-// const Card = ({ text, link }) => {
-//   return (
-//     <>
-//       <div className={styles.cardWrapper}>
-//         <Link href={link} target="_blank" style={{ textDecoration: "none"}}>
-//           <div className={styles.cardcontainer} >
-//             <p className={styles.cardText}>{text}</p>
-//           </div>
-//         </Link>
-//       </div>
-//     </>
-//   );
-// };
+
 
 const Card = ({ text, link }) => {
     return (
