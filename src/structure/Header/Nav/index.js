@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide, slide } from "../animation";
-import StyledLink from "../../StyledLink";
+import StyledLink from "../../../components/StyledLink";
 import { useTranslation } from "react-i18next";
 // import LanguageChanger from "@/components/LanguageChanger";
 

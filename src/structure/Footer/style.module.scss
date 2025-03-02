@@ -1,0 +1,85 @@
+@import "@/styles/base/_variables.scss";
+.section {
+  width: 100%;
+  height: auto;
+  background-color: $background-color-foot;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 98%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  margin-bottom: 0vh;
+  margin-top: 10vh;
+
+  .title {
+    font-family: $font-inter;
+    color: $font-color-green;
+    font-size: $font-size-Agp-small;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 50%;
+    height: auto;
+
+
+    .row1{
+      display: flex;
+      flex-direction: row;
+      height: 60%;
+      .column1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+
+      }
+  
+      .column2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+
+      }
+
+    }
+
+    .row2{
+      display: flex;
+      flex-direction: column;
+      height: 40%;
+
+      img{
+        height: 8vh;
+        width: 27vh;
+        margin-top: 3vh;
+      }
+    }
+
+   
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 60vh;
+    .column3 {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+    }
+  }
+}

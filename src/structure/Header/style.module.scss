@@ -1,0 +1,88 @@
+@import "@/styles/base/_variables.scss";
+.header {
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  top: 0;
+  height: 13.5vh;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300;
+  align-items: center;
+  z-index: 10;
+  background-color: $background-color-nav;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin: 0 auto;
+    z-index: 1000;
+
+    .logo {
+      display: flex;
+      cursor: pointer;
+
+      img {
+        height: 6.1vh;
+        width: auto;
+      }
+    }
+
+    .headerButtonContainerMobile {
+      z-index: 2000;
+      width: auto;
+
+      .button {
+        position: relative;
+
+        width: 7vh;
+        height: 7vh;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+      }
+
+      .burger {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        &::after,
+        &::before {
+          content: "";
+          display: block;
+          height: 1px;
+          width: 70%;
+          margin: auto;
+          background-color: black;
+          position: relative;
+          transition: transform 0.3s;
+        }
+
+        &::after {
+          top: -0.5vh;
+        }
+
+        &::before {
+          top: 0.5vh;
+        }
+      }
+
+      .burgerActive {
+        &::after {
+          transform: rotate(45deg);
+          top: -0.1vh;
+        }
+
+        &::before {
+          transform: rotate(-45deg);
+          top: 0vh;
+        }
+      }
+    }
+  }
+}
+

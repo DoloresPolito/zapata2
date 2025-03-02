@@ -35,7 +35,7 @@ const ContactForm = () => {
           <textarea
             rows={4}
             placeholder="Type your message"
-            className={styles.input}
+            className={styles.textarea}
             {...register("message", { required: true })}
           ></textarea>
         </div>

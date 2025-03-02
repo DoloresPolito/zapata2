@@ -1,6 +1,7 @@
 "use client";
 import styles from "./style.module.scss";
-import LinkButton from "@/components/LinkButton";
+import RoundedButton from "@/components/RoundedButton";
+import Link from "next/link";
 
 export default function Process({ process_translations }) {
   const boxesData = [
@@ -29,18 +30,22 @@ export default function Process({ process_translations }) {
     <>
       <div className={styles.section}>
         <div className={styles.container}>
-          <div className={styles.left}>
+          <div className={styles.top}>
             <h2>{process_translations.process_title}</h2>
-<LinkButton text={process_translations.process_button} link="/process" color="black"/>
-            
           </div>
 
-          <div className={styles.right}>
+          <div className={styles.gridcontainer}>
             <div className={styles.grid}>
               {boxesData.map((box) => (
                 <Box key={box.index} box={box} />
               ))}
             </div>
+          </div>
+
+          <div className={styles.bottom}>
+            <Link href="/process">
+              <RoundedButton text={process_translations.process_button} />
+            </Link>
           </div>
         </div>
       </div>
@@ -53,10 +58,7 @@ const Box = ({ box }) => {
     <>
       <div className={styles.box}>
         <div className={styles.top}>
-            <div className={styles.circle}>
-            <p>{box.index}</p>
-            </div>
-
+          <p>{box.index}</p>
         </div>
         <div className={styles.bottom}>
           <h2>{box.title}</h2>

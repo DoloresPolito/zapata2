@@ -1,0 +1,116 @@
+@import "@/styles/base/_variables.scss";
+.section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: $background-color-white;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+
+    .cv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+
+      h2 {
+        color: $font-color-black1;
+        font-family: $font-inter;
+        font-size: $font-size-Agp-big;
+        font-weight: 300;
+        margin-top: 10vh;
+      }
+
+      .containercv {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10vh;
+      }
+
+      .imagecontainer {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 90%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .textcontainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0vh 10vh;
+
+        p {
+          font-family: $font-inter;
+          font-weight: 200;
+          font-size: $font-size-Agp-small;
+          color: $font-color-black1;
+
+          line-height: 120%;
+          margin-bottom: 5vh;
+        }
+      }
+    }
+
+    .logossection {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+
+      h4 {
+        font-family: $font-inter;
+        font-weight: 400;
+        font-size: $font-size-Agp;
+        color: $font-color-black1;
+        margin-top: 5vh;
+      }
+
+      .logoscontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+
+        .logoitem {
+          display: flex;
+          align-items: center;
+        }
+
+        img {
+          height: 15vh;
+          width: auto;
+          margin: 2vh;
+        }
+
+        p {
+          color: $font-color-grey2;
+          font-size: $font-size-Agp-small;
+          font-family: $font-inter;
+        }
+      }
+    }
+  }
+}

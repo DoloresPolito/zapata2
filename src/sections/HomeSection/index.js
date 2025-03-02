@@ -1,23 +1,18 @@
 "use client";
 import styles from "./style.module.scss";
-import Image from "next/image";
-import background from "../../../public/assets/images/back.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect, useState } from "react";
-import Process from "../../home/Process";
+import Process from "../home/Process";
 import Dr from "../../home/Dr";
-import Contact from "@/home/Contact";
+import Contact from "@/structure/Footer";
 import Treatments from "@/home/Treatments";
-import Reviews from "@/home/Reviews";
-import Cv from "@/home/Cv";
-import LinkButton from "@/components/LinkButton";
-import whitearrow from "../../../public/assets/arrows/small-white.svg";
-import ContactButtons from "../../home/ContactButtons";
+import Reviews from "@/sections/home/Reviews";
+import Cv from "@/sections/home/Cv";
+
 
 import Hero from "@/sections/home/Hero";
 import Description from "@/sections/home/Description";
-
 import RoundedButton from "@/components/RoundedButton";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -66,10 +61,12 @@ export default function Index({
 
       <div className={styles.buttoncontainer}>
         <RoundedButton
-          text="Contactanos"
+          text="Solicitar un turno"
           color="#281A0F"
           background="#bcc090"
           border="#bcc090"
+          hoverB="#281A0F"
+          hoverC="#bcc090"
         />
       </div>
     </>

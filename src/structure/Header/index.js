@@ -5,8 +5,9 @@ import styles from "./style.module.scss";
 import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 import Mask from "./Nav";
-import LanguageChanger from "../LanguageChanger";
-
+import LanguageChanger from "../../components/LanguageChanger";
+import logo from "../../../public/assets/logo/logo.png";
+import Image from "next/image";
 export default function Index() {
   const { t, i18n } = useTranslation("common");
   // const locale = i18n.language;
@@ -16,20 +17,13 @@ export default function Index() {
     <>
       <div className={styles.header}>
         <div className={styles.container}>
+          <LanguageChanger />
 
-        <LanguageChanger />
-     
           <div className={styles.logo}>
             <Link href="/">
-              <div className={styles.name}>Dr. Federico Zapata</div>
+              <Image src={logo} alt="logo" />
             </Link>
           </div>
-
-          {/* <div className={styles.logo}>
-            <Link href="/">
-             
-            </Link>
-          </div> */}
 
           <div className={styles.headerButtonContainerMobile}>
             <button
