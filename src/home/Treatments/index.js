@@ -63,9 +63,9 @@ export default function Treatments() {
               <div className={styles.overlay}>
                 <ul>
                   {category.treatments.map((treatment, tIndex) => (
-                    <div className={styles.item}>
+                    <div    key={tIndex} className={styles.item}>
                     <li
-                      key={tIndex}
+                   
                       className={hoveredTreatment === tIndex ? styles.active : ""}
                       onMouseEnter={() => setHoveredTreatment(tIndex)}
                       onClick={() => router.push(treatment.path)}
