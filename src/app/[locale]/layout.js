@@ -17,8 +17,11 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Federico Zapata",
-  description: ".",
+  description: "Clínica de Cirugía Plástica",
 };
+
+
+
 
 export default function RootLayout({ children }) {
   return (

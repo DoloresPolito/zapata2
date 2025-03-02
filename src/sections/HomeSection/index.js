@@ -14,6 +14,7 @@ import Cv from "@/sections/home/Cv";
 import Hero from "@/sections/home/Hero";
 import Description from "@/sections/home/Description";
 import RoundedButton from "@/components/RoundedButton";
+import SectionEffectTop from "../home/SectionEffectTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,7 +54,8 @@ export default function Index({
       <Description />
 
       <Dr dr_translations={dr_translations} />
-      <Process process_translations={process_translations} />
+      <SectionEffectTop process_translations={process_translations}/>
+      {/* <Process process_translations={process_translations} /> */}
       <Cv />
       <Treatments />
       <Reviews />
