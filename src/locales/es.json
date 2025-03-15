@@ -1,10 +1,34 @@
 {
     "contact": {
       "title": "Contáctanos",
-      "subtitle": "Déjanos tu mensaje y te responderemos pronto",
-      "name": "Nombre",
-      "email": "Correo electrónico",
-      "message": "Mensaje",
+      "description": "Estamos aquí para resolver todas tus dudas. Agendá tu consulta o escríbenos para recibir más información personalizada. Estamos en el corazón de Buenos Aires.",
+      "visit": "Visitanos",
+      "contact": "Contactanos",
+      "formtitle":"O dejanos un mensaje y te contactaremos a la brevedad",
+      "name":"Nombre y apellido",
+      "message": "Tu mensaje...",
       "send": "Enviar"
+    },
+
+    "cv-home":{
+      "description":"El Dr. Federico E. Zapata es un reconocido cirujano plástico, egresado de la Universidad de Buenos Aires y con entrenamiento de posgrado en prestigiosas instituciones en Estados Unidos, donde, además, realizó fellowships de perfeccionamiento junto a los grandes maestros quienes le enseñaron la artesanía quirúrgica en las distintas áreas plásticas, tanto estéticas como reparadoras."
+    },
+
+    "book":{
+      "title":"Solicitar turnos o consultas:",
+      "button1":"Escribinos",
+      "button2":"Enviar correo",
+      "button3":"LLamanos"
+    },
+
+    "footer":{
+      "column1":{"title":"Ubicación", "button":"Ver en Google Maps"},
+      "column2":{"title":"Contactanos"},
+      "column3":{"title":"Seguinos en redes"},
+      "column4":{"title":"Centro habilitado por"},
+      "form":{"title":"Dejanos un mensaje y te contactaremos a la brevedad"}
+
     }
+
+
   }

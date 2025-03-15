@@ -8,27 +8,26 @@ import cv from "../../../../public/assets/home/about.png";
 import Image from "next/image";
 import LinkButton from "@/components/LinkButton";
 
-export default function Cv() {
+import { getTranslation } from "@/utils/getTranslation";
+
+export default function Cv({locale}) {
   return (
     <>
       <div className={styles.section}>
         <div className={styles.container}>
           <div className={styles.cv}>
-            <h2>Dr. Federico Zapata</h2>
+
+            <h2  className={`typography-Ag-P-Big`}>Dr. Federico Zapata</h2>
             <div className={styles.containercv}>
               <div className={styles.imagecontainer}>
                 <Image src={cv} alt="cv" />
               </div>
 
               <div className={styles.textcontainer}>
-                <p>
-                  El Dr. Federico E. Zapata es un reconocido cirujano plástico,
-                  egresado de la Universidad de Buenos Aires y con entrenamiento
-                  de posgrado en prestigiosas instituciones en Estados Unidos,
-                  donde, además, realizó fellowships de perfeccionamiento junto
-                  a los grandes maestros quienes le enseñaron la artesanía
-                  quirúrgica en las distintas áreas plásticas, tanto estéticas
-                  como reparadoras.
+                <p className={`typography-Ag-P`}>
+              
+
+                  {getTranslation(locale, "cv-home.description")}
                 </p>
                 <LinkButton text="Ver CV completo"/>
               </div>

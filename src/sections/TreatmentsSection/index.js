@@ -1,7 +1,7 @@
 "use client";
 import styles from "./style.module.scss";
 
-import Treatments from "../home/Treatments";
+import Treatments from "../../subsections/home/Treatments";
 
 export default function TreatmentsSection({ translations }) {
   return (

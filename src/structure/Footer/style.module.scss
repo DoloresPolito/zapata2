@@ -17,9 +17,8 @@
   margin-top: 10vh;
 
   .title {
-    font-family: $font-inter;
     color: $font-color-green;
-    font-size: $font-size-Agp-small;
+    margin-bottom: 3vh;
   }
 
   .left {
@@ -30,42 +29,50 @@
     width: 50%;
     height: auto;
 
-
-    .row1{
+    .row1 {
       display: flex;
       flex-direction: row;
       height: 60%;
+  
+
+      .linkcontainer {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1vh;
+        align-items: center;
+        p{
+          margin-left: 2vh;
+        }
+
+     
+      }
       .column1 {
         display: flex;
         flex-direction: column;
         width: 50%;
         height: 100%;
-
+   
       }
-  
+
       .column2 {
         display: flex;
         flex-direction: column;
         width: 50%;
         height: 100%;
-
       }
-
     }
 
-    .row2{
+    .row2 {
       display: flex;
       flex-direction: column;
       height: 40%;
 
-      img{
+      img {
         height: 8vh;
         width: 27vh;
         margin-top: 3vh;
       }
     }
-
-   
   }
 
   .right {

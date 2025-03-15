@@ -24,12 +24,9 @@
     align-items: center;
     margin-bottom: 10vh;
 
-    h2 {
-      color: $font-color-black1;
-      font-family: $font-inter;
-      font-size: $font-size-Agp-big;
-      font-weight: 400;
-    }
+h2{
+  margin-top: 5vh;
+}
   }
 
   .gridcontainer {
@@ -47,7 +44,7 @@
     }
 
     .box {
-      padding: 5vh 5vh;
+      padding: 3vh 3vh;
       background-color: $background-color-white;
       display: flex;
       flex-direction: column;
@@ -67,12 +64,7 @@
         flex-direction: column;
         align-items: flex-start;
 
-        p {
-          font-size: 5vh;
-          font-weight: 200;
-          font-family: $font-inter;
-          color: $font-color-black1;
-        }
+        
       }
 
       .bottom {
@@ -81,19 +73,12 @@
         flex-direction: column;
         align-items: flex-start;
 
-        h2 {
-          color: $font-color-black1;
-          font-family: $font-inter;
-          font-size: $font-size-Agp;
-          font-weight: 400;
+        .titulo {
           margin-bottom: 4vh;
         }
 
-        p {
-          color: $font-color-black1;
-          font-family: $font-inter;
-          font-size: $font-size-Agp-small;
-          font-weight: 200;
+        .texto {
+          color:#666666;
         }
       }
     }

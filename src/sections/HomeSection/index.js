@@ -3,18 +3,17 @@ import styles from "./style.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect, useState } from "react";
-import Process from "../home/Process";
+// import Process from "../../subsections/home/Process";
 import Dr from "../../home/Dr";
-import Contact from "@/structure/Footer";
-import Treatments from "@/sections/home/Treatments";
-import Reviews from "@/sections/home/Reviews";
-import Cv from "@/sections/home/Cv";
+import Footer from "@/structure/Footer";
+import Treatments from "@/subsections/home/Treatments";
+import Reviews from "@/subsections/home/Reviews";
+import Cv from "@/subsections/home/Cv";
 
-
-import Hero from "@/sections/home/Hero";
-import Description from "@/sections/home/Description";
+import Hero from "@/subsections/home/Hero";
+import Description from "@/subsections/home/Description";
 import RoundedButton from "@/components/RoundedButton";
-import SectionEffectTop from "../home/SectionEffectTop";
+import SectionEffectTop from "../../subsections/home/SectionEffectTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +21,7 @@ export default function Index({
   translations,
   process_translations,
   dr_translations,
+  locale
 }) {
   const titleRef = useRef(null);
   const imageRef = useRef(null);
@@ -51,15 +51,15 @@ export default function Index({
   return (
     <>
       <Hero title={translations.title} reserva={translations.reserva} />
-      <Description />
+      <Description locale={locale}/>
 
       <Dr dr_translations={dr_translations} />
-      <SectionEffectTop process_translations={process_translations}/>
+      <SectionEffectTop process_translations={process_translations} />
       {/* <Process process_translations={process_translations} /> */}
-      <Cv />
+      <Cv locale={locale}/>
       <Treatments />
       <Reviews />
-      <Contact />
+      <Footer locale={locale} />
 
       <div className={styles.buttoncontainer}>
         <RoundedButton

@@ -31,7 +31,7 @@ export default function Process({ process_translations }) {
       <div className={styles.section}>
         <div className={styles.container}>
           <div className={styles.top}>
-            <h2>{process_translations.process_title}</h2>
+            <h2 className={`typography-Ag-P-Big`}>{process_translations.process_title}</h2>
           </div>
 
           <div className={styles.gridcontainer}>
@@ -58,11 +58,11 @@ const Box = ({ box }) => {
     <>
       <div className={styles.box}>
         <div className={styles.top}>
-          <p>{box.index}</p>
+          <p className={`typography-Ag-Numbers`} >{box.index}</p>
         </div>
         <div className={styles.bottom}>
-          <h2>{box.title}</h2>
-          <p>{box.text}</p>
+          <h2 className={`typography-Ag-P ${styles.titulo}`}>{box.title}</h2>
+          <p className={`typography-Ag-P ${styles.texto}`}>{box.text}</p>
         </div>
       </div>
     </>

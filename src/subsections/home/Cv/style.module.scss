@@ -20,10 +20,6 @@
       height: auto;
 
       h2 {
-        color: $font-color-black1;
-        font-family: $font-inter;
-        font-size: $font-size-Agp-big;
-        font-weight: 300;
         margin-top: 10vh;
       }
 
@@ -59,12 +55,6 @@
         padding: 0vh 10vh;
 
         p {
-          font-family: $font-inter;
-          font-weight: 200;
-          font-size: $font-size-Agp-small;
-          color: $font-color-black1;
-
-          line-height: 120%;
           margin-bottom: 5vh;
         }
       }
@@ -80,9 +70,9 @@
       h4 {
         font-family: $font-inter;
         font-weight: 400;
-        font-size: $font-size-Agp;
+        font-size: 2.8vh;
         color: $font-color-black1;
-        margin-top: 5vh;
+        margin-top: 7vh;
       }
 
       .logoscontainer {
