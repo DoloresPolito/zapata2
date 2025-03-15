@@ -4,6 +4,7 @@ import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import HomeSection from "../../sections/HomeSection";
 
+
 const i18nNamespaces = ["home", "common"];
 
 export default async function Home({ params: { locale } }) {
@@ -12,7 +13,6 @@ export default async function Home({ params: { locale } }) {
   const translations = {
     title: t("title"),
     reserva: t("reserva"),
-
     cv_text: t("cv_text"),
   };
 
@@ -53,6 +53,7 @@ export default async function Home({ params: { locale } }) {
           translations={translations}
           process_translations={process_translations}
           dr_translations={dr_translations}
+          locale={locale}
         />
       </div>
     </TranslationsProvider>

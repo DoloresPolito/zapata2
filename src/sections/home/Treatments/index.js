@@ -4,9 +4,9 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import { useRouter } from "next/navigation"; // Importar el router para la navegación
 
-import cara from "../../../public/assets/home/t1.png";
-import cuerpo from "../../../public/assets/home/t2.png";
-import noinvasivos from "../../../public/assets/home/t3.png";
+import cara from "../../../../public/assets/home/t1.png";
+import cuerpo from "../../../../public/assets/home/t2.png";
+import noinvasivos from "../../../../public/assets/home/t3.png";
 
 const treatmentsData = [
   {

@@ -8,10 +8,11 @@ import Mask from "./Nav";
 import LanguageChanger from "../../components/LanguageChanger";
 import logo from "../../../public/assets/logo/logo.png";
 import Image from "next/image";
-export default function Index() {
+export default function Index({locale}) {
   const { t, i18n } = useTranslation("common");
   // const locale = i18n.language;
   const [isActive, setIsActive] = useState(false);
+
 
   return (
     <>

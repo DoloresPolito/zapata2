@@ -1,0 +1,10 @@
+{
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "Déjanos tu mensaje y te responderemos pronto",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar"
+    }
+  }

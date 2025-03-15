@@ -6,7 +6,7 @@ import { useRef, useEffect, useState } from "react";
 import Process from "../home/Process";
 import Dr from "../../home/Dr";
 import Contact from "@/structure/Footer";
-import Treatments from "@/home/Treatments";
+import Treatments from "@/sections/home/Treatments";
 import Reviews from "@/sections/home/Reviews";
 import Cv from "@/sections/home/Cv";
 
