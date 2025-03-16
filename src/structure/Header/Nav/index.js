@@ -101,7 +101,7 @@ export default function Mask() {
               </StyledLink>
             </motion.div>
           </div>
-          <div className={styles.footer}>
+          <div className={styles.column2}>
             <div className={styles.header}>
               <p>Contactanos</p>
             </div>

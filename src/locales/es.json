@@ -28,7 +28,53 @@
       "column4":{"title":"Centro habilitado por"},
       "form":{"title":"Dejanos un mensaje y te contactaremos a la brevedad"}
 
+    },
+
+
+    "process-section":{
+      "label": "Te acompañamos a lo largo de todo el proceso",
+      "title":"Atención Integral en Cirugía y Cuidado Postoperatorio",
+      "description":"En nuestra clínica, su bienestar es nuestra prioridad. Desde la cirugía hasta el seguimiento postoperatorio, estará en manos de un equipo altamente calificado que cuidará cada detalle de su salud y seguridad.",
+
+      "title1":"Cirugía",
+      "description1":"Su salud y su seguridad es nuestra principal preocupación. Usted será cuidado por un equipo altamente calificado y entrenado para tal fin durante toda su estadía en la clínica. Durante la cirugía será monitoreado constantemente por el cardiólogo y el anestesiólogo quienes permanecerán a su lado durante todo el procedimiento.",
+
+     
+      "title2":"Postoperatorio inmediato",
+      "description2":"Luego de la cirugía, el paciente es llevado a su habitación donde estará en recuperación bajo el cuidado de la enfermera del equipo. Todos los esfuerzos están enfocados para que usted se sienta lo más relajado y confortable posible. El Dr. Zapata lo visitará inmediatamente luego de la cirugía y realizará el seguimiento hasta el alta, y estando en activa comunicación con la enfermera.",
+
+      "title3":"Seguimiento postoperatorio",
+      "description3":"Un procedimiento quirúrgico no sólo incluye la cirugía sino también el cuidado postoperatorio del paciente. Ud. Contará con los números privados de todo el equipo médico por cualquier eventualidad, lo acompañaremos y cuidaremos las 24hs. Generalmente la primera curación postoperatoria se realiza entre las 24 y 48 h en el consultorio. Posteriormente se harán controles cada 2 o 3 días en las primeras 2 semanas, al mes, 3 meses, 6 meses y 1 año después de la cirugía. Sin embargo, Ud. será atendido con mayor frecuencia si es necesario."
+    },
+
+
+    "about":{
+    
+      "subtitle":"Director Clínica de Cirugía Plástica, Estética y Reparadora Dr. Zapata",
+   
+      "text1":"El Dr. Federico E. Zapata es un reconocido cirujano plástico, egresado de la Universidad de Buenos Aires y con entrenamiento de posgrado en prestigiosas instituciones nacionales y de Estados Unidos, donde, además, realizó fellowships de perfeccionamiento junto a los grandes maestros quienes le enseñaron la artesanía quirúrgica en las distintas áreas plásticas, tanto estéticas como reparadoras.",
+      "text2":"Actualmente el Dr. Zapata dedica su tiempo a la práctica privada sustentándola con capacitación continua. Obteniendo en forma ininterrumpida la Certificación en Educación Avanzada en Cirugía Plástica (“Certificate of Advanced Educacion in Cosmetic Surgery”) otorgado por The American Sociaety for Aesthetic Plastic Surgery, sociedad de la que es partícipe, además de la de Argentina y de Buenos Aires.",
+
+     
+    
+      "item1":"Médico graduado en la Facultad de Medicina (UBA)",
+      "item2":"Especialista Universitario en Cirugía General",
+      "item3":"Especialista en Cirugía Plástica, Estética y Reparadora",
+      "item4":"Fellow Post Grade University California Irvine, UCI (EEUU)",
+      "item5":"Miembro Titular de la Asociación Médica Argentina",
+      "item6":"Miembro Titular de la Sociedad de Cirugía Plástica de Buenos Aires",
+      "item7":"Miembro Titular de la Sociedad de Cirugía Plastica Argentina",
+
+      "item8":"Miembro The American Society for Aesthetic Plastic Surgery",
+      "item9":"Miembro The Rhinoplasty Society",
+      "item10":"Director médico clínica de cirugía plástica",
+      "item11":"Trabajo comunitario (honorario) en Sanatorio Adventista del Plata – Puigari, E. Ríos",
+      "item12":"Trabajo comunitario (honorario) en The Natuvu Mission – Islas Fiji"
+    
     }
+
+
+
 
 
   }

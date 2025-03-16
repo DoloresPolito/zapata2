@@ -10,14 +10,13 @@ import LinkButton from "@/components/LinkButton";
 
 import { getTranslation } from "@/utils/getTranslation";
 
-export default function Cv({locale}) {
+export default function Cv({ locale }) {
   return (
     <>
       <div className={styles.section}>
         <div className={styles.container}>
           <div className={styles.cv}>
-
-            <h2  className={`typography-Ag-P-Big`}>Dr. Federico Zapata</h2>
+            <h2 className={`typography-Ag-P-Big`}>Dr. Federico Zapata</h2>
             <div className={styles.containercv}>
               <div className={styles.imagecontainer}>
                 <Image src={cv} alt="cv" />
@@ -25,42 +24,37 @@ export default function Cv({locale}) {
 
               <div className={styles.textcontainer}>
                 <p className={`typography-Ag-P`}>
-              
-
                   {getTranslation(locale, "cv-home.description")}
                 </p>
-                <LinkButton text="Ver CV completo"/>
+                <LinkButton text="Ver CV completo" />
               </div>
             </div>
           </div>
 
           <div className={styles.logossection}>
-          <h4>Avalado por</h4>
+            <h4>Avalado por</h4>
             <div className={styles.logoscontainer}>
-
               <div className={styles.logoitem}>
-              <Image src={logo1} alt="logo1" />
-              <p>Asociación Médica Argentina</p>
+                <Image src={logo1} alt="logo1" />
+                <p>Asociación Médica Argentina</p>
               </div>
 
               <div className={styles.logoitem}>
-              <Image src={logo2} alt="logo2" />
-              <p>Sociedad Argentina de Cirugía Plástica, Estética y Reparadora</p>
+                <Image src={logo2} alt="logo2" />
+                <p>
+                  Sociedad Argentina de Cirugía Plástica, Estética y Reparadora
+                </p>
               </div>
 
               <div className={styles.logoitem}>
-              <Image src={logo3} alt="logo3" />
-              <p>Sociedad de Cirugía Plástica de  Buenos Aires</p>
+                <Image src={logo3} alt="logo3" />
+                <p>Sociedad de Cirugía Plástica de Buenos Aires</p>
               </div>
 
               <div className={styles.logoitem}>
-              <Image src={logo4} alt="logo4" />
-              <p>The American Society For Aesthetic Plastic Surgery, INC.</p>
+                <Image src={logo4} alt="logo4" />
+                <p>The American Society For Aesthetic Plastic Surgery, INC.</p>
               </div>
-       
-           
-         
-            
             </div>
           </div>
         </div>

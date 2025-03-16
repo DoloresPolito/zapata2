@@ -13,15 +13,10 @@ body {
       font-weight: 500;
       font-size: 2.4vh;
       line-height: 150%;
-      color: $font-color-black1
+      color: $font-color-black1;
+      letter-spacing: 0.05vh;
     }
-  
-    &-Ag-P-Big {
-      font-family: $font-inter;
-      font-weight: 200;
-      font-size: 4.5vh;
-      line-height: 130%;
-    }
+
 
 
     &-Ag-Numbers {
@@ -32,5 +27,38 @@ body {
       color: $font-color-black1;
     }
 
+    &-Ag-P-Small {
+      font-family: $font-inter;
+      font-weight: 500;
+      font-size: 2vh;
+      line-height: 150%;
+      color: #565555;
+      letter-spacing: 0.05vh;
+    }
+      
+    &-Ag-P-Big {
+      font-family: $font-inter;
+      font-weight: 200;
+      font-size: 4.5vh;
+      line-height: 130%;
+    }
+
+    &-Ag-Camino-Final-H1 {
+      font-family: $font-inter;
+      font-weight: 200;
+      font-size: 5.5vh;
+      line-height: 130%;
+      color:$font-color-black1;
+    }
+
+    &-Ag-Camino-Label {
+      font-family: $font-inter;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 2.2vh;
+      line-height: 100%;
+      letter-spacing: 0.05vh;
+      color:$font-color-green
+    }
 
   }

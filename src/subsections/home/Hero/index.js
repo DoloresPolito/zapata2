@@ -84,8 +84,9 @@ export default function Hero({ title, reserva }) {
                   border="white"
                   hoverB="#BCC090"
                   hoverC="black"
-              
-        
+                  hoverA="#BCC090"
+                  link="/contact"
+          
                 />
                 <LinkButton
                   text="International patients"

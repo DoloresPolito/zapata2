@@ -1,7 +1,6 @@
 "use client";
 import styles from "./style.module.scss";
 import RoundedButton from "@/components/RoundedButton";
-import Link from "next/link";
 
 export default function Process({ process_translations }) {
   const boxesData = [
@@ -31,7 +30,9 @@ export default function Process({ process_translations }) {
       <div className={styles.section}>
         <div className={styles.container}>
           <div className={styles.top}>
-            <h2 className={`typography-Ag-P-Big`}>{process_translations.process_title}</h2>
+            <h2 className={`typography-Ag-P-Big`}>
+              {process_translations.process_title}
+            </h2>
           </div>
 
           <div className={styles.gridcontainer}>
@@ -43,9 +44,16 @@ export default function Process({ process_translations }) {
           </div>
 
           <div className={styles.bottom}>
-            <Link href="/process">
-              <RoundedButton text={process_translations.process_button} />
-            </Link>
+            <RoundedButton
+              text={process_translations.process_button}
+              link="/process"
+              background="transparent"
+              color="black"
+              border="black"
+              hoverB="#BCC090"
+              hoverC="black"
+              hoverA="#BCC090"
+            />
           </div>
         </div>
       </div>
@@ -58,7 +66,7 @@ const Box = ({ box }) => {
     <>
       <div className={styles.box}>
         <div className={styles.top}>
-          <p className={`typography-Ag-Numbers`} >{box.index}</p>
+          <p className={`typography-Ag-Numbers`}>{box.index}</p>
         </div>
         <div className={styles.bottom}>
           <h2 className={`typography-Ag-P ${styles.titulo}`}>{box.title}</h2>

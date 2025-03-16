@@ -82,12 +82,12 @@ export default function Reviews() {
                 <SwiperSlide key={item.id}>
                   <div className={styles.itemWrapperStyles}>
                     <div className={styles.circle}>{item.iniciales}</div>
-                    <h3 className={styles.itemName}>
-                      {item.name} - {item.time}
+                    <h3  className={`typography-Ag-P-Small ${styles.itemName}`}>
+                     <span> {item.name}</span> - {item.time}
                     </h3>
-                    <h3 className={styles.itemStars}>{item.stars}</h3>
+                    <h3 className={`typography-Ag-P-Small ${styles.itemStars}`}>{item.stars}</h3>
                     <Image src={stars} alt="stars" />
-                    <p className={styles.itemText}>{item.text}</p>
+                    <p  className={`typography-Ag-P ${styles.itemText}`}>{item.text}</p>
                   </div>
                 </SwiperSlide>
               ))}
@@ -106,15 +106,15 @@ export default function Reviews() {
   );
 }
 
-const Card = ({ name, text }) => {
-  return (
-    <div className={styles.cardcontainer}>
-      <div className={styles.cardtop}>
-        <p className={styles.cardtext}>{text}</p>
-      </div>
-      <div className={styles.cardbottom}>
-        <p className={styles.cardname}>{name}</p>
-      </div>
-    </div>
-  );
-};
+// const Card = ({ name, text }) => {
+//   return (
+//     <div className={styles.cardcontainer}>
+//       <div className={styles.cardtop}>
+//         <p className={styles.cardtext}>{text}</p>
+//       </div>
+//       <div className={styles.cardbottom}>
+//         <p className={styles.cardname}>{name}</p>
+//       </div>
+//     </div>
+//   );
+// };

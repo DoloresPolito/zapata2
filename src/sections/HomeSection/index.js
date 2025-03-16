@@ -2,7 +2,7 @@
 import styles from "./style.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect} from "react";
 // import Process from "../../subsections/home/Process";
 import Dr from "../../home/Dr";
 import Footer from "@/structure/Footer";
@@ -69,6 +69,10 @@ export default function Index({
           border="#bcc090"
           hoverB="#281A0F"
           hoverC="#bcc090"
+          hoverA="#BCC090"
+          link="/contact"
+
+     
         />
       </div>
     </>

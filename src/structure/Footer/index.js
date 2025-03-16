@@ -20,7 +20,10 @@ export default function Footer({ locale }) {
                 <p className={`typography-Ag-P `}>Dr. Federico Zapata</p>
                 <p className={`typography-Ag-P `}>Austria 2630 — PB</p>
                 <p className={`typography-Ag-P `}>CABA, Argentina</p>
-                <Link href="https://maps.app.goo.gl/ew7RVyhtAvf42wzR7" target="_blank">
+                <Link
+                  href="https://maps.app.goo.gl/ew7RVyhtAvf42wzR7"
+                  target="_blank"
+                >
                   <p className={`typography-Ag-P `}>
                     {getTranslation(locale, "footer.column1.button")}
                   </p>
@@ -28,44 +31,7 @@ export default function Footer({ locale }) {
               </div>
 
               <div className={styles.column2}>
-                <p className={`typography-Ag-P ${styles.title}`}>
-                  {getTranslation(locale, "footer.column2.title")}
-                </p>
-                <div className={styles.linkcontainer}>
-                  <Image
-                    src={`/assets/icons/whatsapp.png`}
-                    alt="more"
-                    width={20}
-                    height={18}
-                  />
-                  <p className={`typography-Ag-P `}>
-                    WhatsApp:           <Link href="https://api.whatsapp.com/send/?phone=541148077889" target="_blank"> +54 9 11 4807 4040</Link>
-                  </p>
-                </div>
-
-                <div className={styles.linkcontainer}>
-                  <Image
-                    src={`/assets/icons/mail.png`}
-                    alt="more"
-                    width={20}
-                    height={20}
-                  />
-                  <Link href="mailto:info@drzapata.com">
-                  <p className={`typography-Ag-P `}>info@drzapata.com</p>
-                  </Link>
-                </div>
-
-                <div className={styles.linkcontainer}>
-                  <Image
-                    src={`/assets/icons/phone.png`}
-                    alt="more"
-                    width={20}
-                    height={20}
-                  />
-                  <Link href="/"> 
-                  <p className={`typography-Ag-P `}>Tel: 011 4562 9283</p>
-                  </Link>
-                </div>
+                <Column locale={locale} />
 
                 <p
                   className={`typography-Ag-P ${styles.title}`}
@@ -73,8 +39,9 @@ export default function Footer({ locale }) {
                 >
                   {getTranslation(locale, "footer.column3.title")}
                 </p>
-                <Link href="https://www.instagram.com/" target="_blank"> 
-                <p className={`typography-Ag-P `}> Instagram</p>       </Link>
+                <Link href="https://www.instagram.com/" target="_blank">
+                  <p className={`typography-Ag-P `}> Instagram</p>{" "}
+                </Link>
               </div>
             </div>
 
@@ -95,6 +62,58 @@ export default function Footer({ locale }) {
             </div>
           </div>
         </div>
+      </div>
+    </>
+  );
+}
+
+export function Column({ locale }) {
+  return (
+    <>
+      <p className={`typography-Ag-P ${styles.title}`}>
+        {getTranslation(locale, "footer.column2.title")}
+      </p>
+      <div className={styles.linkcontainer}>
+        <Image
+          src={`/assets/icons/whatsapp.png`}
+          alt="more"
+          width={20}
+          height={18}
+        />
+        <p className={`typography-Ag-P `}>
+          WhatsApp:{" "}
+          <Link
+            href="https://api.whatsapp.com/send/?phone=541148077889"
+            target="_blank"
+          >
+            {" "}
+            +54 9 11 4807 4040
+          </Link>
+        </p>
+      </div>
+
+      <div className={styles.linkcontainer}>
+        <Image
+          src={`/assets/icons/mail.png`}
+          alt="more"
+          width={20}
+          height={20}
+        />
+        <Link href="mailto:info@drzapata.com">
+          <p className={`typography-Ag-P `}>info@drzapata.com</p>
+        </Link>
+      </div>
+
+      <div className={styles.linkcontainer}>
+        <Image
+          src={`/assets/icons/phone.png`}
+          alt="more"
+          width={20}
+          height={20}
+        />
+        <Link href="/">
+          <p className={`typography-Ag-P `}>Tel: 011 4562 9283</p>
+        </Link>
       </div>
     </>
   );

@@ -30,20 +30,46 @@
 
     },
 
-    "process-home":{
-      "title": "How does the process work?",
-      "title1":"First consultation",
-      "description1":"You will have an extensive consultation with Dr. Federico Zapata. This step is essential for you to discuss your concerns and for the doctor to recommend the best treatment for you. You will be provided with all the details and will be asked for any necessary preliminary studies.",
 
-      "title2":"Second consultation",
-      "description2":"One week before the scheduled surgery, you must attend the relevant medical evaluation, with the requested tests, where you will also be given pre-surgical medical instructions.",
+    "process-section":{
+      "label": "We accompany you throughout the entire process",
+      "title":"Comprehensive Care in Surgery and Postoperative Care",
+      "description":"At our clinic, your well-being is our priority. From surgery to postoperative follow-up, you'll be in the hands of a highly qualified team who will take care of every detail of your health and safety.",
 
-      "title3":"Confirmation",
-      "description3":"The day before your surgery, you will have another consultation with Dr. Zapata to determine the surgical procedure and address any questions you may have.",
+      "title1":"Surgery",
+      "description1":"Your health and safety are our primary concern. You will be cared for by a highly qualified and trained team throughout your stay at the clinic. During surgery, you will be constantly monitored by the cardiologist and anesthesiologist, who will remain by your side throughout the procedure.",
 
-      "title4":"The day of surgery",
-      "description4":"After surgery, you will receive all necessary checkups and treatment with Dr. Zapata and his medical team for as long as necessary."
+     
+      "title2":"Immediate postoperative",
+      "description2":"After surgery, the patient is taken to their room where they will recover under the care of the team nurse. Every effort is made to ensure you feel as relaxed and comfortable as possible. Dr. Zapata will visit you immediately after surgery and monitor you until discharge, remaining in close communication with the nurse.",
 
+      "title3":"Postoperative follow-up",
+      "description3":"A surgical procedure includes not only the surgery itself but also postoperative care. You will have the private numbers of the entire medical team in case of any eventuality; we will be with you and care for you 24 hours a day. Generally, the initial postoperative treatment takes place within 24 to 48 hours in the office. Subsequent follow-ups will be performed every 2 or 3 days during the first 2 weeks, and at 1 month, 3 months, 6 months, and 1 year after surgery. However, you will be seen more frequently if necessary."
+    },
+
+
+    "about":{
+    
+      "subtitle":"Director of the Dr. Zapata Plastic, Aesthetic and Reconstructive Surgery Clinic",
+   
+      "text1":"Dr. Federico E. Zapata is a renowned plastic surgeon, a graduate of the University of Buenos Aires and with postgraduate training at prestigious national and American institutions. He also completed fellowships with renowned masters who taught him surgical craftsmanship in various areas of plastic surgery, both aesthetic and reconstructive.",
+      "text2":"Dr. Zapata currently dedicates his time to his private practice, supporting it with ongoing training. He has continuously earned the Certificate of Advanced Education in Cosmetic Surgery from The American Society for Aesthetic Plastic Surgery, a society of which he is a member, in addition to those of Argentina and Buenos Aires.",
+
+     
+    
+      "item1":"Doctor graduated from the Faculty of Medicine (UBA)",
+      "item2":"University Specialist in General Surgery",
+      "item3":"Specialist in Plastic, Aesthetic and Reconstructive Surgery",
+      "item4":"Fellow Post Grade University California Irvine, UCI (USA)",
+      "item5":"Full Member of the Argentine Medical Association",
+      "item6":"Full Member of the Buenos Aires Society of Plastic Surgery",
+      "item7":"Full Member of the Argentine Plastic Surgery Society",
+
+      "item8":"Member The American Society for Aesthetic Plastic Surgery",
+      "item9":"Member The Rhinoplasty Society",
+      "item10":"Medical Director of a Plastic Surgery Clinic",
+      "item11":"Community service (honorary) at the Adventist Sanatorium of the Plata – Puigari, E. Ríos",
+      "item12":"Community work (honorary) at The Natuvu Mission – Fiji Islands"
+    
     }
-
   }
