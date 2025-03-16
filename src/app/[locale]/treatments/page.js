@@ -19,7 +19,7 @@ export default async function Procedures({ params: { locale } }) {
       <div className={styles.main}>
         <Header />
 
-        <TreatmentsSection />
+        <TreatmentsSection locale={locale}/>
         <Footer/>
       </div>
     </TranslationsProvider>

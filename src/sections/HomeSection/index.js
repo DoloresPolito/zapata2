@@ -57,7 +57,7 @@ export default function Index({
       <SectionEffectTop process_translations={process_translations} />
       {/* <Process process_translations={process_translations} /> */}
       <Cv locale={locale}/>
-      <Treatments />
+      <Treatments   locale={locale}/>
       <Reviews />
       <Footer locale={locale} />
 

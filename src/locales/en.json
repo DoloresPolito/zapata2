@@ -71,5 +71,32 @@
       "item11":"Community service (honorary) at the Adventist Sanatorium of the Plata – Puigari, E. Ríos",
       "item12":"Community work (honorary) at The Natuvu Mission – Fiji Islands"
     
+    },
+    "treatments": {
+      "title": "Treatments",
+      "subtitle": "Our specialized team offers a wide range of plastic surgery treatments designed to improve your well-being and confidence. Each procedure is carefully customized to meet your expectations, using the most advanced and safest techniques available.",
+      "t1": {
+        "title": "Face",
+        "treatments": [
+          { "name": "Botox", "path": "/treatments/botox" },
+          { "name": "Hyaluronic Acid", "path": "/treatments/hyaluronic-acid" },
+          { "name": "Facelift", "path": "/treatments/facelift" }
+        ]
+      },
+      "t2": {
+        "title": "Body",
+        "treatments": [
+          { "name": "Liposuction", "path": "/treatments/liposuction" },
+          { "name": "Abdominoplasty", "path": "/treatments/abdominoplasty" },
+          { "name": "Gluteoplasty", "path": "/treatments/gluteoplasty" }
+        ]
+      },
+      "t3": {
+        "title": "Non-Invasive",
+        "treatments": [
+          { "name": "Radiofrequency", "path": "/treatments/radiofrequency" },
+          { "name": "Cryolipolysis", "path": "/treatments/cryolipolysis" }
+        ]
+      }
     }
   }

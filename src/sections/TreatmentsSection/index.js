@@ -1,20 +1,18 @@
 "use client";
 import styles from "./style.module.scss";
 
-import Treatments from "../../subsections/home/Treatments";
+import TreatmentsCards from "@/components/TreatmentsCards";
+import { getTranslation } from "@/utils/getTranslation";
 
-export default function TreatmentsSection({ translations }) {
+export default function TreatmentsSection({locale}) {
   return (
     <div className={styles.section}>
       <div className={styles.container}>
-        <h4>
-          Nuestro equipo especializado ofrece una amplia gama de tratamientos de
-          cirugía plástica diseñados para mejorar su bienestar y confianza. Cada
-          procedimiento es cuidadosamente personalizado para cumplir con sus
-          expectativas, utilizando las técnicas más avanzadas y seguras
-          disponibles en el campo.
-        </h4>
-        <Treatments />
+           <h2 className={`typography-Ag-Camino-Final-H1`}>  {getTranslation(locale, "treatments.title")}</h2>
+        <p className={`typography-Ag-P`}>
+        {getTranslation(locale, "treatments.subtitle")}
+        </p>
+        <TreatmentsCards locale={locale}/>
       </div>
     </div>
   );

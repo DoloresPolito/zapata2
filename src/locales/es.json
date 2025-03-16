@@ -71,7 +71,36 @@
       "item11":"Trabajo comunitario (honorario) en Sanatorio Adventista del Plata – Puigari, E. Ríos",
       "item12":"Trabajo comunitario (honorario) en The Natuvu Mission – Islas Fiji"
     
+    },
+
+    "treatments": {
+      "title": "Tratamientos",
+      "subtitle": "Nuestro equipo especializado ofrece una amplia gama de tratamientos de cirugía plástica diseñados para mejorar su bienestar y confianza. Cada procedimiento es cuidadosamente personalizado para cumplir con sus expectativas, utilizando las técnicas más avanzadas y seguras disponibles en el campo.",
+      "t1": {
+        "title": "Cara",
+        "treatments": [
+          { "name": "Bótox", "path": "/tratamientos/botox" },
+          { "name": "Ácido hialurónico", "path": "/tratamientos/acido-hialuronico" },
+          { "name": "Lifting facial", "path": "/tratamientos/lifting-facial" }
+        ]
+      },
+      "t2": {
+        "title": "Cuerpo",
+        "treatments": [
+          { "name": "Liposucción", "path": "/tratamientos/liposuccion" },
+          { "name": "Abdominoplastia", "path": "/tratamientos/abdominoplastia" },
+          { "name": "Gluteoplastia", "path": "/tratamientos/gluteoplastia" }
+        ]
+      },
+      "t3": {
+        "title": "No Invasivos",
+        "treatments": [
+          { "name": "Radiofrecuencia", "path": "/tratamientos/radiofrecuencia" },
+          { "name": "Criolipólisis", "path": "/tratamientos/criolipolisis" }
+        ]
+      }
     }
+
 
 
 
