@@ -62,7 +62,7 @@ export default function Mask() {
               initial="initial"
               className={styles.link}
             >
-              <StyledLink link="/process">
+              <StyledLink link="/proceso">
                 <p className={styles.text}>{t("common:nav_process")}</p>
               </StyledLink>
             </motion.div>
@@ -84,7 +84,7 @@ export default function Mask() {
               initial="initial"
               className={styles.link}
             >
-              <StyledLink link="/treatments">
+              <StyledLink link="/tratamientos">
                 <p className={styles.text}>{t("common:nav_tratamientos")}</p>
               </StyledLink>
             </motion.div>
@@ -96,7 +96,7 @@ export default function Mask() {
               initial="initial"
               className={styles.link}
             >
-              <StyledLink link="/contact">
+              <StyledLink link="/contacto">
                 <p className={styles.text}>{t("common:nav_contacto")}</p>
               </StyledLink>
             </motion.div>

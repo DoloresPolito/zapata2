@@ -78,25 +78,372 @@
       "t1": {
         "title": "Face",
         "treatments": [
-          { "name": "Botox", "path": "/treatments/botox" },
-          { "name": "Hyaluronic Acid", "path": "/treatments/hyaluronic-acid" },
-          { "name": "Facelift", "path": "/treatments/facelift" }
+          {
+            "id":"nariz",
+            "name": "Nose",
+            "name2": "Rhinoplasty",
+            "description": "Treatment of the nasal tip, dorsum, and bones. And the airway, by correcting respiratory insufficiency (treatment of the septum, turbinates, and valves).",
+            "items": [
+              {
+                "title": "PATIENT AGE",
+                "answer": "Have completed bone development"
+              },
+              { "title": "ANESTHESIA", "answer": "General and local" },
+              { "title": "INTERNMENT", "answer": "Outpatient or 1 day" },
+              {
+                "title": "RECOVERY",
+                "answer": "7 to 10 days with nasal splints"
+              }
+            ],
+            "image":"/assets/home/t1.png",
+            "path": "/tratamientos/nariz"
+          },
+  
+          {
+            "id":"lifting-facial",
+            "name": "Face Lift",
+            "name2": "",
+            "description": "Treatment of the deep musculoaponeurotic system to correct signs of aging on both the face and neck. The goal is to achieve a natural-looking final result.",
+            "items": [
+    
+              { "title": "ANESTHESIA", "answer": "Local and intravenous sedation" },
+              { "title": "DURATION", "answer": "3 hours" },
+              {
+                "title": "INCISIONS",
+                "answer": "In front of the temporal or intrapilous hairy area, depending on the previous evaluation, then it goes around the ear and the auricular lobe, passing through the retroauricular groove and again in front of the occipital hairy area"
+              },
+              {
+                "title": "INTERNMENT",
+                "answer": "1 day"
+              },
+              {
+                "title": "RECOVERY",
+                "answer": "10 to 12 days"
+              }
+  
+            ],
+            "image":"/assets/home/t1.png",
+            "path": "/tratamientos/lifting-facial"
+          },
+  
+  
+  
+          {
+            "id":"parpados",
+            "name": "Eyelids",
+            "name2": "Blepharoplasty",
+            "description": "Our goal is to remove excess skin on the upper lip and bags on the lower lip. This is also complemented by correction of the tear trough when it's deepened. Maintaining the expression of the eyes is key.",
+            "items": [
+    
+              { "title": "ANESTHESIA", "answer": "Sedation and local" },
+              { "title": "DURATION", "answer": "1 to 2,5 hours" },
+              {
+                "title": "RECOVERY",
+                "answer": "3 to 7 days"
+              },
+              {
+                "title": "SCAR",
+                "answer": "In the upper eyelid in the palpebral groove and in the lower eyelid it is via the conjunctiva and no stitches are placed"
+              }
+             
+  
+            ],
+            "image":"/assets/home/t1.png",
+            "path": "/tratamientos/parpados"
+          },
+  
+  
+  
+          {
+            "id":"cejas",
+            "name": "Forehead-Eyebrow Repositioning",
+            "name2": "",
+            "description": "Reposition eyebrows and aim to obtain a youthful and fresh look expression.",
+            "items": [
+    
+              { "title": "ANESTHESIA", "answer": "Sedation and local" },
+              { "title": "DURATION", "answer": "1,5 hours" },
+              {
+                "title": "RECOVERY",
+                "answer": "3 to 5 days"
+              },
+              {
+                "title": "SCAR",
+                "answer": "For minimally severe cases, a facelift with reduced scarring can be performed; in very advanced cases, a full forehead lift may be chosen. These include the temporal intrapilous area."
+              }
+             
+  
+            ],
+            "image":"/assets/home/t1.png",
+            "path": "/tratamientos/cejas"
+          },
+  
+          {
+            "id":"menton",
+            "name": "Chin",
+            "name2": "Augmentative Mentoplasty",
+            "description": "It can be treated by placing a silicone implant or by reinjecting the patient's own fatty tissue.",
+            "items": [
+    
+              { "title": "ANESTHESIA", "answer": "Sedation and local" },
+              { "title": "DURATION", "answer": "1 hour" },
+              {
+                "title": "RECOVERY",
+                "answer": "3 to 5 days"
+              }
+             
+             
+  
+            ],
+            "image":"/assets/home/t1.png",
+            "path": "/tratamientos/menton"
+          },
+  
+          {
+            "id":"orejas",
+            "name": "Ears",
+            "name2": "Auriculoplasty",
+            "description": "It is indicated when the auricle is more projected or prominent.",
+            "items": [
+              { "title": "PATIENT AGE", "answer": "It can be done from a very early age" },
+    
+              { "title": "ANESTHESIA", "answer": "Sedation and local" },
+              { "title": "INTERNMENT", "answer": "Outpatient" },
+              {
+                "title": "RECOVERY",
+                "answer": "7 to 10 days"
+              },
+              {
+                "title": "SCAR",
+                "answer": "In the posterior groove of the ear."
+              }
+             
+             
+  
+            ],
+            "image":"/assets/home/t1.png",
+            "path": "/tratamientos/orejas"
+          },
+  
+          {
+            "id":"piel",
+            "name": "Skin",
+            "name2": "Resection of malignant skin lesions",
+            "description": "They are treated with the protocols indicated for each case, leaving the margins of the lesion free of normal cells. A simultaneous histopathological study (with freezing by a pathologist) and a deferred histopathological study are performed.",
+            "items": [
+           
+    
+              { "title": "ANESTHESIA", "answer": "Local, or sedation and local, as the case may be." },
+              { "title": "DURATION", "answer": "1 to 2,5 hours, depending on the case." },
+              {
+                "title": "RECOVERY",
+                "answer": "3 to 5 days, simple injuries, and up to 30 days for injuries with skin grafts necessary."
+              }
+             
+  
+            ],
+            "image":"/assets/home/t1.png",
+            "path": "/tratamientos/piel"
+          }
         ]
       },
       "t2": {
         "title": "Body",
+  
         "treatments": [
-          { "name": "Liposuction", "path": "/treatments/liposuction" },
-          { "name": "Abdominoplasty", "path": "/treatments/abdominoplasty" },
-          { "name": "Gluteoplasty", "path": "/treatments/gluteoplasty" }
+          {
+            "id":"aumento-mamario",
+            "name": "Breast augmentation",
+            "name2": "Moms (Augmentative mastoplasty)",
+            "description": "For treatment of small breast volume, with or without asymmetries. The goal is to provide volume naturally.",
+            "items": [
+  
+              { "title": "ANESTHESIA", "answer": "Sedation and local" },
+              { "title": "IMPLANTS", "answer": "Placed in a retropectoral position." },
+              { "title": "DURATION", "answer": "1,5 hours" },
+  
+  
+              {
+                "title": "RECOVERY",
+                "answer": "5 days"
+              },
+              {
+                "title": "SCAR",
+                "answer": "In the submammary fold."
+              }
+            ],
+            "image":"/assets/home/t2.png",
+            "path": "/tratamientos/aumento-mamario"
+          },
+  
+  
+          {
+            "id":"levantamiento-mamario",
+            "name": "Breast lift ",
+            "name2": "Moms (Mastopexy)",
+            "description": "It is used to treat breast sagging due to the passage of time, breastfeeding, weight changes, or all of the above. The goal is to lift and sometimes reduce the areolas and, if indicated, reduce breast volume.",
+            "items": [
+  
+              { "title": "ANESTHESIA", "answer": "Sedation and local" },
+              { "title": "DURATION", "answer": "2 hours" },
+              {
+                "title": "RECOVERY",
+                "answer": "5 to 10 days"
+              },      
+              {
+                "title": "SCAR",
+                "answer": "Depending on the case, only areolas, or areola and vertical incision, or both and horizontal scar."
+              },
+  
+              { "title": "IMPLANTS", "answer": "When indicated, implants are placed in conjunction with a lifting procedure and can increase firmness and size." }
+  
+  
+      
+        
+            ],
+            "image":"/assets/home/t2.png",
+            "path": "/tratamientos/levantamiento-mamario"
+          },
+  
+          {
+            "id":"reduccion-mamaria",
+            "name": "Breast reduction",
+            "name2": "Moms",
+            "description": "It is used to treat large breasts and their consequences (back pain, etc.). The objective is to reduce the volume (size) and lift, sometimes associated with a reduction in areolar diameter.",
+            "items": [
+  
+              { "title": "ANESTHESIA", "answer": "General and local" },
+              { "title": "DURATION", "answer": "2 hours" },
+              {
+                "title": "RECOVERY",
+                "answer": "7 days"
+              },      
+              {
+                "title": "SCAR",
+                "answer": "Periareolar, vertical and horizontal."
+              }
+  
+      
+        
+            ],
+            "image":"/assets/home/t2.png",
+            "path": "/tratamientos/reduccion-mamaria"
+          },
+  
+  
+  
+          {
+            "id":"abdomen",
+            "name": "Abdomen",
+            "name2": "Abdominoplasty or abdominal dermolipectomy",
+            "description": "It is used to treat sagging skin and eventually muscle disorders (muscle separation, hernias, etc.). The objective is to restore the abdomen's aesthetics, eliminating excess skin, maintaining the natural look of the navel and resolving muscle problems.",
+            "items": [
+  
+              { "title": "ANESTHESIA", "answer": "General y local" },
+              { "title": "INTERNMENT", "answer": "1 day" },
+              { "title": "DURATION", "answer": "2,5 hours" },
+              {
+                "title": "RECOVERY",
+                "answer": "20 to 30 days"
+              },      
+              {
+                "title": "POST-OPERATIVE TIME",
+                "answer": "A containment belt will be used for 30 days or more if indicated."
+              }
+  
+      
+        
+            ],
+            "image":"/assets/home/t2.png",
+            "path": "/tratamientos/abdomen"
+          }
+  
+  
+  
+  
         ]
       },
       "t3": {
-        "title": "Non-Invasive",
+        "title": "No Invasive",
+  
         "treatments": [
-          { "name": "Radiofrequency", "path": "/treatments/radiofrequency" },
-          { "name": "Cryolipolysis", "path": "/treatments/cryolipolysis" }
+          {
+            "id":"botox-cara-cuello",
+            "name": "BOTOX® on face and neck",
+            "name2": "",
+            "description": "It is used to treat expression lines or static wrinkles (caused by sagging and laxity of the skin). The areas to be treated are periorbicularis oculi wrinkles or 'crow's feet,' horizontal lines on the forehead, vertical lines between the eyebrows, and wrinkles/bands on the neck.",
+            "items": [
+              { "title": "PROCEDURE", "answer": "It is applied to the muscle responsible for the formation of expression lines or wrinkles. No prior testing is required. It allows you to return to your normal life immediately without any problems." },
+              {
+                "title": "EFFECT",
+                "answer": "They appear between three and ten days"
+              },
+              { "title": "DURATION", "answer": "For a period of approximately four months, so the result is reversible and temporary." },
+  
+              {
+                "title": "IT IS PREVENTIVE",
+                "answer": "Consequent applications prevent the wrinkle from appearing on the skin."
+              }
+            ],
+            "image":"/assets/home/t3.png",
+            "path": "/tratamientos/botox-cara-cuello"
+          },
+  
+          {
+            "id":"botox-hiperhidrosis",
+            "name": "BOTOX® and excessive sweating",
+            "name2": "Hyperhidrosis",
+            "description": "It is used to treat armpits and inguinal region.",
+            "items": [
+              { "title": "WHAT EFFECT IS ACHIEVED", "answer": "It works by temporarily preventing sweating." },
+              {
+                "title": "EFFECT",
+                "answer": "They appear between three and ten days"
+              },
+              { "title": "DURATION", "answer": "It varies from four to ten months, depending on the individual patient's response and the dose used." }
+            ],
+            "image":"/assets/home/t3.png",
+            "path": "/tratamientos/botox-hiperhidrosis"
+          },
+  
+          {
+            "id":"botox-bruxismo",
+            "name": "BOTOX® and bruxism",
+            "name2": "",
+            "description": "It is used to relax the masticatory muscles that contract and affect the teeth and temporomandibular joint.",
+            "items": [
+             
+              {
+                "title": "EFFECT",
+                "answer": "They appear between three and ten days"
+              },
+              { "title": "DURATION", "answer": "For a period of approximately four to eight months." }
+            ],
+            "image":"/assets/home/t3.png",
+            "path": "/tratamientos/botox-bruxismo"
+          },
+  
+          {
+            "id":"acido-hialuronico",
+            "name": "Hyaluronic Acid",
+            "name2": "",
+            "description": "As a filler for nasolabial folds, lips, between the eyebrows, chin, cheekbones, and any depressions in the face due to atrophy of fat pads, for example in the temporal fossae or corners of the mouth. The goal is to add volume and restore skin quality (hydrating effect).",
+            "items": [
+             
+              {
+                "title": "WHAT IS",
+                "answer": "It is a crystalline, biodegradable, and 100% absorbable gel. It is found naturally in the structure of some tissues in our bodies."
+              },
+              { "title": "DURATION", "answer": "It is long-lasting, nine to twelve months, but at the same time it is NOT permanent." },
+              { "title": "APPLICATION", "answer": "You can resume your work or daily activities immediately after application." },
+              { "title": "ANESTHETIC", "answer": "It's a product that contains anesthetic, helping to minimize discomfort during application. It's applied with anesthetic cream beforehand." }
+            ],
+            "image":"/assets/home/t3.png",
+            "path": "/tratamientos/acido-hialuronico"
+          }
         ]
+  
+       
       }
     }
   }

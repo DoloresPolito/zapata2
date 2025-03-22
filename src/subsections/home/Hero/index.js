@@ -19,7 +19,7 @@ export default function Hero({ title, reserva }) {
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "300vh"]);
 
   const titleRef = useRef(null);
   const imageRef = useRef(null);

@@ -26,7 +26,7 @@ export default function Cv({ locale }) {
                 <p className={`typography-Ag-P`}>
                   {getTranslation(locale, "cv-home.description")}
                 </p>
-                <LinkButton text="Ver CV completo" />
+                <LinkButton text="Ver CV completo" link="/dr"/>
               </div>
             </div>
           </div>

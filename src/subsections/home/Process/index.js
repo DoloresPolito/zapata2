@@ -46,7 +46,7 @@ export default function Process({ process_translations }) {
           <div className={styles.bottom}>
             <RoundedButton
               text={process_translations.process_button}
-              link="/process"
+              link="/proceso"
               background="transparent"
               color="black"
               border="black"

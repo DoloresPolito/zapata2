@@ -31,6 +31,8 @@ export default function TreatmentsCards({ locale }) {
     };
   });
 
+
+
   return (
     <div className={styles.tratamientos}>
       <div className={styles.container}>
@@ -63,9 +65,10 @@ export default function TreatmentsCards({ locale }) {
                   {category.treatments.map((treatment, tIndex) => (
                     <div key={tIndex} className={styles.item}>
                       <li
-                        className={hoveredTreatment === tIndex ? styles.active : ""}
+                        className={`${hoveredTreatment === tIndex ? styles.active : ""} typography-Ag-P`}
                         onMouseEnter={() => setHoveredTreatment(tIndex)}
                         onClick={() => router.push(treatment.path)}
+                      
                       >
                         {treatment.name}
                         <span className={styles.arrow}>→</span>

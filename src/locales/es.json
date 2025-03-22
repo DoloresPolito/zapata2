@@ -1,109 +1,407 @@
 {
-    "contact": {
-      "title": "Contáctanos",
-      "description": "Estamos aquí para resolver todas tus dudas. Agendá tu consulta o escríbenos para recibir más información personalizada. Estamos en el corazón de Buenos Aires.",
-      "visit": "Visitanos",
-      "contact": "Contactanos",
-      "formtitle":"O dejanos un mensaje y te contactaremos a la brevedad",
-      "name":"Nombre y apellido",
-      "message": "Tu mensaje...",
-      "send": "Enviar"
+  "contact": {
+    "title": "Contáctanos",
+    "description": "Estamos aquí para resolver todas tus dudas. Agendá tu consulta o escríbenos para recibir más información personalizada. Estamos en el corazón de Buenos Aires.",
+    "visit": "Visitanos",
+    "contact": "Contactanos",
+    "formtitle": "O dejanos un mensaje y te contactaremos a la brevedad",
+    "name": "Nombre y apellido",
+    "message": "Tu mensaje...",
+    "send": "Enviar"
+  },
+
+  "cv-home": {
+    "description": "El Dr. Federico E. Zapata es un reconocido cirujano plástico, egresado de la Universidad de Buenos Aires y con entrenamiento de posgrado en prestigiosas instituciones en Estados Unidos, donde, además, realizó fellowships de perfeccionamiento junto a los grandes maestros quienes le enseñaron la artesanía quirúrgica en las distintas áreas plásticas, tanto estéticas como reparadoras."
+  },
+
+  "book": {
+    "title": "Solicitar turnos o consultas:",
+    "button1": "Escribinos",
+    "button2": "Enviar correo",
+    "button3": "LLamanos"
+  },
+
+  "footer": {
+    "column1": { "title": "Ubicación", "button": "Ver en Google Maps" },
+    "column2": { "title": "Contactanos" },
+    "column3": { "title": "Seguinos en redes" },
+    "column4": { "title": "Centro habilitado por" },
+    "form": { "title": "Dejanos un mensaje y te contactaremos a la brevedad" }
+  },
+
+  "process-section": {
+    "label": "Te acompañamos a lo largo de todo el proceso",
+    "title": "Atención Integral en Cirugía y Cuidado Postoperatorio",
+    "description": "En nuestra clínica, su bienestar es nuestra prioridad. Desde la cirugía hasta el seguimiento postoperatorio, estará en manos de un equipo altamente calificado que cuidará cada detalle de su salud y seguridad.",
+
+    "title1": "Cirugía",
+    "description1": "Su salud y su seguridad es nuestra principal preocupación. Usted será cuidado por un equipo altamente calificado y entrenado para tal fin durante toda su estadía en la clínica. Durante la cirugía será monitoreado constantemente por el cardiólogo y el anestesiólogo quienes permanecerán a su lado durante todo el procedimiento.",
+
+    "title2": "Postoperatorio inmediato",
+    "description2": "Luego de la cirugía, el paciente es llevado a su habitación donde estará en recuperación bajo el cuidado de la enfermera del equipo. Todos los esfuerzos están enfocados para que usted se sienta lo más relajado y confortable posible. El Dr. Zapata lo visitará inmediatamente luego de la cirugía y realizará el seguimiento hasta el alta, y estando en activa comunicación con la enfermera.",
+
+    "title3": "Seguimiento postoperatorio",
+    "description3": "Un procedimiento quirúrgico no sólo incluye la cirugía sino también el cuidado postoperatorio del paciente. Ud. Contará con los números privados de todo el equipo médico por cualquier eventualidad, lo acompañaremos y cuidaremos las 24hs. Generalmente la primera curación postoperatoria se realiza entre las 24 y 48 h en el consultorio. Posteriormente se harán controles cada 2 o 3 días en las primeras 2 semanas, al mes, 3 meses, 6 meses y 1 año después de la cirugía. Sin embargo, Ud. será atendido con mayor frecuencia si es necesario."
+  },
+
+  "about": {
+    "subtitle": "Director Clínica de Cirugía Plástica, Estética y Reparadora Dr. Zapata",
+
+    "text1": "El Dr. Federico E. Zapata es un reconocido cirujano plástico, egresado de la Universidad de Buenos Aires y con entrenamiento de posgrado en prestigiosas instituciones nacionales y de Estados Unidos, donde, además, realizó fellowships de perfeccionamiento junto a los grandes maestros quienes le enseñaron la artesanía quirúrgica en las distintas áreas plásticas, tanto estéticas como reparadoras.",
+    "text2": "Actualmente el Dr. Zapata dedica su tiempo a la práctica privada sustentándola con capacitación continua. Obteniendo en forma ininterrumpida la Certificación en Educación Avanzada en Cirugía Plástica (“Certificate of Advanced Educacion in Cosmetic Surgery”) otorgado por The American Sociaety for Aesthetic Plastic Surgery, sociedad de la que es partícipe, además de la de Argentina y de Buenos Aires.",
+
+    "item1": "Médico graduado en la Facultad de Medicina (UBA)",
+    "item2": "Especialista Universitario en Cirugía General",
+    "item3": "Especialista en Cirugía Plástica, Estética y Reparadora",
+    "item4": "Fellow Post Grade University California Irvine, UCI (EEUU)",
+    "item5": "Miembro Titular de la Asociación Médica Argentina",
+    "item6": "Miembro Titular de la Sociedad de Cirugía Plástica de Buenos Aires",
+    "item7": "Miembro Titular de la Sociedad de Cirugía Plastica Argentina",
+
+    "item8": "Miembro The American Society for Aesthetic Plastic Surgery",
+    "item9": "Miembro The Rhinoplasty Society",
+    "item10": "Director médico clínica de cirugía plástica",
+    "item11": "Trabajo comunitario (honorario) en Sanatorio Adventista del Plata – Puigari, E. Ríos",
+    "item12": "Trabajo comunitario (honorario) en The Natuvu Mission – Islas Fiji"
+  },
+
+  "treatments": {
+    "title": "Tratamientos",
+    "subtitle": "Nuestro equipo especializado ofrece una amplia gama de tratamientos de cirugía plástica diseñados para mejorar su bienestar y confianza. Cada procedimiento es cuidadosamente personalizado para cumplir con sus expectativas, utilizando las técnicas más avanzadas y seguras disponibles en el campo.",
+    "t1": {
+      "title": "Cara",
+      "treatments": [
+        {
+          "id":"nariz",
+          "name": "Nariz",
+          "name2": "Rinoplastia",
+          "description": "Tratamiento de punta nasal, del dorso y huesos. Y la vía aérea, mediante la corrección de insuficiencia respiratoria (tratamiento de tabique, cornetes, válvulas)",
+          "items": [
+            {
+              "title": "EDAD DEL PACIENTE",
+              "answer": "haber completado el desarrollo óseo"
+            },
+            { "title": "ANESTESIA", "answer": "general y local" },
+            { "title": "INTERNACIÓN", "answer": "ambulatoria o 1 día" },
+            {
+              "title": "RECUPERACIÓN",
+              "answer": "7 a 10 días con férulas nasales"
+            }
+          ],
+          "image":"/assets/home/t1.png",
+          "path": "/tratamientos/nariz"
+        },
+
+        {
+          "id":"lifting-facial",
+          "name": "Lifting Facial",
+          "name2": "",
+          "description": "Tratamiento del sistema músculo aponeurótico profundo, para corrección de signos de envejecimiento, tanto en cara como en cuello. Siguiendo como objetivo la naturalidad del resultado final.",
+          "items": [
+            { "title": "ANESTESIA", "answer": "local y sedación intravenosa" },
+            { "title": "DURACIÓN", "answer": "3horas" },
+            {
+              "title": "INCISIONES",
+              "answer": "delante del área pilosa temporal o intra pilosa, según evaluación previa, luego se circunda la oreja y al lóbulo auricular, se pasa por el surco retroauricular y nuevamente por delante del área pilosa occipital"
+            },
+            {
+              "title": "INTERNACIÓN",
+              "answer": "1 día"
+            },
+            {
+              "title": "RECUPERACIÓN",
+              "answer": "10 a 12 días"
+            }
+          ],
+          "image":"/assets/home/t1.png",
+          "path": "/tratamientos/lifting-facial"
+        },
+
+        {
+          "id":"parpados",
+          "name": "Parpados",
+          "name2": "Blefaroplastia",
+          "description": "Como objetivo eliminamos excedente de piel en el superior y bolsas en el inferior. A esto se agrega corrección del surco lagrimal cuando está profundizado. No perder la expresión de la mirada es lo importante",
+          "items": [
+            { "title": "ANESTESIA", "answer": "Sedación y local" },
+            { "title": "DURACIÓN", "answer": "1 a 2,5 horas" },
+            {
+              "title": "RECUPERACION",
+              "answer": "3 a 7 días"
+            },
+            {
+              "title": "CICATRIZ",
+              "answer": "En el párpado superior en el surco palpebral y en el párpado inferior es vía la conjuntiva y no se colocan puntos"
+            }
+          ],
+          "image":"/assets/home/t1.png",
+          "path": "/tratamientos/parpados"
+        },
+
+        {
+          "id":"cejas",
+          "name": "Frente-Reposicionamiento de las cejas",
+          "name2": "",
+          "description": "Reposicionar cejas y como objetivo obtener expresión de la mirada joven y fresca.",
+          "items": [
+            { "title": "ANESTESIA", "answer": "Sedación y local" },
+            { "title": "DURACIÓN", "answer": "1,5 horas" },
+            {
+              "title": "RECUPERACION",
+              "answer": " 3 a 5 días"
+            },
+            {
+              "title": "CICATRIZ",
+              "answer": "Para grados mínimos, se puede realizar un lifting con cicatrices reducidas; en casos muy avanzados, puede optarse por el lifting frontal completo. Son el zona intra pilosa temporal."
+            }
+          ],
+          "image":"/assets/home/t1.png",
+          "path": "/tratamientos/cejas"
+        },
+
+        {
+          "id":"menton",
+          "name": "Menton",
+          "name2": "Mentoplastia Aumentativa",
+          "description": "Se puede tratar con la colocación de un implante de silicona o mediante la reinyección de tejido graso del mismo paciente.",
+          "items": [
+            { "title": "ANESTESIA", "answer": "sedación y local" },
+            { "title": "DURACIÓN", "answer": "1 hora" },
+            {
+              "title": "RECUPERACION",
+              "answer": " 3 a 5 días"
+            }
+          ],
+          "image":"/assets/home/t1.png",
+          "path": "/tratamientos/menton"
+        },
+
+        {
+          "id":"orejas",
+          "name": "Orejas",
+          "name2": "Auriculoplastia",
+          "description": "Está indicada cuando el pabellón de la oreja se encuentra más proyectado o prominente.",
+          "items": [
+            {
+              "title": "EDAD DEL PACIENTE",
+              "answer": "Se puede hacer desde muy temprana edad"
+            },
+
+            { "title": "ANESTESIA", "answer": "Sedación y local" },
+            { "title": "INTERNACIÓN", "answer": "Ambulatoria" },
+            {
+              "title": "RECUPERACION",
+              "answer": "7 a 10 días"
+            },
+            {
+              "title": "CICATRIZ",
+              "answer": "En el surco posterior de la oreja."
+            }
+          ],
+          "image":"/assets/home/t1.png",
+          "path": "/tratamientos/orejas"
+        },
+
+        {
+          "id":"piel",
+          "name": "Piel",
+          "name2": "Resección de lesiones malignas de piel",
+          "description": "Se tratan con los protocolos indicados en cada caso, dejando los márgenes libres de la lesión con células normales. Se hace estudio histopatológico simultáneo (con congelación con Patólogo), y estudio histopatológico diferido.",
+          "items": [
+            {
+              "title": "ANESTESIA",
+              "answer": "Local, o sedación y local, según el caso."
+            },
+            { "title": "DURACIÓN", "answer": " 1 a 2,5 horas, según el caso." },
+            {
+              "title": "RECUPERACION",
+              "answer": "3 a 5 días, lesiones sencillas, y hasta 30 días lesiones con injertos de piel necesario."
+            }
+          ],
+          "image":"/assets/home/t1.png",
+          "path": "/tratamientos/piel"
+        }
+      ]
     },
+    "t2": {
+      "title": "Cuerpo",
 
-    "cv-home":{
-      "description":"El Dr. Federico E. Zapata es un reconocido cirujano plástico, egresado de la Universidad de Buenos Aires y con entrenamiento de posgrado en prestigiosas instituciones en Estados Unidos, donde, además, realizó fellowships de perfeccionamiento junto a los grandes maestros quienes le enseñaron la artesanía quirúrgica en las distintas áreas plásticas, tanto estéticas como reparadoras."
+      "treatments": [
+        {
+          "id":"aumento-mamario",
+          "name": "Aumento mamario",
+          "name2": " Mamas (Mastoplastia aumentativa)",
+          "description": "Parta tratamiento de poco volumen mamario, con o sin asimetrías. Se busca proveer volumen con naturalidad",
+          "items": [
+            { "title": "ANESTESIA", "answer": "sedación y local" },
+            {
+              "title": "IMPLANTES",
+              "answer": "colocados en posición retro pectoral."
+            },
+            { "title": "DURACIÓN", "answer": "1,5 horas" },
+
+            {
+              "title": "RECUPERACIÓN",
+              "answer": "5 días"
+            },
+            {
+              "title": "CICATRIZ",
+              "answer": "En el surco sub mamario."
+            }
+          ],
+          "image":"/assets/home/t2.png",
+          "path": "/tratamientos/aumento-mamario"
+        },
+
+        {
+          "id":"levantamiento-mamario",
+          "name": "Levantamieto mamario ",
+          "name2": "Mamas (Mastopexia)",
+          "description": "Es para tratar el descenso mamario producto del paso del tiempo, lactancias, cambios de peso o todos ellos asociados. El objetivo es el levantamiento y a  veces la reducción de areolas y, también, de volumen mamario sí estuviera indicado.",
+          "items": [
+            { "title": "ANESTESIA", "answer": "Sedación y local" },
+            { "title": "DURACIÓN", "answer": "2 horas" },
+            {
+              "title": "RECUPERACIÓN",
+              "answer": "5 a 10 días"
+            },
+            {
+              "title": "CICATRIZ",
+              "answer": "Dependiendo del caso, solo areolas, o areola e incisión vertical, o ambas y cicatriz horizontal."
+            },
+
+            {
+              "title": "IMPLANTES",
+              "answer": "Cuando están indicados los implantes se colocan conjuntamente con un procedimiento de levantamiento y pueden aumentar firmeza y tamaño."
+            }
+          ],
+          "image":"/assets/home/t2.png",
+          "path": "/tratamientos/levantamiento-mamario"
+        },
+
+        {
+          "id":"reduccion-mamaria",
+          "name": "Reducción mamaria",
+          "name2": "Mamas",
+          "description": "Es para tratar las mamas voluminosas y sus consecuencias (dolores de espalda, etc.) El objetivo es reducción del volumen (tamaño) y levantamiento asociado, a veces, a la reducción del diámetro areolar.",
+          "items": [
+            { "title": "ANESTESIA", "answer": "General y local" },
+            { "title": "DURACIÓN", "answer": "2 horas" },
+            {
+              "title": "RECUPERACIÓN",
+              "answer": "7 días"
+            },
+            {
+              "title": "CICATRIZ",
+              "answer": "Periareolar, vertical y horizontal."
+            }
+          ],
+          "image":"/assets/home/t2.png",
+          "path": "/tratamientos/reduccion-mamaria"
+        },
+
+        {
+          "id":"abdomen",
+          "name": "Abdomen",
+          "name2": "Abdominoplastia o Dermolipectomia abdominal",
+          "description": "Es para tratar la flaccidez de piel y eventualmente trastornos de la musculatura (separación de músculos, hernias, etc.) El objetivo es devolver al abdomen su estética, eliminando excedentes de piel, manteniendo naturalidad del ombligo y resolviendo problemas de la musculatura",
+          "items": [
+            { "title": "ANESTESIA", "answer": "General y local" },
+            { "title": "INTERNACIÓN", "answer": "1 día" },
+            { "title": "DURACIÓN", "answer": "2,5 horas" },
+            {
+              "title": "RECUPERACIÓN",
+              "answer": "20 a 30 días"
+            },
+            {
+              "title": "TIEMPO POST OPERATORIO",
+              "answer": "Se usará una faja de contención durante 30 días o más sí estuviera indicado."
+            }
+          ],
+          "image":"/assets/home/t2.png",
+          "path": "/tratamientos/abdomen"
+        }
+      ]
     },
+    "t3": {
+      "title": "No Invasivos",
 
-    "book":{
-      "title":"Solicitar turnos o consultas:",
-      "button1":"Escribinos",
-      "button2":"Enviar correo",
-      "button3":"LLamanos"
-    },
+      "treatments": [
+        {
+          "id":"botox-cara-cuello",
+          "name": "BOTOX® en cara y cuello",
+          "name2": "",
+          "description": "Es para tratar arrugas de expresión o arrugas estáticas (generadas por la caída y laxitud de la piel). Las áreas a tratar son las arrugas peri orbiculares o “patas de gallo”, las líneas horizontales en la frente, las líneas verticales en el entrecejo y las arrugas/bandas del cuello",
+          "items": [
+            { "title": "PROCEDIMIENTO", "answer": "Se aplica en el músculo responsable de la formación de la línea o arruga de expresión. No requiere ningún test previo. Permite reincorporarse de inmediato a la vida habitual sin inconvenientes." },
+            {
+              "title": "EFECTO",
+              "answer": "Aparecen entre los tres y diez días"
+            },
+            { "title": "DURACIÓN", "answer": "Por un periodo aproximado de cuatro meses, de manera que el resultado es reversible y transitorio, " },
 
-    "footer":{
-      "column1":{"title":"Ubicación", "button":"Ver en Google Maps"},
-      "column2":{"title":"Contactanos"},
-      "column3":{"title":"Seguinos en redes"},
-      "column4":{"title":"Centro habilitado por"},
-      "form":{"title":"Dejanos un mensaje y te contactaremos a la brevedad"}
+            {
+              "title": "ES PREVENTIVO",
+              "answer": "Las consecuentes aplicaciones evitan que la arruga se marque en la piel."
+            }
+          ],
+          "image":"/assets/home/t3.png",
+          "path": "/tratamientos/botox-cara-cuello"
+        },
 
-    },
+        {
+          "id":"botox-hiperhidrosis",
+          "name": "BOTOX® y sudoración exesiva",
+          "name2": "Hiperhidrosis",
+          "description": "Es para tratar axilas y región inguinal.",
+          "items": [
+            { "title": "QUE EFECTO SE LOGRA", "answer": "Actúa impidiendo temporalmente la sudoración." },
+            {
+              "title": "EFECTO",
+              "answer": "Aparecen entre los tres y diez días"
+            },
+            { "title": "DURACIÓN", "answer": "Varía de cuatro a diez meses, dependiendo de la respuesta individual del paciente y de la dosis empleada." }
+          ],
+          "image":"/assets/home/t3.png",
+          "path": "/tratamientos/botox-hiperhidrosis"
+        },
 
+        {
+          "id":"botox-bruxismo",
+          "name": "BOTOX® y bruxismo",
+          "name2": "",
+          "description": "Es para relajar los músculos masticatorios que se contraen y afectan los dientes y la articulación temporomaxilar.",
+          "items": [
+           
+            {
+              "title": "EFECTO",
+              "answer": "Aparecen entre los tres y diez días"
+            },
+            { "title": "DURACIÓN", "answer": "Por un periodo aproximado de cuatro a ocho meses." }
+          ],
+          "image":"/assets/home/t3.png",
+          "path": "/tratamientos/botox-bruxismo"
+        },
 
-    "process-section":{
-      "label": "Te acompañamos a lo largo de todo el proceso",
-      "title":"Atención Integral en Cirugía y Cuidado Postoperatorio",
-      "description":"En nuestra clínica, su bienestar es nuestra prioridad. Desde la cirugía hasta el seguimiento postoperatorio, estará en manos de un equipo altamente calificado que cuidará cada detalle de su salud y seguridad.",
-
-      "title1":"Cirugía",
-      "description1":"Su salud y su seguridad es nuestra principal preocupación. Usted será cuidado por un equipo altamente calificado y entrenado para tal fin durante toda su estadía en la clínica. Durante la cirugía será monitoreado constantemente por el cardiólogo y el anestesiólogo quienes permanecerán a su lado durante todo el procedimiento.",
-
-     
-      "title2":"Postoperatorio inmediato",
-      "description2":"Luego de la cirugía, el paciente es llevado a su habitación donde estará en recuperación bajo el cuidado de la enfermera del equipo. Todos los esfuerzos están enfocados para que usted se sienta lo más relajado y confortable posible. El Dr. Zapata lo visitará inmediatamente luego de la cirugía y realizará el seguimiento hasta el alta, y estando en activa comunicación con la enfermera.",
-
-      "title3":"Seguimiento postoperatorio",
-      "description3":"Un procedimiento quirúrgico no sólo incluye la cirugía sino también el cuidado postoperatorio del paciente. Ud. Contará con los números privados de todo el equipo médico por cualquier eventualidad, lo acompañaremos y cuidaremos las 24hs. Generalmente la primera curación postoperatoria se realiza entre las 24 y 48 h en el consultorio. Posteriormente se harán controles cada 2 o 3 días en las primeras 2 semanas, al mes, 3 meses, 6 meses y 1 año después de la cirugía. Sin embargo, Ud. será atendido con mayor frecuencia si es necesario."
-    },
-
-
-    "about":{
-    
-      "subtitle":"Director Clínica de Cirugía Plástica, Estética y Reparadora Dr. Zapata",
-   
-      "text1":"El Dr. Federico E. Zapata es un reconocido cirujano plástico, egresado de la Universidad de Buenos Aires y con entrenamiento de posgrado en prestigiosas instituciones nacionales y de Estados Unidos, donde, además, realizó fellowships de perfeccionamiento junto a los grandes maestros quienes le enseñaron la artesanía quirúrgica en las distintas áreas plásticas, tanto estéticas como reparadoras.",
-      "text2":"Actualmente el Dr. Zapata dedica su tiempo a la práctica privada sustentándola con capacitación continua. Obteniendo en forma ininterrumpida la Certificación en Educación Avanzada en Cirugía Plástica (“Certificate of Advanced Educacion in Cosmetic Surgery”) otorgado por The American Sociaety for Aesthetic Plastic Surgery, sociedad de la que es partícipe, además de la de Argentina y de Buenos Aires.",
-
-     
-    
-      "item1":"Médico graduado en la Facultad de Medicina (UBA)",
-      "item2":"Especialista Universitario en Cirugía General",
-      "item3":"Especialista en Cirugía Plástica, Estética y Reparadora",
-      "item4":"Fellow Post Grade University California Irvine, UCI (EEUU)",
-      "item5":"Miembro Titular de la Asociación Médica Argentina",
-      "item6":"Miembro Titular de la Sociedad de Cirugía Plástica de Buenos Aires",
-      "item7":"Miembro Titular de la Sociedad de Cirugía Plastica Argentina",
-
-      "item8":"Miembro The American Society for Aesthetic Plastic Surgery",
-      "item9":"Miembro The Rhinoplasty Society",
-      "item10":"Director médico clínica de cirugía plástica",
-      "item11":"Trabajo comunitario (honorario) en Sanatorio Adventista del Plata – Puigari, E. Ríos",
-      "item12":"Trabajo comunitario (honorario) en The Natuvu Mission – Islas Fiji"
-    
-    },
-
-    "treatments": {
-      "title": "Tratamientos",
-      "subtitle": "Nuestro equipo especializado ofrece una amplia gama de tratamientos de cirugía plástica diseñados para mejorar su bienestar y confianza. Cada procedimiento es cuidadosamente personalizado para cumplir con sus expectativas, utilizando las técnicas más avanzadas y seguras disponibles en el campo.",
-      "t1": {
-        "title": "Cara",
-        "treatments": [
-          { "name": "Bótox", "path": "/tratamientos/botox" },
-          { "name": "Ácido hialurónico", "path": "/tratamientos/acido-hialuronico" },
-          { "name": "Lifting facial", "path": "/tratamientos/lifting-facial" }
-        ]
-      },
-      "t2": {
-        "title": "Cuerpo",
-        "treatments": [
-          { "name": "Liposucción", "path": "/tratamientos/liposuccion" },
-          { "name": "Abdominoplastia", "path": "/tratamientos/abdominoplastia" },
-          { "name": "Gluteoplastia", "path": "/tratamientos/gluteoplastia" }
-        ]
-      },
-      "t3": {
-        "title": "No Invasivos",
-        "treatments": [
-          { "name": "Radiofrecuencia", "path": "/tratamientos/radiofrecuencia" },
-          { "name": "Criolipólisis", "path": "/tratamientos/criolipolisis" }
-        ]
-      }
+        {
+          "id":"acido-hialuronico",
+          "name": "Ácido Hialurónico",
+          "name2": "",
+          "description": "Cómo relleno para surcos naso labiales, labios, entrecejo, mentón, pómulos. Y, eventuales depresiones en la cara por atrofia de panículos de grasa, por ejemplo e fosas temporales o comisuras. Se busca agregar volumen, restaurar la calidad de la piel (efecto hidratante)",
+          "items": [
+           
+            {
+              "title": "QUÉ ES",
+              "answer": "Es un gel cristalino, biodegradable y reabsorbible 100%. En la estructura de algunos tejidos de nuestro organismo se encuentra naturalmente."
+            },
+            { "title": "DURACIÓN", "answer": "Es de larga duración, de nueve a doce meses, pero a la vez es NO permanente." },
+            { "title": "APLICACIÓN", "answer": "Se puede retomar su actividad laboral o diaria, inmediatamente después de la aplicación." },
+            { "title": "ANESTÉSICO", "answer": "Es un producto que posee anestésico dentro de sus componentes, ayudando a que sea mínima la molestia en la aplicación del mismo. Se aplica con crema anestésica previamente." }
+          ],
+          "image":"/assets/home/t3.png",
+          "path": "/tratamientos/acido-hialuronico"
+        }
+      ]
     }
-
-
-
-
-
-
   }
+}
