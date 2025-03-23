@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./style.module.scss";
 import Link from "next/link";
@@ -8,17 +8,30 @@ import Mask from "./Nav";
 import LanguageChanger from "../../components/LanguageChanger";
 import logo from "../../../public/assets/logo/logo.png";
 import Image from "next/image";
-export default function Index({locale}) {
-  const { t, i18n } = useTranslation("common");
-  // const locale = i18n.language;
-  const [isActive, setIsActive] = useState(false);
 
+export default function Index({ locale }) {
+  const { t, i18n } = useTranslation("common");
+  const [isActive, setIsActive] = useState(false);
+  const [showLanguageChanger, setShowLanguageChanger] = useState(true);
+  const [isFullWidth, setIsFullWidth] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowLanguageChanger(window.innerWidth >= 540);
+      setIsFullWidth(window.innerWidth >= 800);
+    };
+
+    handleResize(); // Ejecutar al montar el componente
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
       <div className={styles.header}>
         <div className={styles.container}>
-          <LanguageChanger />
+          {showLanguageChanger && <LanguageChanger />}
 
           <div className={styles.logo}>
             <Link href="/">
@@ -40,7 +53,11 @@ export default function Index({locale}) {
               ></div>
             </button>
           </div>
-          <AnimatePresence mode="wait">{isActive && <Mask />}</AnimatePresence>
+          <AnimatePresence mode="wait">
+            {isActive && <Mask locale={locale} 
+        
+            />}
+          </AnimatePresence>
         </div>
       </div>
     </>

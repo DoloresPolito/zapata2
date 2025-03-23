@@ -5,6 +5,7 @@ import logonacion from "../../../public/assets/home/logo-nacion.png";
 import Image from "next/image";
 import { getTranslation } from "@/utils/getTranslation";
 import Link from "next/link";
+import ContactColumnInfo from "@/components/ContactColumnInfo";
 
 export default function Footer({ locale }) {
   return (
@@ -31,7 +32,7 @@ export default function Footer({ locale }) {
               </div>
 
               <div className={styles.column2}>
-                <Column locale={locale} />
+                <ContactColumnInfo locale={locale} />
 
                 <p
                   className={`typography-Ag-P ${styles.title}`}
@@ -58,7 +59,7 @@ export default function Footer({ locale }) {
               <p className={`typography-Ag-P ${styles.title}`}>
                 {getTranslation(locale, "footer.form.title")}
               </p>
-              <ContactForm />
+              <ContactForm locale={locale}/>
             </div>
           </div>
         </div>
@@ -67,54 +68,4 @@ export default function Footer({ locale }) {
   );
 }
 
-export function Column({ locale }) {
-  return (
-    <>
-      <p className={`typography-Ag-P ${styles.title}`}>
-        {getTranslation(locale, "footer.column2.title")}
-      </p>
-      <div className={styles.linkcontainer}>
-        <Image
-          src={`/assets/icons/whatsapp.png`}
-          alt="more"
-          width={20}
-          height={18}
-        />
-        <p className={`typography-Ag-P `}>
-          WhatsApp:{" "}
-          <Link
-            href="https://api.whatsapp.com/send/?phone=541148077889"
-            target="_blank"
-          >
-            {" "}
-            +54 9 11 4807 4040
-          </Link>
-        </p>
-      </div>
 
-      <div className={styles.linkcontainer}>
-        <Image
-          src={`/assets/icons/mail.png`}
-          alt="more"
-          width={20}
-          height={20}
-        />
-        <Link href="mailto:info@drzapata.com">
-          <p className={`typography-Ag-P `}>info@drzapata.com</p>
-        </Link>
-      </div>
-
-      <div className={styles.linkcontainer}>
-        <Image
-          src={`/assets/icons/phone.png`}
-          alt="more"
-          width={20}
-          height={20}
-        />
-        <Link href="/">
-          <p className={`typography-Ag-P `}>Tel: 011 4562 9283</p>
-        </Link>
-      </div>
-    </>
-  );
-}

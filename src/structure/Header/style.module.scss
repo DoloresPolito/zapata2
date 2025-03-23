@@ -19,13 +19,27 @@
     margin: 0 auto;
     z-index: 1000;
 
+
     .logo {
       display: flex;
       cursor: pointer;
 
+
       img {
         height: 6.1vh;
         width: auto;
+
+        @media (max-width: 460px) {
+          height: 5.5vh;
+          margin-top: 1.2vh;
+        }
+
+        @media (max-width: 360px) {
+          
+          height: 5vh;
+        
+        margin-top: 1.2vh;}
+ 
       }
     }
 

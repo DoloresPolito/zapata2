@@ -3,8 +3,9 @@ import { useForm } from "react-hook-form";
 import { sendEmail } from "@/utils/send-email";
 import styles from "./style.module.scss";
 import LinkButton from "../LinkButton";
+import { getTranslation } from "@/utils/getTranslation";
 
-const ContactForm = () => {
+const ContactForm = ({locale}) => {
   const { register, handleSubmit } = useForm();
 
   function onSubmit(data) {
@@ -18,8 +19,9 @@ const ContactForm = () => {
         <div className={styles.inputcontainer}>
           <input
             type="text"
-            placeholder="Full Name"
-            className={styles.input}
+            placeholder=   {getTranslation(locale, "contact.name")}
+
+            className={`typography-Ag-P ${styles.input}`}
             {...register("name", { required: true })}
           />
         </div>
@@ -27,20 +29,21 @@ const ContactForm = () => {
           <input
             type="email"
             placeholder="example@domain.com"
-            className={styles.input}
+            className={`typography-Ag-P ${styles.input}`}
             {...register("email", { required: true })}
           />
         </div>
         <div className={styles.inputcontainer}>
           <textarea
             rows={4}
-            placeholder="Type your message"
-            className={styles.textarea}
+            placeholder={getTranslation(locale, "contact.message")}
+  
+            className={`typography-Ag-P ${styles.textarea}`}
             {...register("message", { required: true })}
           ></textarea>
         </div>
-        <div>
-          <LinkButton text="enviar" color="white" link="/" />
+        <div className={styles.buttoncontainer}>
+          <LinkButton text={getTranslation(locale, "contact.send")} color="black" link="/" />
         </div>
       </form>
     </div>

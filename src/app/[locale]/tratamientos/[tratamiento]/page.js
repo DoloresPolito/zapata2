@@ -18,10 +18,10 @@ export default async function Treatment({ params: { locale } }) {
       namespaces={i18nNamespaces}
     >
       <div className={styles.main}>
-        <Header />
+        <Header locale={locale}/>
 
         <TreatmentItemSection locale={locale} />
-        <Footer />
+        <Footer locale={locale}/>
       </div>
     </TranslationsProvider>
   );

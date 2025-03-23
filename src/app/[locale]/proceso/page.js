@@ -20,7 +20,7 @@ export default async function Prcess({ params: { locale } }) {
         <Header locale={locale} />
 
         <ProcessSection locale={locale} />
-        <Footer/>
+        <Footer locale={locale}/>
       </TranslationsProvider>
     </>
   );

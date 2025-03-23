@@ -19,7 +19,7 @@ export default async function Procedures({ params: { locale } }) {
         <Header locale={locale} />
 
         <DrSection locale={locale} />
-        <Footer/>
+        <Footer locale={locale}/>
       </TranslationsProvider>
     </>
   );
