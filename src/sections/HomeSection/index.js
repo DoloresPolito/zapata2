@@ -61,7 +61,7 @@ export default function Index({
       <Reviews />
       <Footer locale={locale} />
 
-      <div className={styles.buttoncontainer}>
+      {/* <div className={styles.buttoncontainer}>
         <RoundedButton
           text="Solicitar un turno"
           color="#281A0F"
@@ -70,11 +70,11 @@ export default function Index({
           hoverB="#281A0F"
           hoverC="#bcc090"
           hoverA="#BCC090"
-          link="/contact"
+          link="/contacto"
 
      
         />
-      </div>
+      </div> */}
     </>
   );
 }

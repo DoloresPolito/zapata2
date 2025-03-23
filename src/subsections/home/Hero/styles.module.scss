@@ -7,6 +7,9 @@
   justify-content: space-between;
   align-items: flex-start;
   overflow: hidden;
+  @media (max-width: 500px) {
+    height: 130vh;
+  }
 
   .motionDiv {
     position: relative;
@@ -25,7 +28,10 @@
     position: relative;
     background-color: $background-color-foot;
     overflow: hidden;
-
+    @media (max-width: 500px) {
+      background-color: #e3e3e0;
+      height: 130vh;
+    }
 
     .imagecontainer {
       height: calc(100vh - 10vh);
@@ -34,6 +40,10 @@
       top: 70px;
       left: 0;
       z-index: 1;
+
+      @media (max-width: 500px) {
+        top: 40vh;
+      }
 
       img {
         object-fit: cover;
@@ -49,29 +59,61 @@
       z-index: 100;
       align-items: flex-start;
 
+      @media (max-width: 500px) {
+        height: 120vh;
+        align-items: center;
+      }
+
+      .logomobilecontainer {
+        display: none;
+
+        @media (max-width: 500px) {
+          display: flex;
+
+          img {
+            height: 7vh;
+            width: auto;
+            margin-top: 10vh;
+          }
+        }
+      }
+
       h2 {
-        font-family: $font-inter;
         color: $font-color-white;
-        font-size: $font-size-Agp-big;
-        font-weight: 300;
         max-width: 100vh;
 
+        @media (max-width: 500px) {
+          text-align: center;
+          font-size: 3vh;
+          color: $font-color-black1;
+        }
       }
 
       .bottom {
         display: flex;
         height: 20vh;
-        width: 32%;
         align-items: center;
         justify-content: space-between;
-  
-      }
 
-      
+        .button1 {
+          margin-right: 4vh;
+        }
+
+        @media (max-width: 500px) {
+          flex-direction: column;
+          height: auto;
+          margin-top: 10vh;
+
+          .button1 {
+            margin-right: 0vh;
+            margin-bottom: 2vh;
+          }
+        }
+      }
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     height: auto;
   }
 }

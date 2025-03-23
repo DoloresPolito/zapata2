@@ -17,7 +17,7 @@ export default function Index({ locale }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setShowLanguageChanger(window.innerWidth >= 540);
+      setShowLanguageChanger(window.innerWidth >= 800);
       setIsFullWidth(window.innerWidth >= 800);
     };
 
