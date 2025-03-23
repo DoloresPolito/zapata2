@@ -11,6 +11,16 @@
     height: auto;
     width: 98%;
     padding: 3vh;
+    @media (max-width: 800px) {
+      padding: 1vh;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: black;
+      text-underline-offset: 0.2vh;
+      color: black !important;
+    }
 
     .title {
       font-weight: 600;
@@ -25,6 +35,35 @@
       padding-right: 3vh;
       justify-content: space-between;
 
+      .titlecontactcontainer {
+        display: flex;
+        flex-direction: row;
+
+        img {
+          margin-right: 2vh;
+        }
+
+        @media (max-width: 800px) {
+          flex-direction: column;
+
+          img {
+            margin-bottom: 2vh;
+          }
+        }
+      }
+
+      .imagecontainermobile {
+        display: none;
+        @media (max-width: 800px) {
+          display: flex;
+
+          img {
+            width: 100%;
+            height: 300px;
+          }
+        }
+      }
+
       .first {
         display: flex;
         flex-direction: column;
@@ -38,11 +77,19 @@
         height: 30%;
         width: 100%;
 
+        @media (max-width: 800px) {
+          flex-direction: column;
+        }
+
         .column1 {
           display: flex;
           flex-direction: column;
           width: 50%;
           height: 100%;
+          @media (max-width: 800px) {
+            margin-top: 4vh;
+            width: 100%;
+          }
         }
 
         .column2 {
@@ -50,14 +97,22 @@
           flex-direction: column;
           width: 50%;
           height: 100%;
+          @media (max-width: 800px) {
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+            width: 100%;
+          }
         }
       }
 
       .third {
         display: flex;
         flex-direction: column;
-        height: 40%;
+        height: auto;
         width: 100%;
+        @media (max-width: 800px) {
+          margin-top: 8vh;
+        }
       }
     }
 
@@ -67,6 +122,10 @@
       align-items: center;
       width: 50%;
       height: 100vh;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
 
       img {
         width: 100%;

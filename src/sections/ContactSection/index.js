@@ -11,34 +11,78 @@ export default function ContactSection({ locale }) {
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.left}>
-    
-
           <div className={styles.first}>
-            <p className={`typography-Ag-P `}>{getTranslation(locale, "contact.description")}</p>
-            <LinkButton text="Solicitar un turno" color="green"/>
+            <p className={`typography-Ag-P `}>
+              {getTranslation(locale, "contact.description")}
+            </p>
+            <LinkButton text="Solicitar un turno" color="green" />
           </div>
 
           <div className={styles.second}>
             <div className={styles.column1}>
-              <p className={`typography-Ag-P ${styles.title}`} >{getTranslation(locale, "contact.visit")}</p>
+              <div className={styles.titlecontactcontainer}>
+                <Image
+                  src={`/assets/icons/mail.png`}
+                  alt="more"
+                  width={25}
+                  height={25}
+                />
+
+                <p className={`typography-Ag-P ${styles.title}`}>
+                  {getTranslation(locale, "contact.visit")}
+                </p>
+              </div>
+
               <p className={`typography-Ag-P `}>Austria 2630 — PB</p>
               <p className={`typography-Ag-P `}>CABA, Argentina</p>
-              <Link href="https://maps.app.goo.gl/ew7RVyhtAvf42wzR7" target="_blank">
-                  <p className={`typography-Ag-P `}>
-                    {getTranslation(locale, "footer.column1.button")}
-                  </p>
-                </Link>
+              <Link
+                href="https://maps.app.goo.gl/ew7RVyhtAvf42wzR7"
+                target="_blank"
+              >
+                <p className={`typography-Ag-P `}>
+                  {getTranslation(locale, "footer.column1.button")}
+                </p>
+              </Link>
             </div>
             <div className={styles.column2}>
-              <p className={`typography-Ag-P ${styles.title}`}>{getTranslation(locale, "contact.contact")}</p>
-              <p className={`typography-Ag-P `}>Tel: + 54 11 4807 4040</p>
-              <p className={`typography-Ag-P `}>WhatsApp: +54 11 4807 7889</p>
-              <p className={`typography-Ag-P `}>coordinacion@federicozapata.com.ar</p>
+              <div className={styles.titlecontactcontainer}>
+                <Image
+                  src={`/assets/icons/mail.png`}
+                  alt="more"
+                  width={25}
+                  height={25}
+                />
+                <p className={`typography-Ag-P ${styles.title}`}>
+                  {getTranslation(locale, "contact.contact")}
+                </p>
+              </div>
+
+              <p className={`typography-Ag-P `}>Tel: 011 4562 9283</p>
+
+              <p className={`typography-Ag-P `}>
+                WhatsApp:{" "}
+                <Link
+                  href="https://api.whatsapp.com/send/?phone=541148077889"
+                  target="_blank"
+                >
+                  +54 9 11 4807 4040
+                </Link>
+              </p>
+
+              <Link href="mailto:info@drzapata.com">
+                <p className={`typography-Ag-P `}>info@drzapata.com</p>
+              </Link>
             </div>
           </div>
 
+          <div className={styles.imagecontainermobile}>
+            <Image src={image} alt="contact" />
+          </div>
+
           <div className={styles.third}>
-            <p className={`typography-Ag-P `}>{getTranslation(locale, "contact.formtitle")}</p>
+            <p className={`typography-Ag-P `}>
+              {getTranslation(locale, "contact.formtitle")}
+            </p>
             {/* <form>
               <label>{getTranslation(locale, "contact.name")}</label>
               <input type="text" />
@@ -52,7 +96,7 @@ export default function ContactSection({ locale }) {
               <button>{getTranslation(locale, "contact.send")}</button>
             </form> */}
 
-            <ContactForm/>
+            <ContactForm locale={locale}/>
           </div>
         </div>
 

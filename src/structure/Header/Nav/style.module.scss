@@ -18,6 +18,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    @media (max-width: 800px) {
+      padding: 4vh;
+    }
 
     .nav {
       display: flex;
