@@ -9,15 +9,6 @@
   height: auto;
   background-color: $background-color-foot;
 
-  h1 {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    font-size: $font-size-Agp-big;
-    font-weight: 400;
-    color: $font-color-black1;
-    font-family: $font-inter;
-  }
-
   .container {
     display: flex;
     flex-direction: row;
@@ -25,6 +16,12 @@
     height: 100%;
     justify-content: space-between;
     margin-bottom: 10vh;
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .imagecontainer {
@@ -33,80 +30,44 @@
     overflow: hidden;
     cursor: pointer;
 
+    @media only screen and (max-width: 1000px) {
+      width: 100%;
+    }
+
     img {
       width: 100%;
       height: 98%;
       object-fit: cover;
       transition: transform 0.3s ease-in-out;
-    }
 
- 
+      @media only screen and (max-width: 1000px) {
+        height: 70vh;
+      }
+    }
   }
 
-  /* 🔹 Overlay que aparece en hover */
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 98%;
-    background-color: #E6E0DB;
+    background-color: #e6e0db;
     display: flex;
     color: $font-color-black1;
     opacity: 0;
     transition: opacity 0.6s ease-in-out, background-color 0.9s ease-in-out;
+  
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
-
+  
   .imagecontainer:hover .overlay {
     opacity: 1;
   }
-
-  /* 🔹 Lista de tratamientos */
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .item{
-    width: 100%;
-    border-bottom: 1px solid black;
-  }
-
-  li {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    padding: 8px 15px;
-    cursor: pointer;
-    position: relative;
-    transition: color 0.3s ease-in-out;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
-
-  }
-
-  /* 🔹 Flecha aparece en hover */
-  .arrow {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    position: relative; // Cambia absolute por relative para que siga el flujo del contenido
-    margin-left: auto;  // Empuja la flecha hacia la derecha dentro del <li>
-  }
-
-  li:hover {
-    color: $font-color-black1;
-  }
-
-  li:hover .arrow {
-    opacity: 1;
-    transform: translateX(5px);
-  }
-
-
+  
+  /* 🔹 Título y flecha que se ven sobre la imagen en desktop */
   .topOverlay {
     position: absolute;
     top: 10px;
@@ -116,14 +77,87 @@
     align-items: center;
     width: 100%;
     padding: 10px;
+  
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
   
+  /* 🔹 Overlay fijo debajo de la imagen en mobile */
+  .fixedOverlay {
+    width: 100%;
+    background-color: #e6e0db;
+    color: $font-color-black1;
+    padding: 15px;
+    margin-top: 5px; /* Espacio entre imagen y lista */
+  }
+
+  /* 🔹 Lista de tratamientos en pantallas grandes */
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .item {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li:hover .arrow {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+
+  /* 🔹 Estilos para el contenedor fijo de tratamientos en móviles */
+  .fixedTreatments {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    ul {
+      width: 100%;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-size: 1rem;
+      border-bottom: 1px solid black;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
   .title {
     font-size: 4.5vw;
     color: white;
     max-width: 40vh;
   }
-  
+
   .circle {
     position: absolute;
     top: 4vh;
@@ -131,16 +165,17 @@
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
-    background-color:#F5F4F4;
+    background-color: #f5f4f4;
     opacity: 0.4;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .circlearrow {
     font-size: 1.2rem;
     color: black;
     z-index: 1000;
   }
+  
 }

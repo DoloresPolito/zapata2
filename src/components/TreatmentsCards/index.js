@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -8,8 +8,6 @@ import { getTranslation } from "@/utils/getTranslation";
 import cara from "../../../public/assets/home/t1.png";
 import cuerpo from "../../../public/assets/home/t2.png";
 import noinvasivos from "../../../public/assets/home/t3.png";
-
-
 
 const images = {
   t1: cara,
@@ -20,7 +18,17 @@ const images = {
 export default function TreatmentsCards({ locale }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [hoveredTreatment, setHoveredTreatment] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
   const router = useRouter();
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   const treatmentsData = ["t1", "t2", "t3"].map((key) => {
     const section = getTranslation(locale, `treatments.${key}`);
@@ -30,8 +38,6 @@ export default function TreatmentsCards({ locale }) {
       treatments: section.treatments || [],
     };
   });
-
-
 
   return (
     <div className={styles.tratamientos}>
@@ -47,9 +53,9 @@ export default function TreatmentsCards({ locale }) {
             }}
           >
             <Image src={category.image} alt={category.title} />
-            
-    
-            {hoveredIndex !== index && (
+
+            {/* 🔹 Muestra el título y la flecha en desktop cuando no hay hover */}
+            {!isMobile && hoveredIndex !== index && (
               <div className={styles.topOverlay}>
                 <span className={styles.title}>{category.title}</span>
                 <div className={styles.circle}>
@@ -58,8 +64,8 @@ export default function TreatmentsCards({ locale }) {
               </div>
             )}
 
-           
-            {hoveredIndex === index && (
+            {/* 🔹 En desktop, muestra el overlay con tratamientos solo en hover */}
+            {!isMobile && hoveredIndex === index && (
               <div className={styles.overlay}>
                 <ul>
                   {category.treatments.map((treatment, tIndex) => (
@@ -68,7 +74,25 @@ export default function TreatmentsCards({ locale }) {
                         className={`${hoveredTreatment === tIndex ? styles.active : ""} typography-Ag-P`}
                         onMouseEnter={() => setHoveredTreatment(tIndex)}
                         onClick={() => router.push(treatment.path)}
-                      
+                      >
+                        {treatment.name}
+                        <span className={styles.arrow}>→</span>
+                      </li>
+                    </div>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* 🔹 En mobile, el overlay con tratamientos siempre visible debajo */}
+            {isMobile && (
+              <div className={styles.fixedOverlay}>
+                <ul>
+                  {category.treatments.map((treatment, tIndex) => (
+                    <div key={tIndex} className={styles.item}>
+                      <li
+                        className={`${hoveredTreatment === tIndex ? styles.active : ""} typography-Ag-P`}
+                        onClick={() => router.push(treatment.path)}
                       >
                         {treatment.name}
                         <span className={styles.arrow}>→</span>
@@ -80,8 +104,6 @@ export default function TreatmentsCards({ locale }) {
             )}
           </div>
         ))}
-
-
       </div>
     </div>
   );
