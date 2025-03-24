@@ -4,6 +4,7 @@ import styles from "./style.module.scss";
 
 import TreatmentsCards from "@/components/TreatmentsCards";
 
+
 export default function Treatments({locale}) {
   return (
     <div className={styles.tratamientos}>

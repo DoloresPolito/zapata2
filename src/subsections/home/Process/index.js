@@ -1,6 +1,7 @@
 "use client";
 import styles from "./style.module.scss";
 import RoundedButton from "@/components/RoundedButton";
+import AnimatedDiv from "@/components/AnimatedDiv";
 
 export default function Process({ process_translations }) {
   const boxesData = [
@@ -68,10 +69,14 @@ const Box = ({ box }) => {
         <div className={styles.top}>
           <p className={`typography-Ag-Numbers`}>{box.index}</p>
         </div>
+        <AnimatedDiv>
+
+   
         <div className={styles.bottom}>
           <h2 className={`typography-Ag-P ${styles.titulo}`}>{box.title}</h2>
           <p className={`typography-Ag-P ${styles.texto}`}>{box.text}</p>
         </div>
+        </AnimatedDiv>
       </div>
     </>
   );

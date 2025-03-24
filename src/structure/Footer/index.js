@@ -6,7 +6,7 @@ import Image from "next/image";
 import { getTranslation } from "@/utils/getTranslation";
 import Link from "next/link";
 import ContactColumnInfo from "@/components/ContactColumnInfo";
-
+import AnimatedDiv from "@/components/AnimatedDiv";
 export default function Footer({ locale }) {
   return (
     <>
@@ -15,12 +15,17 @@ export default function Footer({ locale }) {
           <div className={styles.left}>
             <div className={styles.row1}>
               <div className={styles.column1}>
+              <AnimatedDiv>
                 <p className={`typography-Ag-P ${styles.title}`}>
                   {getTranslation(locale, "footer.column1.title")}
                 </p>
+          
+
+            
                 <p className={`typography-Ag-P `}>Dr. Federico Zapata</p>
                 <p className={`typography-Ag-P `}>Austria 2630 — PB</p>
                 <p className={`typography-Ag-P `}>CABA, Argentina</p>
+              
                 <Link
                   href="https://maps.app.goo.gl/ew7RVyhtAvf42wzR7"
                   target="_blank"
@@ -29,10 +34,13 @@ export default function Footer({ locale }) {
                     {getTranslation(locale, "footer.column1.button")}
                   </p>
                 </Link>
+                </AnimatedDiv>
               </div>
 
               <div className={styles.column2}>
+              <AnimatedDiv>
                 <ContactColumnInfo locale={locale} />
+        
 
                 <p
                   className={`typography-Ag-P ${styles.title}`}
@@ -43,6 +51,7 @@ export default function Footer({ locale }) {
                 <Link href="https://www.instagram.com/" target="_blank">
                   <p className={`typography-Ag-P `}> Instagram</p>{" "}
                 </Link>
+                </AnimatedDiv>
               </div>
             </div>
 

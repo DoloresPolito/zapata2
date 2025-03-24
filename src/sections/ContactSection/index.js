@@ -1,28 +1,55 @@
+"use client";
 import { getTranslation } from "@/utils/getTranslation";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import image from "../../../public/assets/contact/contactnocompress.png";
-import LinkButton from "@/components/LinkButton";
+import RoundedButton from "@/components/RoundedButton";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import {
+  slideUp,
+  slideUp2,
+  opacity,
+} from "../../subsections/home/Hero/animation";
+import { motion } from "framer-motion";
 
 export default function ContactSection({ locale }) {
   return (
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <div className={styles.first}>
-            <p className={`typography-Ag-P `}>
+          <motion.div
+            className={styles.first}
+            variants={slideUp2}
+            initial="initial"
+            animate="enter"
+          >
+            <p className={`typography-Ag-P ${styles.description}`}>
               {getTranslation(locale, "contact.description")}
             </p>
-            <LinkButton text="Solicitar un turno" color="green" />
-          </div>
+            <RoundedButton
+              text="Solicitar un turno"
+              color="#281A0F"
+              background="#bcc090"
+              border="#bcc090"
+              hoverB="#281A0F"
+              hoverC="#bcc090"
+              hoverA="#BCC090"
+              link="/contacto"
+            />
+          </motion.div>
 
-          <div className={styles.second}>
+          <motion.div
+            className={styles.second}
+            variants={slideUp}
+            initial="initial"
+            animate="enter"
+          >
+            {/* <div className={styles.second}> */}
             <div className={styles.column1}>
               <div className={styles.titlecontactcontainer}>
                 <Image
-                  src={`/assets/icons/mail.png`}
+                  src={`/assets/icons/location.png`}
                   alt="more"
                   width={25}
                   height={25}
@@ -73,13 +100,26 @@ export default function ContactSection({ locale }) {
                 <p className={`typography-Ag-P `}>info@drzapata.com</p>
               </Link>
             </div>
-          </div>
+          </motion.div>
 
-          <div className={styles.imagecontainermobile}>
+          <motion.div
+            className={styles.imagecontainermobile}
+            variants={opacity}
+            initial="initial"
+            animate="enter"
+          >
+            {/* <div className={styles.imagecontainermobile}> */}
             <Image src={image} alt="contact" />
-          </div>
+          </motion.div>
 
-          <div className={styles.third}>
+          {/* <div className={styles.third}> */}
+
+          <motion.div
+            className={styles.third}
+            variants={opacity}
+            initial="initial"
+            animate="enter"
+          >
             <p className={`typography-Ag-P `}>
               {getTranslation(locale, "contact.formtitle")}
             </p>
@@ -96,13 +136,20 @@ export default function ContactSection({ locale }) {
               <button>{getTranslation(locale, "contact.send")}</button>
             </form> */}
 
-            <ContactForm locale={locale}/>
-          </div>
+            <ContactForm locale={locale} />
+          </motion.div>
         </div>
 
-        <div className={styles.right}>
+        {/* <div className={styles.right}> */}
+
+        <motion.div
+          className={styles.right}
+          variants={opacity}
+          initial="initial"
+          animate="enter"
+        >
           <Image src={image} alt="contact" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

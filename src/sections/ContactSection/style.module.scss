@@ -67,15 +67,22 @@
       .first {
         display: flex;
         flex-direction: column;
-        height: 30%;
+        // height: 30%;
         width: 100%;
+        margin-top: 3vh;
+
+        .description{
+          margin-bottom: 3vh;
+          max-width: 90%;
+        }
       }
 
       .second {
         display: flex;
         flex-direction: row;
-        height: 30%;
+        // height: 30%;
         width: 100%;
+        margin-top: 7vh;
 
         @media (max-width: 800px) {
           flex-direction: column;
@@ -110,6 +117,7 @@
         flex-direction: column;
         height: auto;
         width: 100%;
+        margin-top: 7vh;
         @media (max-width: 800px) {
           margin-top: 8vh;
         }

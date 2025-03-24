@@ -8,6 +8,7 @@ import { getTranslation } from "@/utils/getTranslation";
 import cara from "../../../public/assets/home/t1.png";
 import cuerpo from "../../../public/assets/home/t2.png";
 import noinvasivos from "../../../public/assets/home/t3.png";
+import AnimatedDiv from "../AnimatedDiv";
 
 const images = {
   t1: cara,
@@ -43,7 +44,8 @@ export default function TreatmentsCards({ locale }) {
     <div className={styles.tratamientos}>
       <div className={styles.container}>
         {treatmentsData.map((category, index) => (
-          <div
+
+             <div
             key={index}
             className={styles.imagecontainer}
             onMouseEnter={() => setHoveredIndex(index)}
@@ -52,6 +54,7 @@ export default function TreatmentsCards({ locale }) {
               setHoveredTreatment(null);
             }}
           >
+               <AnimatedDiv delay={index * 0.2}>  
             <Image src={category.image} alt={category.title} />
 
             {/* 🔹 Muestra el título y la flecha en desktop cuando no hay hover */}
@@ -102,8 +105,13 @@ export default function TreatmentsCards({ locale }) {
                 </ul>
               </div>
             )}
+                 </AnimatedDiv>
           </div>
+
+     
         ))}
+ 
+
       </div>
     </div>
   );

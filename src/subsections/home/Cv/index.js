@@ -9,6 +9,7 @@ import Image from "next/image";
 import LinkButton from "@/components/LinkButton";
 
 import { getTranslation } from "@/utils/getTranslation";
+import AnimatedDiv from "@/components/AnimatedDiv";
 
 export default function Cv({ locale }) {
   return (
@@ -23,10 +24,16 @@ export default function Cv({ locale }) {
               </div>
 
               <div className={styles.textcontainer}>
+              <AnimatedDiv>
                 <p className={`typography-Ag-P`}>
                   {getTranslation(locale, "cv-home.description")}
                 </p>
+                </AnimatedDiv>
+                <AnimatedDiv delay="0.5">
+
                 <LinkButton text="Ver CV completo" link="/dr"   color="#7a8025" />
+                </AnimatedDiv>
+
               </div>
             </div>
           </div>

@@ -75,10 +75,8 @@ export default function Reviews() {
               slidesPerGroup={1}
               spaceBetween={10}
             >
-              {items.map((item, index) => (
-                // <SwiperSlide key={index}>
-                //   <Card name={card.name} text={card.text} />
-                // </SwiperSlide>
+              {items.map((item) => (
+
                 <SwiperSlide key={item.id}>
                   <div className={styles.itemWrapperStyles}>
                     <div className={styles.circle}>{item.iniciales}</div>
@@ -106,15 +104,3 @@ export default function Reviews() {
   );
 }
 
-// const Card = ({ name, text }) => {
-//   return (
-//     <div className={styles.cardcontainer}>
-//       <div className={styles.cardtop}>
-//         <p className={styles.cardtext}>{text}</p>
-//       </div>
-//       <div className={styles.cardbottom}>
-//         <p className={styles.cardname}>{name}</p>
-//       </div>
-//     </div>
-//   );
-// };
