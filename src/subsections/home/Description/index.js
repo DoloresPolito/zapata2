@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import ContactButtons from "@/home/ContactButtons";
+import ContactButtons from "@/components/ContactButtons";
 import { getTranslation } from "@/utils/getTranslation";
 
 import AnimatedDiv from "@/components/AnimatedDiv";

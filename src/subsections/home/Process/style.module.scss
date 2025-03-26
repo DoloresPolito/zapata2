@@ -72,7 +72,8 @@ h2{
       }
 
       &:hover {
-        background-color: $background-color-green;
+        background-color: rgba($background-color-green, 0.5);
+       
       }
 
       .top {
