@@ -12,7 +12,6 @@ import "swiper/css/scrollbar";
 import stars from "../../../../public/assets/home/stars.png";
 import Image from "next/image";
 
-
 export default function Reviews() {
   const items = [
     {
@@ -49,15 +48,11 @@ export default function Reviews() {
     },
   ];
 
-
-
   return (
     <div className={styles.testimonios}>
       <div className={styles.container}>
         <div className={styles.carouselcontainer}>
           <div className={styles.arrowscontainer}>
-
-
             <div className={styles.customprev}>
               <span>←</span>
             </div>
@@ -76,24 +71,34 @@ export default function Reviews() {
               spaceBetween={10}
             >
               {items.map((item) => (
-
                 <SwiperSlide key={item.id}>
                   <div className={styles.itemWrapperStyles}>
                     <div className={styles.circle}>{item.iniciales}</div>
-                    <h3  className={`typography-Ag-P-Small ${styles.itemName}`}>
-                     <span> {item.name}</span> - {item.time}
+                    <h3 className={`typography-Ag-P-Small ${styles.itemName}`}>
+                      <span> {item.name}</span> - {item.time}
                     </h3>
-                    <h3 className={`typography-Ag-P-Small ${styles.itemStars}`}>{item.stars}</h3>
+                    <h3 className={`typography-Ag-P-Small ${styles.itemStars}`}>
+                      {item.stars}
+                    </h3>
                     <Image src={stars} alt="stars" />
-                    <p  className={`typography-Ag-P ${styles.itemText}`}>{item.text}</p>
+                    <p className={`typography-Ag-P ${styles.itemText}`}>
+                      {item.text}
+                    </p>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
           <div className={styles.arrowscontainer}>
-    
+            <div className={styles.customnext}>
+              <span>→</span>
+            </div>
+          </div>
 
+          <div className={styles.arrowscontainermobile}>
+            <div className={styles.customprev}>
+              <span>←</span>
+            </div>
             <div className={styles.customnext}>
               <span>→</span>
             </div>
@@ -103,4 +108,3 @@ export default function Reviews() {
     </div>
   );
 }
-

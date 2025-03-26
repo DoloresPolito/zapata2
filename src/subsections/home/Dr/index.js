@@ -1,6 +1,6 @@
 "use client";
 import styles from "./style.module.scss";
-import dr from "../../../public/assets/home/dr-home.png";
+import dr from "../../../../public/assets/home/dr-home.png"
 import Image from "next/image";
 import AnimatedDiv from "@/components/AnimatedDiv";
 export default function Dr({ dr_translations }) {

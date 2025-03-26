@@ -11,8 +11,8 @@ body {
     &-Ag-P {
       font-family: $font-inter;
       font-weight: 500;
-      font-size: 2.4vh;
-      line-height: 150%;
+      font-size: 2.6vh;
+      line-height: 140%;
       color: $font-color-black1;
       letter-spacing: 0.05vh;
     }
@@ -40,7 +40,7 @@ body {
       font-family: $font-inter;
       font-weight: 200;
       font-size: 4.5vh;
-      line-height: 130%;
+      line-height: 120%;
     }
 
     &-Ag-Camino-Final-H1 {
@@ -62,3 +62,33 @@ body {
     }
 
   }
+
+
+  // Reducir fuentes en pantallas de 800px o menos
+@media (max-width: 800px) {
+  .typography {
+    &-Ag-P {
+      font-size: 2.2vh;
+    }
+
+    &-Ag-Numbers {
+      font-size: 7vh;
+    }
+
+    &-Ag-P-Small {
+      font-size: 1.8vh;
+    }
+
+    &-Ag-P-Big {
+      font-size: 3.4vh;
+    }
+
+    &-Ag-Camino-Final-H1 {
+      font-size: 4.5vh;
+    }
+
+    &-Ag-Camino-Label {
+      font-size: 2vh;
+    }
+  }
+}

@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect} from "react";
 // import Process from "../../subsections/home/Process";
-import Dr from "../../home/Dr";
+import Dr from "../../subsections/home/Dr";
 import Footer from "@/structure/Footer";
 import Treatments from "@/subsections/home/Treatments";
 import Reviews from "@/subsections/home/Reviews";

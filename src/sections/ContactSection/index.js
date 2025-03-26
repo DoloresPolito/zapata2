@@ -49,7 +49,7 @@ export default function ContactSection({ locale }) {
             <div className={styles.column1}>
               <div className={styles.titlecontactcontainer}>
                 <Image
-                  src={`/assets/icons/location.png`}
+                  src={`/assets/icons/location.svg`}
                   alt="more"
                   width={25}
                   height={25}

@@ -17,7 +17,7 @@ export default function ContactColumnInfo({ locale }) {
       </p>
       <div className={styles.linkcontainer}>
         <Image
-          src={`/assets/icons/whatsapp.png`}
+          src={`/assets/icons/whatsapp.svg`}
           alt="more"
           width={20}
           height={18}
@@ -36,7 +36,7 @@ export default function ContactColumnInfo({ locale }) {
 
       <div className={styles.linkcontainer}>
         <Image
-          src={`/assets/icons/mail.png`}
+          src={`/assets/icons/mail.svg`}
           alt="more"
           width={20}
           height={20}
@@ -48,7 +48,7 @@ export default function ContactColumnInfo({ locale }) {
 
       <div className={styles.linkcontainer}>
         <Image
-          src={`/assets/icons/phone.png`}
+          src={`/assets/icons/phone.svg`}
           alt="more"
           width={20}
           height={20}

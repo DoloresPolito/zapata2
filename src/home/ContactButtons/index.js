@@ -12,21 +12,21 @@ export default function ContactButtons({ locale }) {
       text1: "WhatsApp: +54 11 4807 7889",
       text2: getTranslation(locale, "book.button1"),
       link: "https://api.whatsapp.com/send/?phone=541148077889",
-      icon: "/icons/whatsapp.png",
+      icon: "/icons/whatsapp.svg",
     },
     {
       id: 2,
       text1: "coordinacion@federicozapata.com.ar",
       text2: getTranslation(locale, "book.button2"),
       link: "mailto:coordinacion@federicozapata.com.ar",
-      icon: "/icons/mail.png",
+      icon: "/icons/mail.svg",
     },
     {
       id: 3,
       text1: "Tel: +54 11 4807 4040",
       text2: getTranslation(locale, "book.button3"),
       link: "https://api.whatsapp.com/send/?phone=541148074040",
-      icon: "/icons/phone.png",
+      icon: "/icons/phone.svg",
     },
   ];
   return (
@@ -50,8 +50,8 @@ const Card = ({ card }) => {
           <Image
             src={`/assets${card.icon}`}
             alt="more"
-            width={25}
-            height={25}
+            width={40}
+            height={40}
           />
 
           <p  className={`typography-Ag-P`}>{card.text1}</p>
