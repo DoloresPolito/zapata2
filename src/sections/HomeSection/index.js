@@ -15,6 +15,12 @@ import Description from "@/subsections/home/Description";
 import RoundedButton from "@/components/RoundedButton";
 import SectionEffectTop from "../../subsections/home/SectionEffectTop";
 
+
+
+import Lenis from "lenis";
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Index({
@@ -46,6 +52,18 @@ export default function Index({
         scrub: 1,
       },
     });
+  }, []);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+  
+    function raf(time) {
+      lenis.raf(time);
+  
+      requestAnimationFrame(raf);
+    }
+  
+    requestAnimationFrame(raf);
   }, []);
 
   return (

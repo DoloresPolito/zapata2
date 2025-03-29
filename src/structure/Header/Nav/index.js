@@ -42,7 +42,7 @@ export default function Mask({ locale}) {
               className={styles.link}
             >
               <StyledLink link="/">
-                <p className={styles.text}>{t("common:nav_home")}</p>
+                <p className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>{t("common:nav_home")}</p>
               </StyledLink>
             </motion.div>
 
@@ -54,7 +54,7 @@ export default function Mask({ locale}) {
               className={styles.link}
             >
               <StyledLink link="/dr">
-                <p className={styles.text}>{t("common:nav_dr")}</p>
+                <p  className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>{t("common:nav_dr")}</p>
               </StyledLink>
             </motion.div>
             <motion.div
@@ -65,7 +65,7 @@ export default function Mask({ locale}) {
               className={styles.link}
             >
               <StyledLink link="/proceso">
-                <p className={styles.text}>{t("common:nav_process")}</p>
+                <p className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>{t("common:nav_process")}</p>
               </StyledLink>
             </motion.div>
             <motion.div
@@ -76,7 +76,7 @@ export default function Mask({ locale}) {
               className={styles.link}
             >
               <StyledLink link="/international">
-                <p className={styles.text}>{t("common:nav_internacional")}</p>
+                <p className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>{t("common:nav_internacional")}</p>
               </StyledLink>
             </motion.div>
             <motion.div
@@ -87,7 +87,7 @@ export default function Mask({ locale}) {
               className={styles.link}
             >
               <StyledLink link="/tratamientos">
-                <p className={styles.text}>{t("common:nav_tratamientos")}</p>
+                <p className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>{t("common:nav_tratamientos")}</p>
               </StyledLink>
             </motion.div>
 
@@ -99,7 +99,7 @@ export default function Mask({ locale}) {
               className={styles.link}
             >
               <StyledLink link="/contacto">
-                <p className={styles.text}>{t("common:nav_contacto")}</p>
+                <p className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>{t("common:nav_contacto")}</p>
               </StyledLink>
             </motion.div>
           </div>

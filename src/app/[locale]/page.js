@@ -1,3 +1,4 @@
+
 import styles from "./page.module.css";
 import Header from "../../structure/Header";
 import initTranslations from "../i18n";
@@ -9,7 +10,7 @@ const i18nNamespaces = ["home", "common"];
 
 export default async function Home({ params: { locale } }) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
-
+ 
   const translations = {
     title: t("title"),
     reserva: t("reserva"),

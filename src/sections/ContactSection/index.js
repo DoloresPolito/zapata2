@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import { getTranslation } from "@/utils/getTranslation";
 import styles from "./style.module.scss";
 import Image from "next/image";
@@ -12,8 +13,23 @@ import {
   opacity,
 } from "../../subsections/home/Hero/animation";
 import { motion } from "framer-motion";
+import Lenis from "lenis";
 
 export default function ContactSection({ locale }) {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+  
+    function raf(time) {
+      lenis.raf(time);
+  
+      requestAnimationFrame(raf);
+    }
+  
+    requestAnimationFrame(raf);
+  }, []);
+
+  
   return (
     <div className={styles.section}>
       <div className={styles.container}>

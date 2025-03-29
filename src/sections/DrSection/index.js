@@ -1,11 +1,27 @@
+"use client"
+import { useEffect } from "react";
 import { getTranslation } from "@/utils/getTranslation";
 import styles from "./style.module.scss";
 
 import Image from "next/image";
 import image1 from "../../../public/assets/about/federico.png";
 import image2 from "../../../public/assets/about/cv.png";
+import Lenis from "lenis";
 
 export default function DrSection({ locale }) {
+
+
+  useEffect(() => {
+    const lenis = new Lenis();
+  
+    function raf(time) {
+      lenis.raf(time);
+  
+      requestAnimationFrame(raf);
+    }
+  
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <div className={styles.section}>
       <div className={styles.container}>

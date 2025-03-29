@@ -1,7 +1,10 @@
+"use client"
+import { useEffect } from "react";
 import { getTranslation } from "@/utils/getTranslation";
 import styles from "./style.module.scss";
 
 import Image from "next/image";
+import Lenis from "lenis";
 export default function ProcessSection({ locale }) {
   const sections = [
     {
@@ -26,6 +29,18 @@ export default function ProcessSection({ locale }) {
       reverse: false,
     },
   ];
+
+  useEffect(() => {
+    const lenis = new Lenis();
+  
+    function raf(time) {
+      lenis.raf(time);
+  
+      requestAnimationFrame(raf);
+    }
+  
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <div className={styles.section}>

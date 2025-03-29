@@ -1,10 +1,12 @@
 "use client";
+import { useEffect } from "react";
 import { useParams } from "next/navigation";
 import dataes from "../../locales/es.json";
 import dataen from "../../locales/en.json";
 import styles from "./style.module.scss";
 import Link from "next/link";
 import LinkButton from "@/components/LinkButton";
+import Lenis from "lenis";
 
 export default function TreatmentItemSection({ locale }) {
   const { tratamiento } = useParams(); // <-- El parámetro se llama "tratamiento"
@@ -28,6 +30,20 @@ export default function TreatmentItemSection({ locale }) {
   // Ejemplo de uso
   const tratamientoEncontrado = buscarTratamiento(data.treatments, tratamiento); // Cambia "Nariz" por cualquier otro nombre
 
+
+
+  useEffect(() => {
+    const lenis = new Lenis();
+  
+    function raf(time) {
+      lenis.raf(time);
+  
+      requestAnimationFrame(raf);
+    }
+  
+    requestAnimationFrame(raf);
+  }, []);
+  
   return (
     <div className={styles.section}>
       <div className={styles.container}>
