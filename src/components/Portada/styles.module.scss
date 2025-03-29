@@ -1,0 +1,70 @@
+@import "@/styles/base/_variables.scss";
+
+// .homeCover {
+//     width: 100vw;
+//     min-height: 80vh;
+//     overflow-x:scroll;
+//     white-space: nowrap; /* Ensures all content stays in one line */
+//     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+//     scrollbar-width: none;  /* Firefox */
+//     margin-top: 0; /* Asegúrate de que no haya margen superior */
+//     z-index: 100;
+//     display: flex;
+//     align-items: center;
+
+//   }
+
+//   @media (max-width: 768px) {
+//     .homeCover {
+//       min-height: 60vh;
+//       max-height: 60vh;
+
+//     }
+//   }
+
+.homeCover {
+  width: 100vw;
+  height: 40vh;
+  overflow-x: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.homeCover::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.scrollContent {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+}
+
+.logoitem {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto; // Evita que los items se achiquen y se superpongan
+  min-width: 25vh; // Ajusta según el diseño
+
+
+  img {
+    height: 15vh;
+    width: auto;
+    margin: 2vh;
+
+    @media only screen and (max-width: 1100px) {
+      height: 10vh;
+    }
+  }
+
+  p {
+    color: $font-color-grey2;
+    font-size: $font-size-Agp-small;
+    font-family: $font-inter;
+    max-width: 30vh; // Ajusta el ancho del texto para dos renglones
+    white-space: normal; // Permite saltos de línea
+    line-height: 1.2; // Ajusta la altura de línea para evitar espacios innecesarios
+  }
+}

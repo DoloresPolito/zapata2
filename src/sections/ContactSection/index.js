@@ -90,7 +90,7 @@ export default function ContactSection({ locale }) {
             <div className={styles.column2}>
               <div className={styles.titlecontactcontainer}>
                 <Image
-                  src={`/assets/icons/mail.png`}
+                  src={`/assets/icons/mail.svg`}
                   alt="more"
                   width={25}
                   height={25}

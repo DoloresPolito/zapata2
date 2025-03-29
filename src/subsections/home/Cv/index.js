@@ -8,6 +8,8 @@ import cv from "../../../../public/assets/home/about.png";
 import Image from "next/image";
 import LinkButton from "@/components/LinkButton";
 
+import Portada from "@/components/Portada";
+
 import { getTranslation } from "@/utils/getTranslation";
 import AnimatedDiv from "@/components/AnimatedDiv";
 
@@ -24,21 +26,23 @@ export default function Cv({ locale }) {
               </div>
 
               <div className={styles.textcontainer}>
-              <AnimatedDiv>
-                <p className={`typography-Ag-P`}>
-                  {getTranslation(locale, "cv-home.description")}
-                </p>
+                <AnimatedDiv>
+                  <p className={`typography-Ag-P`}>
+                    {getTranslation(locale, "cv-home.description")}
+                  </p>
                 </AnimatedDiv>
                 <AnimatedDiv delay="0.5">
-
-                <LinkButton text="Ver CV completo" link="/dr"   color="#7a8025" />
+                  <LinkButton
+                    text="Ver CV completo"
+                    link="/dr"
+                    color="#7a8025"
+                  />
                 </AnimatedDiv>
-
               </div>
             </div>
           </div>
 
-          <div className={styles.logossection}>
+          {/* <div className={styles.logossection}>
             <h4>Avalado por</h4>
             <div className={styles.logoscontainer}>
               <div className={styles.logoitem}>
@@ -63,6 +67,11 @@ export default function Cv({ locale }) {
                 <p>The American Society For Aesthetic Plastic Surgery, INC.</p>
               </div>
             </div>
+          </div> */}
+
+          <div className={styles.logossection}>
+            <h4>Avalado por</h4>
+            <Portada />
           </div>
         </div>
       </div>
