@@ -21,7 +21,7 @@ const ContactForm = ({locale}) => {
             type="text"
             placeholder=   {getTranslation(locale, "contact.name")}
 
-            className={`typography-Ag-P ${styles.input}`}
+            className={`typography-Ag-camino-2-P  ${styles.input}`}
             {...register("name", { required: true })}
           />
         </div>
@@ -29,7 +29,7 @@ const ContactForm = ({locale}) => {
           <input
             type="email"
             placeholder="example@domain.com"
-            className={`typography-Ag-P ${styles.input}`}
+            className={`typography-Ag-camino-2-P  ${styles.input}`}
             {...register("email", { required: true })}
           />
         </div>
@@ -38,7 +38,7 @@ const ContactForm = ({locale}) => {
             rows={4}
             placeholder={getTranslation(locale, "contact.message")}
   
-            className={`typography-Ag-P ${styles.textarea}`}
+            className={`typography-Ag-camino-2-P  ${styles.textarea}`}
             {...register("message", { required: true })}
           ></textarea>
         </div>

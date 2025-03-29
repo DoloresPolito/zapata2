@@ -71,18 +71,18 @@ export default function ContactSection({ locale }) {
                   height={25}
                 />
 
-                <p className={`typography-Ag-P ${styles.title}`}>
+                <p className={`typography-Ag-camino-2-P ${styles.title}`}>
                   {getTranslation(locale, "contact.visit")}
                 </p>
               </div>
 
-              <p className={`typography-Ag-P `}>Austria 2630 — PB</p>
-              <p className={`typography-Ag-P `}>CABA, Argentina</p>
+              <p className={`typography-Ag-camino-2-P  `}>Austria 2630 — PB</p>
+              <p className={`typography-Ag-camino-2-P  `}>CABA, Argentina</p>
               <Link
                 href="https://maps.app.goo.gl/ew7RVyhtAvf42wzR7"
                 target="_blank"
               >
-                <p className={`typography-Ag-P `}>
+                <p className={`typography-Ag-camino-2-P  `}>
                   {getTranslation(locale, "footer.column1.button")}
                 </p>
               </Link>
@@ -95,14 +95,14 @@ export default function ContactSection({ locale }) {
                   width={25}
                   height={25}
                 />
-                <p className={`typography-Ag-P ${styles.title}`}>
+                <p className={`typography-Ag-camino-2-P  ${styles.title}`}>
                   {getTranslation(locale, "contact.contact")}
                 </p>
               </div>
 
-              <p className={`typography-Ag-P `}>Tel: 011 4562 9283</p>
+              <p className={`typography-Ag-camino-2-P  `}>Tel: 011 4562 9283</p>
 
-              <p className={`typography-Ag-P `}>
+              <p className={`typography-Ag-camino-2-P  `}>
                 WhatsApp:{" "}
                 <Link
                   href="https://api.whatsapp.com/send/?phone=541148077889"
@@ -113,7 +113,7 @@ export default function ContactSection({ locale }) {
               </p>
 
               <Link href="mailto:info@drzapata.com">
-                <p className={`typography-Ag-P `}>info@drzapata.com</p>
+                <p className={`typography-Ag-camino-2-P  `}>info@drzapata.com</p>
               </Link>
             </div>
           </motion.div>

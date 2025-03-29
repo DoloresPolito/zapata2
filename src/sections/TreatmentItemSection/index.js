@@ -48,16 +48,15 @@ export default function TreatmentItemSection({ locale }) {
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.infocontainer}>
-          <Link href="/tratamientos">
-            <div className={styles.button}>
-              <p className={`typography-Ag-P`}>Todos los tratamientos</p>
-            </div>
-          </Link>
+    
           <div className={styles.button}>
+
+         
             <LinkButton
               text="Volver a los tratamientos"
               link="/tratamientos"
               color="black"
+              reverse
             />
           </div>
           <div className={styles.titlecontainer}>

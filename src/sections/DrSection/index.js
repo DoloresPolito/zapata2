@@ -29,7 +29,7 @@ export default function DrSection({ locale }) {
           <h2 className={`typography-Ag-Camino-Final-H1`}>
             Dr. Federico Zapata
           </h2>
-          <p className={`typography-Ag-P`}>
+          <p className={`typography-Ag-Camino-Final-P-Big `}>
             {getTranslation(locale, "about.subtitle")}
           </p>
         </div>
@@ -39,14 +39,14 @@ export default function DrSection({ locale }) {
             <Image src={image1} alt="Federico Zapata" />
           </div>
 
-          <div className={styles.textcontainer}>
+          <div className={styles.textcontainer1}>
             <p className={`typography-Ag-P`}>{getTranslation(locale, "about.text1")}</p>
             <p className={`typography-Ag-P`}>{getTranslation(locale, "about.text2")}</p>
           </div>
         </div>
 
         <div className={styles.section2}>
-          <div className={styles.textcontainer}>
+          <div className={styles.textcontainer2}>
             <p className={`typography-Ag-P`}>Curriculum Vitae</p>
 
             <div className={styles.itemscontainer}>

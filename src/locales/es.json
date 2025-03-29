@@ -404,4 +404,15 @@
       ]
     }
   }
+  ,
+  "international": {
+    "title": "Pacientes Internacionales",
+    "description": "El Dr. Federico Zapata tiene un número importante de pacientes internacionales que llegan a Argentina desde todas partes del mundo, por lo que nuestra práctica es verdaderamente global y nuestro personal está muy familiarizado con las inquietudes comunes que puedan tener los pacientes que vienen del exterior.",
+    "button1": "Programa de vuelo",
+    "button2": "Pautas preoperatorias",
+    "text1": "Cuidamos de nuestros clientes con excelencia, brindándoles soluciones a medida. Ya sea que el objetivo sea rejuvenecer y mejorar, o reparar y restaurar la función y la apariencia, nos enfocamos siempre en brindar una atención ejemplar y resultados satisfactorios.",
+    "text2": "Normalmente, cuando un paciente que reside fuera de Buenos Aires está interesado en una consulta, se le recomienda enviar fotos de frente, de perfil, de tres cuartos y de perfil a la oficina. Al recibirlas, el Dr. Zapata programará una consulta virtual o le enviará un informe por correo electrónico con los detalles del tratamiento y el costo estimado. La privacidad es nuestra prioridad en cualquier conversación.",
+    "text3": "La máxima prioridad de nuestra práctica es la seguridad del paciente. Optar por una intervención quirúrgica en el extranjero exige una planificación y una toma de decisiones cuidadosas."
+
+  }
 }

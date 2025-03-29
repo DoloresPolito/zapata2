@@ -2,8 +2,8 @@ import styles from "./style.module.scss";
 import Header from "../../../structure/Header";
 import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
-
-
+import InternationalSection from "@/sections/InternationalSection";
+import Footer from "@/structure/Footer";
 const i18nNamespaces = ["procedures", "common"];
 
 
@@ -18,9 +18,9 @@ export default async function Procedures({ params: { locale } }) {
     >
       <div className={styles.main}>
         <Header />
-        <h2>{t("title")}</h2>
-
-
+  
+<InternationalSection locale={locale}/>
+<Footer locale={locale}/>
       </div>
     </TranslationsProvider>
   );

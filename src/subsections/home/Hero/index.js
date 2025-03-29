@@ -120,7 +120,7 @@ export default function Hero({ title, reserva }) {
               <Image src={logo1} alt="logo mobile" />
             </div>
             <h2
-              className={`typography-Ag-Camino-Final-H1 ${title}`}
+              className={`typography-Ag-P-Big ${title}`}
               ref={titleRef}
             >
               {title}

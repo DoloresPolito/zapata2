@@ -12,7 +12,7 @@ export default function ContactColumnInfo({ locale }) {
     <div className={styles.contactcontainer}>
 
 
-      <p className={`typography-Ag-P ${styles.title}`}>
+      <p className={`typography-Ag-camino-2-P  ${styles.title}`}>
         {getTranslation(locale, "footer.column2.title")}
       </p>
       <div className={styles.linkcontainer}>
@@ -22,7 +22,7 @@ export default function ContactColumnInfo({ locale }) {
           width={20}
           height={20}
         />
-        <p className={`typography-Ag-P `}>
+        <p className={`typography-Ag-camino-2-P  `}>
           WhatsApp:{" "}
           <Link
             href="https://api.whatsapp.com/send/?phone=541148077889"
@@ -42,7 +42,7 @@ export default function ContactColumnInfo({ locale }) {
           height={20}
         />
         <Link href="mailto:info@drzapata.com">
-          <p className={`typography-Ag-P `}>info@drzapata.com</p>
+          <p className={`typography-Ag-camino-2-P `}>info@drzapata.com</p>
         </Link>
       </div>
 
@@ -54,7 +54,7 @@ export default function ContactColumnInfo({ locale }) {
           height={20}
         />
         <Link href="/">
-          <p className={`typography-Ag-P `}>Tel: 011 4562 9283</p>
+          <p className={`typography-Ag-camino-2-P  `}>Tel: 011 4562 9283</p>
         </Link>
       </div>
       </div>
