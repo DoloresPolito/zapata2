@@ -140,8 +140,8 @@
 
         {
           "id":"cejas",
-          "name": "Frente-Reposicionamiento de las cejas",
-          "name2": "",
+          "name": "Frente",
+          "name2": "Reposicionamiento de las cejas",
           "description": "Reposicionar cejas y como objetivo obtener expresión de la mirada joven y fresca.",
           "items": [
             { "title": "ANESTESIA", "answer": "Sedación y local" },

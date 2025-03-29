@@ -20,7 +20,7 @@ export default function ContactColumnInfo({ locale }) {
           src={`/assets/icons/whatsapp.svg`}
           alt="more"
           width={20}
-          height={18}
+          height={20}
         />
         <p className={`typography-Ag-P `}>
           WhatsApp:{" "}

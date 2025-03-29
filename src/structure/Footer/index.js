@@ -1,7 +1,7 @@
 "use client";
 import styles from "./style.module.scss";
 import ContactForm from "@/components/ContactForm";
-import logonacion from "../../../public/assets/home/logo-nacion.png";
+import logonacion from "../../../public/assets/home/salud.svg";
 import Image from "next/image";
 import { getTranslation } from "@/utils/getTranslation";
 import Link from "next/link";

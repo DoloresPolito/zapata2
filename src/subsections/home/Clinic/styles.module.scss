@@ -1,6 +1,7 @@
+@import "@/styles/base/_variables.scss";
 .section {
   display: flex;
-  background-color: #f0ebe3;
+  background-color: $background-color-foot;
   height: 100vh;
   width: 100vw;
   justify-content: center;
@@ -23,15 +24,18 @@
     height: 100vh;
     width: 100vw;
     align-items: center;
+  
 
     .imagecontainer {
       height: 100vh;
       width: auto;
 
+
       img {
-        height: 90%;
+        height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
+        margin-top: -9vh;
       }
     }
   }

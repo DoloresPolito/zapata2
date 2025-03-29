@@ -5,7 +5,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
-import image from "../../../../public/assets/home/clinic.png";
+import image from "../../../../public/assets/home/clinicanocomp.png";
 
 export default function Clinic() {
   const container = useRef();

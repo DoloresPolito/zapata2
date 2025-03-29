@@ -6,7 +6,8 @@ import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 import Mask from "./Nav";
 import LanguageChanger from "../../components/LanguageChanger";
-import logo from "../../../public/assets/logo/logo.png";
+import logo1 from "../../../public/assets/logo/logosvgchico.svg";
+
 import Image from "next/image";
 
 export default function Index({ locale }) {
@@ -35,7 +36,7 @@ export default function Index({ locale }) {
 
           <div className={styles.logo}>
             <Link href="/">
-              <Image src={logo} alt="logo" />
+              <Image src={logo1} alt="logo" />
             </Link>
           </div>
 

@@ -1,9 +1,9 @@
 "use client";
 import styles from "./style.module.scss";
-import logo1 from "../../../../public/assets/images/logo.1.png";
-import logo2 from "../../../../public/assets/images/logo.2.png";
-import logo3 from "../../../../public/assets/images/logo.3.png";
-import logo4 from "../../../../public/assets/images/logo.4.png";
+// import logo1 from "../../../../public/assets/images/logo.1.png";
+// import logo2 from "../../../../public/assets/images/logo.2.png";
+// import logo3 from "../../../../public/assets/images/logo.3.png";
+// import logo4 from "../../../../public/assets/images/logo.4.png";
 import cv from "../../../../public/assets/home/about.png";
 import Image from "next/image";
 import LinkButton from "@/components/LinkButton";

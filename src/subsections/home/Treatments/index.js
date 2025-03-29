@@ -1,7 +1,5 @@
 "use client";
-
 import styles from "./style.module.scss";
-
 import TreatmentsCards from "@/components/TreatmentsCards";
 
 

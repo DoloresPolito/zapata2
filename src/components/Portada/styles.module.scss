@@ -24,7 +24,7 @@
 
 .homeCover {
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
   overflow-x: hidden;
   white-space: nowrap;
   display: flex;
@@ -47,10 +47,10 @@
   align-items: center;
   flex: 0 0 auto; // Evita que los items se achiquen y se superpongan
   min-width: 25vh; // Ajusta según el diseño
-
+  margin-right: 3vh;
 
   img {
-    height: 15vh;
+    height: 10vh;
     width: auto;
     margin: 2vh;
 

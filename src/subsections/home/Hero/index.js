@@ -3,13 +3,13 @@ import styles from "./styles.module.scss";
 import { slideUp, slideUp2 } from "./animation";
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef, useEffect, useState } from "react";
-import background from "../../../../public/assets/home/hero.png";
+import background from "../../../../public/assets/home/hero.svg";
 import Image from "next/image";
 import LinkButton from "@/components/LinkButton";
 import gsap from "gsap";
 import RoundedButton from "@/components/RoundedButton";
 import "@/styles/base/_variables.scss";
-import logomobile from "../../../../public/assets/logo/logo-mobile.png";
+import logo1 from "../../../../public/assets/logo/logosvgchico.svg";
 
 export default function Hero({ title, reserva }) {
   const home = useRef(null);
@@ -117,7 +117,7 @@ export default function Hero({ title, reserva }) {
             animate="enter"
           >
             <div className={styles.logomobilecontainer}>
-              <Image src={logomobile} alt="logo mobile" />
+              <Image src={logo1} alt="logo mobile" />
             </div>
             <h2
               className={`typography-Ag-Camino-Final-H1 ${title}`}

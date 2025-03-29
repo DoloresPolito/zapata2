@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 // import Carousel from "react-elastic-carousel";
-import stars from "../../../../public/assets/home/stars.png";
+import stars from "../../../../public/assets/home/stars.svg";
 import Image from "next/image";
 
 export default function Reviews() {
@@ -75,7 +75,7 @@ export default function Reviews() {
                   <div className={styles.itemWrapperStyles}>
                     <div className={styles.circle}>{item.iniciales}</div>
                     <h3 className={`typography-Ag-P-Small ${styles.itemName}`}>
-                      <span> {item.name}</span> - {item.time}
+                      <span> {item.name}</span> • {item.time}
                     </h3>
                     <h3 className={`typography-Ag-P-Small ${styles.itemStars}`}>
                       {item.stars}

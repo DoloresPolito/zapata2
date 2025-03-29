@@ -23,10 +23,11 @@
     .logo {
       display: flex;
       cursor: pointer;
+      margin-top: 0.8vh;
 
 
       img {
-        height: 6.1vh;
+        height: 7.5vh;
         width: auto;
 
         @media (max-width: 460px) {

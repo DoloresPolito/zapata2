@@ -2,10 +2,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import logo1 from "../../../public/assets/images/logo.1.png";
-import logo2 from "../../../public/assets/images/logo.2.png";
-import logo3 from "../../../public/assets/images/logo.3.png";
-import logo4 from "../../../public/assets/images/logo.4.png";
+import logo1 from "../../../public/assets/images/logo1.svg";
+import logo2 from "../../../public/assets/images/logo2.svg";
+import logo3 from "../../../public/assets/images/logo3.svg";
+import logo4 from "../../../public/assets/images/logo4.svg";
 
 const logos = [
   { img: logo1, text: "Asociación Médica Argentina" },

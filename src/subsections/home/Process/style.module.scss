@@ -28,9 +28,9 @@
       margin-bottom: 5vh;
     }
 
-h2{
-  margin-top: 5vh;
-}
+    h2 {
+      margin-top: 13vh;
+    }
   }
 
   .gridcontainer {
@@ -57,7 +57,7 @@ h2{
     }
 
     .box {
-      padding: 3vh 3vh;
+      padding: 0vh 3vh;
       background-color: $background-color-white;
       display: flex;
       flex-direction: column;
@@ -65,7 +65,8 @@ h2{
       align-items: flex-start;
       width: 100%;
       height: 100%;
-      transition: background-color 0.5s ease-in-out; 
+      transition: background-color 0.5s ease-in-out;
+
 
       @media only screen and (max-width: 800px) {
         padding: 1vh 1vh;
@@ -73,7 +74,6 @@ h2{
 
       &:hover {
         background-color: rgba($background-color-green, 0.5);
-       
       }
 
       .top {
@@ -82,7 +82,8 @@ h2{
         flex-direction: column;
         align-items: flex-start;
 
-        
+ 
+      
       }
 
       .bottom {
@@ -91,15 +92,21 @@ h2{
         flex-direction: column;
         align-items: flex-start;
 
+        margin-top: -3vh;
+
         .titulo {
-          margin-bottom: 4vh;
+          margin-bottom: 2vh;
+          font-size: 2.3vh;
 
           @media only screen and (max-width: 800px) {
-            margin-bottom: 2vh;}
+            margin-bottom: 2vh;
+            
+          }
         }
 
         .texto {
-          color:#666666;
+          color: #807f7f;
+          font-size: 2.1vh;
         }
       }
     }
@@ -109,7 +116,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     @media only screen and (max-width: 800px) {
       margin-bottom: 5vh;
     }

@@ -26,6 +26,11 @@
     color: black !important;
   }
 
+  img{
+    height: 3vh;
+    width: auto;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
   }
