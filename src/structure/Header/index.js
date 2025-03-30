@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { usePathname } from "next/navigation"; // Importar para obtener la URL
 import styles from "./style.module.scss";
 import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
@@ -8,24 +9,27 @@ import Mask from "./Nav";
 import LanguageChanger from "../../components/LanguageChanger";
 import logo1 from "../../../public/assets/logo/logosvgchico.svg";
 import logomobile from "../../../public/assets/logo/logomobile.svg";
-
 import Image from "next/image";
 
 export default function Index({ locale }) {
   const { t, i18n } = useTranslation("common");
+  const pathname = usePathname(); // Obtener la URL actual
   const [isActive, setIsActive] = useState(false);
   const [showLanguageChanger, setShowLanguageChanger] = useState(true);
   const [isFullWidth, setIsFullWidth] = useState(false);
-  const [logo, setLogo] = useState(logo1); 
+  const [logo, setLogo] = useState(logo1);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setShowLanguageChanger(window.innerWidth >= 800);
-      setIsFullWidth(window.innerWidth >= 800);
-      setLogo(window.innerWidth < 800 ? logomobile : logo1); // Cambia el logo según el tamaño
+      const isSmallScreen = window.innerWidth < 800;
+      setShowLanguageChanger(!isSmallScreen);
+      setIsFullWidth(!isSmallScreen);
+      setIsMobile(isSmallScreen); // Guardar si la pantalla es menor a 800px
+      setLogo(isSmallScreen ? logomobile : logo1);
     };
 
-    handleResize(); // Ejecutar al montar el componente
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
@@ -37,11 +41,16 @@ export default function Index({ locale }) {
         <div className={styles.container}>
           {showLanguageChanger && <LanguageChanger />}
 
-          <div className={styles.logo}>
-            <Link href="/">
-            <Image src={logo} alt="logo" priority />
-            </Link>
-          </div>
+          {/* No renderizar el logo si estamos en "/" y es mobile */}
+          {!isMobile || pathname !== "/" ? (
+            <div className={styles.logo}>
+              <Link href="/">
+                <Image src={logo} alt="logo" priority />
+              </Link>
+            </div>
+          ) :       <div className={styles.logo}>
+         
+        </div>}
 
           <div className={styles.headerButtonContainerMobile}>
             <button
@@ -58,9 +67,7 @@ export default function Index({ locale }) {
             </button>
           </div>
           <AnimatePresence mode="wait">
-            {isActive && <Mask locale={locale} 
-        
-            />}
+            {isActive && <Mask locale={locale} />}
           </AnimatePresence>
         </div>
       </div>
