@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { menuSlide, slide } from "../animation";
 import StyledLink from "../../../components/StyledLink";
 import { useTranslation } from "react-i18next";
-// import LanguageChanger from "@/components/LanguageChanger";
+import LanguageChanger from "@/components/LanguageChanger";
 import ContactColumnInfo from "@/components/ContactColumnInfo";
 
 export default function Mask({ locale}) {
@@ -105,6 +105,11 @@ export default function Mask({ locale}) {
           </div>
           <div className={styles.column2}>
             <ContactColumnInfo locale={locale} />
+          </div>
+
+          <div className={styles.languagecontainer}>
+            <p className={`typography-Ag-camino-2-P  ${styles.title}`}>Change language</p>
+        <  LanguageChanger/>
           </div>
         </div>
       </motion.div>
