@@ -28,7 +28,9 @@
       height: auto;
       margin-top: 20vh;
 
-
+      @media (max-width: 800px) {
+        margin-top: 12vh;
+      }
 
 
       p{

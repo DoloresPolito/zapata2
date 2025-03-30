@@ -9,6 +9,7 @@
   overflow: hidden;
   @media (max-width: 500px) {
     height: 130vh;
+
   }
 
   .motionDiv {
@@ -62,6 +63,7 @@
       @media (max-width: 500px) {
         height: 120vh;
         align-items: center;
+    
       }
 
       .logomobilecontainer {
@@ -73,7 +75,7 @@
           img {
             height: 7vh;
             width: auto;
-            margin-top: 10vh;
+            margin-top: 5vh;
           }
         }
       }
@@ -103,6 +105,7 @@
           flex-direction: column;
           height: auto;
           margin-top: 10vh;
+      
 
           .button1 {
             margin-right: 0vh;

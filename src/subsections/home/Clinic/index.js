@@ -13,14 +13,12 @@ export default function Clinic() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 750);
+      setIsMobile(window.innerWidth <= 800);
     };
 
-    // Check screen size on load
-    handleResize();
-
-    // Listen for resize events
+    handleResize(); // Detectar tamaño inicial
     window.addEventListener("resize", handleResize);
+    
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -30,26 +28,25 @@ export default function Clinic() {
     layoutEffect: false,
   });
 
-  // Define y transform but control its value based on screen size
   const yTransform = useTransform(scrollYProgress, [0, 1], ["0vh", "100vh"]);
-  const y = isMobile ? "0vh" : yTransform;
-
+  
   return (
     <div ref={container} className={styles.section}>
-      <motion.div style={{ y }} 
-      className={styles.motionDiv}
-      >
-        <div className={styles.container}>
-  
-
+      {isMobile ? (
+        // Solo renderizar la imagen sin animación en pantallas pequeñas
+        <div className={styles.imagecontainer}>
+          <Image src={image} alt="clinica" />
+        </div>
+      ) : (
+        // Animación en pantallas grandes
+        <motion.div style={{ y: yTransform }} className={styles.motionDiv}>
+          <div className={styles.container}>
             <div className={styles.imagecontainer}>
               <Image src={image} alt="clinica" />
             </div>
-
-        </div>
-      </motion.div>
-
-      
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 }

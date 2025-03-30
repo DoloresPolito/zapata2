@@ -11,6 +11,9 @@
   align-items: center;
   z-index: 10;
   background-color: $background-color-nav;
+  @media (max-width: 800px) {
+height: 10vh;;
+  }
 
   .container {
     display: flex;

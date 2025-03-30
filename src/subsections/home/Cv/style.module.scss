@@ -98,41 +98,46 @@
         margin-top: 15vh;
       }
 
-      // .logoscontainer {
-      //   display: flex;
-      //   flex-direction: row;
-      //   justify-content: space-around;
-      //   height: auto;
-      //   width: 100%;
-      //   margin-bottom: 5vh;
-      //   margin-top: 0vh;
-      //   background-color: red;
+      .logoscontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-      //   @media only screen and (max-width: 800px) {
 
-      //   flex-direction: column;
-      //   }
+        height: auto;
+        width: 100%;
+        margin-bottom: 5vh;
+        margin-top: 0vh;
+  
 
-      //   .logoitem {
-      //     display: flex;
-      //     align-items: center;
-      //   }
+        @media only screen and (max-width: 800px) {
 
-      //   img {
-      //     height: 15vh;
-      //     width: auto;
-      //     margin: 2vh;
+        flex-direction: column;
+        }
 
-      //     @media only screen and (max-width: 1100px) {
-      //       height: 10vh;}
-      //   }
+        .logoitem {
+          display: flex;
+          align-items: center;
+        }
 
-      //   p {
-      //     color: $font-color-grey2;
-      //     font-size: $font-size-Agp-small;
-      //     font-family: $font-inter;
-      //   }
-      // }
+        img {
+          height: 15vh;
+          width: auto;
+          margin: 2vh;
+
+          @media only screen and (max-width: 1100px) {
+            height: 10vh;}
+        }
+
+        p {
+          color: $font-color-grey2;
+          font-size: $font-size-Agp-small;
+          font-family: $font-inter;
+          max-width: 30vh; // Ajusta el ancho del texto para dos renglones
+          white-space: normal; // Permite saltos de línea
+          line-height: 1.2; // Ajusta la altura de línea para evitar espacios innecesarios
+        }
+      }
     }
   }
 }
