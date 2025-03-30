@@ -41,6 +41,8 @@
 
         img {
           margin-right: 2vh;
+
+          
         }
 
         @media (max-width: 800px) {
@@ -48,6 +50,7 @@
 
           img {
             margin-bottom: 2vh;
+            margin-right: 0vh;
           }
         }
       }
@@ -67,20 +70,23 @@
       .first {
         display: flex;
         flex-direction: column;
-        // height: 30%;
         width: 100%;
         margin-top: 3vh;
+
 
         .description{
           margin-bottom: 3vh;
           max-width: 90%;
+
+          @media (max-width: 800px) {
+            max-width: 100%;}
         }
+
       }
 
       .second {
         display: flex;
         flex-direction: row;
-        // height: 30%;
         width: 100%;
         margin-top: 10vh;
     
@@ -95,7 +101,7 @@
           width: 50%;
           height: 100%;
           @media (max-width: 800px) {
-            margin-top: 4vh;
+            margin-top: 0vh;
             width: 100%;
           }
         }

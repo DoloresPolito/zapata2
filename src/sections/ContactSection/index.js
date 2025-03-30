@@ -61,7 +61,7 @@ export default function ContactSection({ locale }) {
             initial="initial"
             animate="enter"
           >
-            {/* <div className={styles.second}> */}
+           
             <div className={styles.column1}>
               <div className={styles.titlecontactcontainer}>
                 <Image

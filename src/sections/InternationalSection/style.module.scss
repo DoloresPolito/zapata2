@@ -66,6 +66,7 @@
       @media (max-width: 800px) {
         height: auto;
         flex-direction: column;
+        margin-bottom: 10vh;
       }
     }
 
@@ -112,6 +113,8 @@
 
         .text{
           margin-right: 0vh;
+          margin-bottom: 0vh;
+         
         }
       }
     }

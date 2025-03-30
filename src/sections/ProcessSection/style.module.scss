@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
   margin-top: 15vh;
+  @media (max-width: 800px) {
+    margin-top:8vh;
+  }
 
   .container {
     display: flex;
@@ -24,9 +27,18 @@
 
       p {
         max-width: 130vh;
+ 
       }
       h2 {
         max-width: 130vh;
+        @media (max-width: 800px) {
+          margin-bottom:5vh;
+          margin-top:5vh;
+         }
+      }
+
+      @media (max-width: 800px) {
+        height:auto;
       }
     }
 

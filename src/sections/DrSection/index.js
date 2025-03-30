@@ -1,5 +1,5 @@
 "use client"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getTranslation } from "@/utils/getTranslation";
 import styles from "./style.module.scss";
 
@@ -9,27 +9,41 @@ import image2 from "../../../public/assets/about/cv.png";
 import Lenis from "lenis";
 
 export default function DrSection({ locale }) {
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 800);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const lenis = new Lenis();
   
     function raf(time) {
       lenis.raf(time);
-  
       requestAnimationFrame(raf);
     }
   
     requestAnimationFrame(raf);
   }, []);
+
   return (
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.titlesection}>
-          <h2 className={`typography-Ag-Camino-Final-H1`}>
+          <h2 className={isMobile ? "typography-Ag-Camino-Label" : "typography-Ag-Camino-Final-H1"}>
             Dr. Federico Zapata
           </h2>
-          <p className={`typography-Ag-Camino-Final-P-Big `}>
+          <p 
+          
+          className={isMobile ? "typography-Ag-Mobile-Headlines" : "typography-Ag-Camino-Final-P-Big"}
+          
+          >
             {getTranslation(locale, "about.subtitle")}
           </p>
         </div>

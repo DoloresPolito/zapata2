@@ -1,11 +1,24 @@
 "use client"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getTranslation } from "@/utils/getTranslation";
 import styles from "./style.module.scss";
 
 import Image from "next/image";
 import Lenis from "lenis";
 export default function ProcessSection({ locale }) {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 800);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const sections = [
     {
       index: "1",
@@ -51,9 +64,9 @@ export default function ProcessSection({ locale }) {
 
             {getTranslation(locale, "process-section.label")}
           </h6>
-          <h2 className={`typography-Ag-Camino-Final-H1`}>
+          <h2 
     
-
+  className={isMobile ? "typography-Ag-Mobile-Headlines" : "typography-Ag-Camino-Final-H1"}>
             {getTranslation(locale, "process-section.title")}
           </h2>
           <p className={`typography-Ag-P`}>
