@@ -5,6 +5,7 @@ import styles from "./style.module.scss";
 
 import Image from "next/image";
 import Lenis from "lenis";
+import AnimatedDiv from "@/components/AnimatedDiv";
 export default function ProcessSection({ locale }) {
 
   const [isMobile, setIsMobile] = useState(false);
@@ -59,20 +60,28 @@ export default function ProcessSection({ locale }) {
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.titlesection}>
+          <AnimatedDiv>
+
+      
           <h6 className={`typography-Ag-Camino-Label`}>
        
 
             {getTranslation(locale, "process-section.label")}
           </h6>
+          </AnimatedDiv>
+          <AnimatedDiv>
           <h2 
     
   className={isMobile ? "typography-Ag-Mobile-Headlines" : "typography-Ag-Camino-Final-H1"}>
             {getTranslation(locale, "process-section.title")}
           </h2>
+          </AnimatedDiv>
+          <AnimatedDiv delay={0.3}>
           <p className={`typography-Ag-P`}>
    
           {getTranslation(locale, "process-section.description")}
           </p>
+          </AnimatedDiv>
         </div>
 
         <div className={styles.itemssection}>

@@ -8,6 +8,7 @@ import image1 from "../../../public/assets/international/international.png";
 
 import Lenis from "lenis";
 import RoundedButton from "@/components/RoundedButton";
+import AnimatedDiv from "@/components/AnimatedDiv";
 
 export default function InternationalSection({ locale }) {
   useEffect(() => {
@@ -25,12 +26,18 @@ export default function InternationalSection({ locale }) {
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.titlesection}>
+          <AnimatedDiv>
+
+    
           <h2 className={`typography-Ag-Camino-Final-H1`}>
             {getTranslation(locale, "international.title")}
           </h2>
+          </AnimatedDiv>
+          <AnimatedDiv delay={0.3}>
           <p className={`typography-Ag-Camino-Final-P-Big ${styles.description}`}>
             {getTranslation(locale, "international.description")}
           </p>
+          </AnimatedDiv>
           <div className={styles.buttoncontainer}>
             <RoundedButton
               text={getTranslation(locale, "international.button1")}
