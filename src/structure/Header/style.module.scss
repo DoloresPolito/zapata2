@@ -30,16 +30,27 @@
         height: 7.5vh;
         width: auto;
 
-        @media (max-width: 460px) {
-          height: 5.5vh;
-          margin-top: 1.2vh;
+        @media (max-width: 800px) {
+          height:3vh;
+          margin-top: 1.5vh;
         }
 
-        @media (max-width: 360px) {
+        @media (max-width: 475px) {
+          height:2.5vh;
+          margin-top: 1.6vh;
+          margin-left: 1vh;
+        }
+
+      //   @media (max-width: 460px) {
+      //     height: 5.5vh;
+      //     margin-top: 1.2vh;
+      //   }
+
+      //   @media (max-width: 360px) {
           
-          height: 5vh;
+      //     height: 5vh;
         
-        margin-top: 1.2vh;}
+      //   margin-top: 1.2vh;}
  
       }
     }

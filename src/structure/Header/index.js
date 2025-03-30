@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import Mask from "./Nav";
 import LanguageChanger from "../../components/LanguageChanger";
 import logo1 from "../../../public/assets/logo/logosvgchico.svg";
+import logomobile from "../../../public/assets/logo/logomobile.svg";
 
 import Image from "next/image";
 
@@ -15,11 +16,13 @@ export default function Index({ locale }) {
   const [isActive, setIsActive] = useState(false);
   const [showLanguageChanger, setShowLanguageChanger] = useState(true);
   const [isFullWidth, setIsFullWidth] = useState(false);
+  const [logo, setLogo] = useState(logo1); 
 
   useEffect(() => {
     const handleResize = () => {
       setShowLanguageChanger(window.innerWidth >= 800);
       setIsFullWidth(window.innerWidth >= 800);
+      setLogo(window.innerWidth < 800 ? logomobile : logo1); // Cambia el logo según el tamaño
     };
 
     handleResize(); // Ejecutar al montar el componente
@@ -36,7 +39,7 @@ export default function Index({ locale }) {
 
           <div className={styles.logo}>
             <Link href="/">
-              <Image src={logo1} alt="logo" />
+            <Image src={logo} alt="logo" priority />
             </Link>
           </div>
 
