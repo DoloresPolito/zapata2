@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
@@ -11,6 +10,7 @@ import "swiper/css/scrollbar";
 // import Carousel from "react-elastic-carousel";
 import stars from "../../../../public/assets/home/stars.svg";
 import Image from "next/image";
+import arrowIcon from "../../../../public/assets/icons/flecha.svg";
 
 export default function Reviews() {
   const items = [
@@ -53,8 +53,9 @@ export default function Reviews() {
       <div className={styles.container}>
         <div className={styles.carouselcontainer}>
           <div className={styles.arrowscontainer}>
+
             <div className={styles.customprev}>
-              <span>←</span>
+              <Image src={arrowIcon} alt="prev" className={styles.arrowIcon} />
             </div>
           </div>
           <div className={styles.carouselcontent}>
@@ -91,16 +92,16 @@ export default function Reviews() {
           </div>
           <div className={styles.arrowscontainer}>
             <div className={styles.customnext}>
-              <span>→</span>
+              <Image src={arrowIcon} alt="next" className={styles.arrowIcon} />
             </div>
           </div>
 
           <div className={styles.arrowscontainermobile}>
             <div className={styles.customprev}>
-              <span>←</span>
+              <Image src={arrowIcon} alt="prev" className={styles.arrowIcon} />
             </div>
             <div className={styles.customnext}>
-              <span>→</span>
+              <Image src={arrowIcon} alt="next" className={styles.arrowIcon} />
             </div>
           </div>
         </div>

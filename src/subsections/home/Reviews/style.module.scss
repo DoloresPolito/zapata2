@@ -18,7 +18,6 @@
 
     @media (max-width: 800px) {
       width: 95%;
-
       flex-direction: column;
     }
   }
@@ -32,6 +31,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 800px) {
+    height: auto;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+  }
 
   .circle {
     display: flex;
@@ -117,13 +122,40 @@
   }
 }
 
+
+
 .arrowscontainermobile {
   display: none;
+  
   @media (max-width: 800px) {
     display: flex;
     width: 20vh;
     justify-content: space-between;
-    margin-top: -5vh;
+    margin-top: 2vh; // Prueba con un margen positivo en lugar de negativo
+    position: relative; // Asegura que no esté fuera de su contenedor
+    z-index: 10; // Para que esté por encima de otros elementos
+  }
+}
+
+.customprevMobile,
+.customnextMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 8vh;
+  border: 0.2vh solid $font-color-black1;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 24px;
+  color: $font-color-black1;
+
+  &:hover {
+    background-color: $background-color-green;
+    border-color: $background-color-green;
+    color: $font-color-white;
   }
 }
 
@@ -144,6 +176,9 @@
   display: none !important;
 }
 
+
+
+
 .customprev,
 .customnext {
   display: flex;
@@ -151,17 +186,29 @@
   align-items: center;
   height: 8vh;
   width: 8vh;
-  border: 0.2vh solid $font-color-black1; // Borde negro por defecto
+  border: 0.2vh solid $font-color-black1;
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  font-size: 24px;
-  color: $font-color-black1; // Flecha negra
+
+  .arrowIcon {
+    width: 2vh;
+    height: auto;
+    filter: invert(0); // Negro por defecto
+    transition: filter 0.3s ease-in-out;
+  }
 
   &:hover {
     background-color: $background-color-green;
     border-color: $background-color-green;
-    color: $font-color-white; // Flecha blanca
+
+    .arrowIcon {
+      filter: invert(1); // Blanco en hover
+    }
   }
+}
+
+.customprev .arrowIcon {
+  transform: rotate(180deg);
 }
