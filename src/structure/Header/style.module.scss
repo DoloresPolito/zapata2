@@ -12,7 +12,7 @@
   z-index: 10;
   background-color: $background-color-nav;
   @media (max-width: 800px) {
-height: 10vh;;
+    height: 10vh;
   }
 
   .container {
@@ -22,39 +22,37 @@ height: 10vh;;
     margin: 0 auto;
     z-index: 1000;
 
-
     .logo {
       display: flex;
       cursor: pointer;
       margin-top: 0.8vh;
 
-
       img {
-        height: 7.5vh;
+        height: 6.5vh;
         width: auto;
 
         @media (max-width: 800px) {
-          height:3vh;
+          height: 2.5vh;
           margin-top: 1.5vh;
+          margin-left: 1vh;
         }
 
         @media (max-width: 475px) {
-          height:2vh;
+          height: 2vh;
           margin-top: 1.6vh;
           margin-left: 1vh;
         }
 
-      //   @media (max-width: 460px) {
-      //     height: 5.5vh;
-      //     margin-top: 1.2vh;
-      //   }
+        //   @media (max-width: 460px) {
+        //     height: 5.5vh;
+        //     margin-top: 1.2vh;
+        //   }
 
-      //   @media (max-width: 360px) {
-          
-      //     height: 5vh;
-        
-      //   margin-top: 1.2vh;}
- 
+        //   @media (max-width: 360px) {
+
+        //     height: 5vh;
+
+        //   margin-top: 1.2vh;}
       }
     }
 
@@ -114,4 +112,3 @@ height: 10vh;;
     }
   }
 }
-

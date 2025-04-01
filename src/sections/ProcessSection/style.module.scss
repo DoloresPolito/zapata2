@@ -4,7 +4,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 15vh;
+  margin-top: 10vh;
   @media (max-width: 800px) {
     margin-top:5vh;
   }
@@ -18,7 +18,7 @@
     .titlesection {
       display: flex;
       flex-direction: column;
-      height: 60vh;
+      height: 55vh;
       width: 100%;
       justify-content: space-between;
       align-items: center;
@@ -31,6 +31,7 @@
       }
       h2 {
         max-width: 130vh;
+       
         @media (max-width: 800px) {
           margin-bottom:5vh;
           margin-top:5vh;

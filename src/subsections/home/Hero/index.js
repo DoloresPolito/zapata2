@@ -116,9 +116,9 @@ export default function Hero({ title, reserva }) {
             initial="initial"
             animate="enter"
           >
-            <div className={styles.logomobilecontainer}>
+            {/* <div className={styles.logomobilecontainer}>
               <Image src={logo1} alt="logo mobile" />
-            </div>
+            </div> */}
             <h2
               className={`typography-Ag-P-Big ${title}`}
               ref={titleRef}

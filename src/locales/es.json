@@ -79,10 +79,10 @@
           "items": [
             {
               "title": "EDAD DEL PACIENTE",
-              "answer": "haber completado el desarrollo óseo"
+              "answer": "Haber completado el desarrollo óseo"
             },
-            { "title": "ANESTESIA", "answer": "general y local" },
-            { "title": "INTERNACIÓN", "answer": "ambulatoria o 1 día" },
+            { "title": "ANESTESIA", "answer": "General y local" },
+            { "title": "INTERNACIÓN", "answer": "Ambulatoria o 1 día" },
             {
               "title": "RECUPERACIÓN",
               "answer": "7 a 10 días con férulas nasales"
@@ -98,11 +98,11 @@
           "name2": "",
           "description": "Tratamiento del sistema músculo aponeurótico profundo, para corrección de signos de envejecimiento, tanto en cara como en cuello. Siguiendo como objetivo la naturalidad del resultado final.",
           "items": [
-            { "title": "ANESTESIA", "answer": "local y sedación intravenosa" },
+            { "title": "ANESTESIA", "answer": "Local y sedación intravenosa" },
             { "title": "DURACIÓN", "answer": "3horas" },
             {
               "title": "INCISIONES",
-              "answer": "delante del área pilosa temporal o intra pilosa, según evaluación previa, luego se circunda la oreja y al lóbulo auricular, se pasa por el surco retroauricular y nuevamente por delante del área pilosa occipital"
+              "answer": "Delante del área pilosa temporal o intra pilosa, según evaluación previa, luego se circunda la oreja y al lóbulo auricular, se pasa por el surco retroauricular y nuevamente por delante del área pilosa occipital"
             },
             {
               "title": "INTERNACIÓN",

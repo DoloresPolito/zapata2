@@ -4,7 +4,6 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { getTranslation } from "@/utils/getTranslation";
-
 import cara from "../../../public/assets/home/t1.png";
 import cuerpo from "../../../public/assets/home/t2.png";
 import noinvasivos from "../../../public/assets/home/t3.png";
@@ -44,8 +43,7 @@ export default function TreatmentsCards({ locale }) {
     <div className={styles.tratamientos}>
       <div className={styles.container}>
         {treatmentsData.map((category, index) => (
-
-             <div
+          <div
             key={index}
             className={styles.imagecontainer}
             onMouseEnter={() => setHoveredIndex(index)}
@@ -54,64 +52,111 @@ export default function TreatmentsCards({ locale }) {
               setHoveredTreatment(null);
             }}
           >
-               <AnimatedDiv delay={index * 0.2}>  
-            <Image src={category.image} alt={category.title} />
+            <AnimatedDiv delay={index * 0.2}>
+              <Image src={category.image} alt={category.title} />
 
-            {/* 🔹 Muestra el título y la flecha en desktop cuando no hay hover */}
-            {!isMobile && hoveredIndex !== index && (
-              <div className={styles.topOverlay}>
-                <span className={styles.title}>{category.title}</span>
-                <div className={styles.circle}>
-                  <span className={styles.circlearrow}>→</span>
+              {/* 🔹 Muestra el título y la flecha en desktop cuando no hay hover */}
+              {!isMobile && hoveredIndex !== index && (
+                <div className={styles.topOverlay}>
+                  <span className={`typography-Ag-P ${styles.title}`}>
+                    {category.title}
+                  </span>
+                  <div className={styles.circle}>
+                    {/* <span className={styles.circlearrow}>→</span> */}
+                    <Image
+                      className={styles.flecha}
+                      src="/assets/icons/flecha.svg"
+                      alt="flecha"
+                      width={20}
+                      height={20}
+                    />
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            {/* 🔹 En desktop, muestra el overlay con tratamientos solo en hover */}
-            {!isMobile && hoveredIndex === index && (
-              <div className={styles.overlay}>
-                <ul>
-                  {category.treatments.map((treatment, tIndex) => (
-                    <div key={tIndex} className={styles.item}>
-                      <li
+              {/* 🔹 En desktop, muestra el overlay con tratamientos solo en hover */}
+              {!isMobile && hoveredIndex === index && (
+                <div className={styles.overlay}>
+                  <ul>
+                    {category.treatments.map((treatment, tIndex) => (
+                      <div key={tIndex} className={styles.item}>
+                        {/* <li
                         className={`${hoveredTreatment === tIndex ? styles.active : ""} typography-Ag-P`}
                         onMouseEnter={() => setHoveredTreatment(tIndex)}
                         onClick={() => router.push(treatment.path)}
                       >
                         {treatment.name}
-                        <span className={styles.arrow}>→</span>
-                      </li>
-                    </div>
-                  ))}
-                </ul>
-              </div>
-            )}
+                        <Image className={styles.flecha}  src="/assets/icons/flecha.svg" alt="flecha" width={20} height={20} />
+                      
+                      </li> */}
 
-            {/* 🔹 En mobile, el overlay con tratamientos siempre visible debajo */}
-            {isMobile && (
-              <div className={styles.fixedOverlay}>
-                <ul>
-                  {category.treatments.map((treatment, tIndex) => (
-                    <div key={tIndex} className={styles.item}>
-                      <li
+                        <li
+                          className={`${
+                            hoveredTreatment === tIndex ? styles.active : ""
+                          } typography-Ag-P`}
+                          onMouseEnter={() => setHoveredTreatment(tIndex)}
+                          onMouseLeave={() => setHoveredTreatment(null)}
+                          onClick={() => router.push(treatment.path)}
+                        >
+                          {treatment.name}
+                          <Image
+                            className={`${styles.flecha} ${
+                              hoveredTreatment === tIndex ? styles.visible : ""
+                            }`}
+                            src="/assets/icons/flecha.svg"
+                            alt="flecha"
+                            width={20}
+                            height={20}
+                          />
+                        </li>
+                      </div>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* 🔹 En mobile, el overlay con tratamientos siempre visible debajo */}
+              {isMobile && (
+                <div className={styles.fixedOverlay}>
+                  <ul>
+                    {category.treatments.map((treatment, tIndex) => (
+                      <div key={tIndex} className={styles.item}>
+                        {/* <li
                         className={`${hoveredTreatment === tIndex ? styles.active : ""} typography-Ag-P`}
                         onClick={() => router.push(treatment.path)}
                       >
                         {treatment.name}
-                        <span className={styles.arrow}>→</span>
-                      </li>
-                    </div>
-                  ))}
-                </ul>
-              </div>
-            )}
-                 </AnimatedDiv>
+                        <Image  className={styles.flecha} src="/assets/icons/flecha.svg" alt="flecha" width={20} height={20} />
+                      
+                      </li> */}
+
+                        <li
+                          className={`${
+                            hoveredTreatment === tIndex ? styles.active : ""
+                          } typography-Ag-P`}
+                          onMouseEnter={() => setHoveredTreatment(tIndex)}
+                          onMouseLeave={() => setHoveredTreatment(null)}
+                          onClick={() => router.push(treatment.path)}
+                        >
+                          {treatment.name}
+                          <Image
+                            className={`${styles.flecha} ${
+                              hoveredTreatment === tIndex ? styles.visible : ""
+                            }`}
+                            src="/assets/icons/flecha.svg"
+                            alt="flecha"
+                            width={20}
+                            height={20}
+                          />
+                        </li>
+                      </div>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </AnimatedDiv>
           </div>
-
-     
         ))}
- 
-
       </div>
     </div>
   );

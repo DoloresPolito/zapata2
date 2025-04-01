@@ -66,28 +66,28 @@
     
       }
 
-      .logomobilecontainer {
-        display: none;
+      // .logomobilecontainer {
+      //   display: none;
 
-        @media (max-width: 500px) {
-          display: flex;
+      //   @media (max-width: 500px) {
+      //     display: flex;
 
-          img {
-            height: 7vh;
-            width: auto;
-            margin-top: 5vh;
-          }
-        }
-      }
+      //     img {
+      //       height: 7vh;
+      //       width: auto;
+      //       margin-top: 5vh;
+      //     }
+      //   }
+      // }
 
       h2 {
         color: $font-color-white;
         max-width: 100vh;
-
         @media (max-width: 500px) {
           text-align: center;
-          font-size: 3vh;
+          font-size: 3.5vh;
           color: $font-color-black1;
+          margin-top: 8vh;
         }
       }
 
@@ -104,7 +104,7 @@
         @media (max-width: 500px) {
           flex-direction: column;
           height: auto;
-          margin-top: 10vh;
+          margin-top: 5vh;
       
 
           .button1 {
