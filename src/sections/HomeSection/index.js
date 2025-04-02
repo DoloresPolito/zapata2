@@ -2,7 +2,7 @@
 import styles from "./style.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useEffect} from "react";
+import { useRef, useEffect, useState} from "react";
 // import Process from "../../subsections/home/Process";
 import Dr from "../../subsections/home/Dr";
 import Footer from "@/structure/Footer";
@@ -15,7 +15,7 @@ import Description from "@/subsections/home/Description";
 import RoundedButton from "@/components/RoundedButton";
 import SectionEffectTop from "../../subsections/home/SectionEffectTop";
 
-
+import HeroMobile from "@/subsections/home/HeroMobile";
 
 import Lenis from "lenis";
 
@@ -66,9 +66,26 @@ export default function Index({
     requestAnimationFrame(raf);
   }, []);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 800);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
-      <Hero title={translations.title} reserva={translations.reserva} />
+    {isMobile ? ( <HeroMobile title={translations.title} reserva={translations.reserva} />) : (
+       <Hero title={translations.title} reserva={translations.reserva} />
+    )
+    
+  }
+     
       <Description locale={locale}/>
 
       <Dr dr_translations={dr_translations} />
