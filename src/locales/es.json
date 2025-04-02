@@ -100,10 +100,7 @@
           "items": [
             { "title": "ANESTESIA", "answer": "Local y sedación intravenosa" },
             { "title": "DURACIÓN", "answer": "3horas" },
-            {
-              "title": "INCISIONES",
-              "answer": "Delante del área pilosa temporal o intra pilosa, según evaluación previa, luego se circunda la oreja y al lóbulo auricular, se pasa por el surco retroauricular y nuevamente por delante del área pilosa occipital"
-            },
+    
             {
               "title": "INTERNACIÓN",
               "answer": "1 día"
@@ -111,6 +108,10 @@
             {
               "title": "RECUPERACIÓN",
               "answer": "10 a 12 días"
+            },
+            {
+              "title": "INCISIONES",
+              "answer": "Delante del área pilosa temporal o intra pilosa, según evaluación previa, luego se circunda la oreja y al lóbulo auricular, se pasa por el surco retroauricular y nuevamente por delante del área pilosa occipital"
             }
           ],
           "image": "/assets/treatments/cara2.jpg",

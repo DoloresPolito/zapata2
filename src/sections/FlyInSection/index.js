@@ -6,6 +6,9 @@ import Image from "next/image";
 import Lenis from "lenis";
 import AnimatedDiv from "@/components/AnimatedDiv";
 import RoundedButton from "@/components/RoundedButton";
+
+import image from "../../../public/assets/contact/contactnocompress.png";
+import image1 from "../../../public/assets/home/fly.png";
 export default function FlyInSection({ locale }) {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -69,17 +72,35 @@ export default function FlyInSection({ locale }) {
               {getTranslation(locale, "flyin.title")}
             </h2>
           </AnimatedDiv>
-          <AnimatedDiv delay={0.3}>
-            <p className={`typography-Ag-P`}>
-              {getTranslation(locale, "flyin.text1")}
-            </p>
-            <p className={`typography-Ag-P`}>
-              {getTranslation(locale, "flyin.text2")}
-            </p>
-          </AnimatedDiv>
         </div>
 
-        <h2> {getTranslation(locale, "flyin.title2")}</h2>
+        <div className={styles.section1}>
+          <div className={styles.rights1}>
+            <Image src={image} alt="contact" />
+          </div>
+
+          <div className={styles.lefts1}>
+            <div className={styles.textcontainer}>
+              <AnimatedDiv delay={0.3}>
+                <p className={`typography-Ag-P`}>
+                  {getTranslation(locale, "flyin.text1")}
+                </p>
+                <p className={`typography-Ag-P`}>
+                  {getTranslation(locale, "flyin.text2")}
+                </p>
+              </AnimatedDiv>
+            </div>
+            <div className={styles.imagecontainer}>
+
+            <Image src={image1} alt="contact" />
+            </div>
+          </div>
+        </div>
+
+        <h2 className={`typography-Ag-Camino-Final-H1`}>
+          {" "}
+          {getTranslation(locale, "flyin.title2")}
+        </h2>
 
         <div className={styles.itemssection}>
           {sections.map((section, i) => (
@@ -110,19 +131,25 @@ export default function FlyInSection({ locale }) {
           ))}
         </div>
 
-        <h2> {getTranslation(locale, "flyin.title3")}</h2>
+        <h2 className={`typography-Ag-Camino-Final-H1`}>
+          {" "}
+          {getTranslation(locale, "flyin.title3")}
+        </h2>
 
         <div className={styles.itemscontainer}>
-              {[...Array(8)].map((_, i) => (
-                <div key={i} className={styles.item}>
-                  <p className={`typography-Ag-P`}>
-                    {getTranslation(locale, `flyin.l${i + 1}`)}
-                  </p>
-                </div>
-              ))}
+          {[...Array(8)].map((_, i) => (
+            <div key={i} className={styles.item}>
+              <p className={`typography-Ag-P`}>
+                {getTranslation(locale, `flyin.l${i + 1}`)}
+              </p>
             </div>
+          ))}
+        </div>
 
-        <h2> {getTranslation(locale, "flyin.title4")}</h2>
+        <h2 className={`typography-Ag-Camino-Final-H1`}>
+          {" "}
+          {getTranslation(locale, "flyin.title4")}
+        </h2>
         <RoundedButton text={getTranslation(locale, "flyin.button")} link="/" />
       </div>
     </div>

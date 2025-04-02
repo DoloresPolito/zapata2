@@ -18,7 +18,7 @@
     height: auto;
     width: 98%;
     @media (max-width: 800px) {
-      width: 95%;
+      width: 97%;
     }
 
     .buttoncontainer {
@@ -109,17 +109,16 @@
       .text {
         margin-bottom: 3vh;
         margin-right: 5vh;
-        // text-align: justify;
-        // text-justify: inter-word;
       }
       @media (max-width: 800px) {
         width: 100%;
         padding: 0vh;
         margin-top: 10vh;
+   
 
         .text{
           margin-right: 0vh;
-          margin-bottom: 0vh;
+          margin-bottom: 2vh;
          
         }
       }

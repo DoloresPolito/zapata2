@@ -1,5 +1,4 @@
 "use client";
-import { useEffect } from "react";
 import { useParams } from "next/navigation";
 import dataes from "../../locales/es.json";
 import dataen from "../../locales/en.json";

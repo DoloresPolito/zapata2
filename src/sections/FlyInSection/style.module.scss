@@ -1,129 +1,195 @@
 .section {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  @media (max-width: 800px) {
+    margin-top: 5vh;
+  }
+
+  .container {
     display: flex;
-    height: auto;
-    width: 100%;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    height: auto;
+    width: 98%;
     @media (max-width: 800px) {
-      margin-top:5vh;
+      width: 97%;
     }
-  
-    .container {
+    .titlesection {
       display: flex;
       flex-direction: column;
       height: auto;
-      width: 98%;
-  
-      .titlesection {
-        display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 10vh 0vh;
+
+      p {
+        max-width: 130vh;
+      }
+      h2 {
+        max-width: 130vh;
+        margin-top: 5vh;
+      }
+    }
+
+    .section1 {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      @media (max-width: 800px) {
         flex-direction: column;
-        height: 55vh;
         width: 100%;
-        justify-content: space-between;
+      }
+
+      .rights1 {
+        display: flex;
+        width: 50%;
+        height: 80vh;
+        justify-content: center;
         align-items: center;
-        text-align: center;
-        padding: 10vh 0vh;
-  
-        p {
-          max-width: 130vh;
-   
-        }
-        h2 {
-          max-width: 130vh;
-         
-          @media (max-width: 800px) {
-            margin-bottom:5vh;
-            margin-top:5vh;
-           }
-        }
-  
         @media (max-width: 800px) {
-          height:auto;
-        }
-      }
-  
-      .itemssection {
-        display: flex;
-        flex-direction: column;
-        gap: 2vh;
-        margin-bottom: 10vh;
-      }
-  
-      .row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1vh;
-  
-        // Cada fila tiene dos columnas: texto e imagen
-        .textContainer {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: 1vh;
-          height: 50vh;
-          justify-content: space-around;
-          padding: 2vh;
-        }
-  
-        span {
-          text-align: start;
-        }
-        .titulo {
-          margin-bottom: 4vh;
-          text-align: start;
-        }
-  
-        .texto {
-          color: #666666;
-          text-align: start;
-        }
-  
-        .imageContainer {
-          flex: 1;
-          display: flex;
-          justify-content: center;
-        }
-  
-        .image {
           width: 100%;
           height: auto;
+          display: none;
         }
-  
-        &.reverse {
-          flex-direction: row-reverse;
+
+        img {
+          width: 100%; // 🔹 Reduce en X sin perder altura
+          height: auto;
+          max-height: 90vh;
+          object-fit: contain; // 🔹 Evita distorsión
         }
       }
 
-      .itemscontainer {
-        margin-top: 5vh;
-
-        .item {
-          border-bottom: 0.1vh solid #8c8885;
+      .lefts1 {
+        display: flex;
+        width: 50%;
+        height: 120vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh 4vh;
+        @media (max-width: 800px) {
+          width: 100%;
           height: auto;
+          padding: 0vh 0vh;
+        }
+
+        .textcontainer {
+          height: 40%;
+          width: auto;
           display: flex;
+          justify-content: center;
           align-items: center;
 
-          p {
-            margin: 1.5vh 0vh;
+          @media (max-width: 800px) {
+            height: auto;
+            text-align: center;
+          }
+        }
+
+        .imagecontainer {
+          height: 60%;
+          display: flex;
+          justify-content: center;
+          @media (max-width: 800px) {
+            height: auto;
+            padding-top: 3vh;
+          }
+
+          img {
+            width: auto;
+            height: 60vh;
+            object-fit: contain;
           }
         }
       }
-  
-      // 🔹 Responsive: Cambia a una sola columna en pantallas pequeñas
-      @media (max-width: 800px) {
-          .row {
-              flex-direction: column !important; // 🔹 Forzamos columna en todas
-              text-align: center;
-          
-              .imageContainer {
-                order: -1; // Imagen arriba cuando es columna
-                height: 30vh;
-                width: 100%;
-              }
-            }
+    }
+
+    .itemssection {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+      margin-bottom: 10vh;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1vh;
+
+      // Cada fila tiene dos columnas: texto e imagen
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        height: 50vh;
+        justify-content: space-around;
+        padding: 2vh;
+      }
+
+      span {
+        text-align: start;
+      }
+      .titulo {
+        margin-bottom: 4vh;
+        text-align: start;
+      }
+
+      .texto {
+        color: #666666;
+        text-align: start;
+      }
+
+      .imageContainer {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+      }
+
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .itemscontainer {
+      margin-top: 5vh;
+
+      .item {
+        border-bottom: 0.1vh solid #8c8885;
+        height: auto;
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 1.5vh 0vh;
+        }
+      }
+    }
+
+    // 🔹 Responsive: Cambia a una sola columna en pantallas pequeñas
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column !important; // 🔹 Forzamos columna en todas
+        text-align: center;
+
+        .imageContainer {
+          order: -1; // Imagen arriba cuando es columna
+          height: 30vh;
+          width: 100%;
+        }
       }
     }
   }
-  
+}
