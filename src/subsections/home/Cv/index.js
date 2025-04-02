@@ -43,14 +43,14 @@ export default function Cv({ locale }) {
                 </p>
               </AnimatedDiv>
               <AnimatedDiv delay="0.5">
-                <LinkButton text="Ver CV completo" link="/dr" color="#7a8025" />
+                <LinkButton   text={getTranslation(locale, "extras.button-home-cv")} link="/dr" color="#7a8025" />
               </AnimatedDiv>
             </div>
           </div>
         </div>
 
         <div className={styles.logossection}>
-          <h4>Avalado por</h4>
+          <h4>{getTranslation(locale, "extras.subtitle-home-avalado")}</h4>
           {isMobile ? (
             <div className={styles.logoscontainer}>
               <div className={styles.logoitem}>

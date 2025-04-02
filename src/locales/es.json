@@ -470,5 +470,15 @@
     "button":"Pautas preoperatorias"
 
     
+  },
+  "extras":{
+    
+    "button-contact":"Solicitar un turno",
+ 
+    "button-home-cv":"Ver CV completo",
+    "subtitle-home-avalado":"Avalado por"
+
+
+  
   }
 }

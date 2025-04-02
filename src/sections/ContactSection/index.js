@@ -44,14 +44,14 @@ export default function ContactSection({ locale }) {
               {getTranslation(locale, "contact.description")}
             </p>
             <RoundedButton
-              text="Solicitar un turno"
+              text={getTranslation(locale, "extras.button-contact")}
               color="#281A0F"
               background="#bcc090"
               border="#bcc090"
               hoverB="#281A0F"
               hoverC="#bcc090"
               hoverA="#BCC090"
-              link="/contacto"
+              link="https://api.whatsapp.com/send/?phone=541148077889"
             />
           </motion.div>
 
@@ -124,11 +124,11 @@ export default function ContactSection({ locale }) {
             initial="initial"
             animate="enter"
           >
-            {/* <div className={styles.imagecontainermobile}> */}
+          
             <Image src={image} alt="contact" />
           </motion.div>
 
-          {/* <div className={styles.third}> */}
+    
 
           <motion.div
             className={styles.third}
@@ -139,24 +139,13 @@ export default function ContactSection({ locale }) {
             <p className={`typography-Ag-P `}>
               {getTranslation(locale, "contact.formtitle")}
             </p>
-            {/* <form>
-              <label>{getTranslation(locale, "contact.name")}</label>
-              <input type="text" />
 
-              <label>{getTranslation(locale, "contact.email")}</label>
-              <input type="email" />
-
-              <label>{getTranslation(locale, "contact.message")}</label>
-              <textarea />
-
-              <button>{getTranslation(locale, "contact.send")}</button>
-            </form> */}
 
             <ContactForm locale={locale} />
           </motion.div>
         </div>
 
-        {/* <div className={styles.right}> */}
+   
 
         <motion.div
           className={styles.right}
