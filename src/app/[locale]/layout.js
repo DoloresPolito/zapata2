@@ -19,9 +19,6 @@ export const metadata = {
   description: "Clínica de Cirugía Plástica",
 };
 
-
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -54,7 +51,6 @@ export default function RootLayout({ children }) {
         className={`${inter.className} ${montserrat.className} ${plusjaku.className}`}
       >
         {children}
-        
       </body>
     </html>
   );
