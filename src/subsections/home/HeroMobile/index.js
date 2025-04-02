@@ -6,14 +6,11 @@ import React, { useRef, useEffect, useState } from "react";
 import background from "../../../../public/assets/home/hero.svg";
 import Image from "next/image";
 import LinkButton from "@/components/LinkButton";
-import gsap from "gsap";
 import RoundedButton from "@/components/RoundedButton";
 import "@/styles/base/_variables.scss";
-import logo1 from "../../../../public/assets/logo/logosvgchico.svg";
 
 export default function HeroMobile({ title, reserva }) {
   const home = useRef(null);
-  const container = useRef();
   const titleRef = useRef(null);
   const imageRef = useRef(null);
 
@@ -70,7 +67,7 @@ export default function HeroMobile({ title, reserva }) {
 
   return (
     <div className={styles.section} ref={home} id="home">
-      <motion.div  className={styles.motionDiv}>
+      {/* <motion.div  className={styles.motionDiv}> */}
         <motion.div
           className={styles.home}
           variants={slideUp2}
@@ -92,9 +89,7 @@ export default function HeroMobile({ title, reserva }) {
             initial="initial"
             animate="enter"
           >
-            {/* <div className={styles.logomobilecontainer}>
-              <Image src={logo1} alt="logo mobile" />
-            </div> */}
+
             <h2
               className={`typography-Ag-P-Big ${title}`}
               ref={titleRef}
@@ -111,7 +106,7 @@ export default function HeroMobile({ title, reserva }) {
             </div>
           </motion.div>
         </motion.div>
-      </motion.div>
+      {/* </motion.div> */}
     </div>
   );
 }
