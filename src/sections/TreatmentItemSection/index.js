@@ -5,7 +5,6 @@ import dataes from "../../locales/es.json";
 import dataen from "../../locales/en.json";
 import styles from "./style.module.scss";
 import LinkButton from "@/components/LinkButton";
-import Lenis from "lenis";
 import AnimatedDiv from "@/components/AnimatedDiv";
 
 export default function TreatmentItemSection({ locale }) {
@@ -30,17 +29,7 @@ export default function TreatmentItemSection({ locale }) {
   // Ejemplo de uso
   const tratamientoEncontrado = buscarTratamiento(data.treatments, tratamiento); // Cambia "Nariz" por cualquier otro nombre
 
-  useEffect(() => {
-    const lenis = new Lenis();
 
-    function raf(time) {
-      lenis.raf(time);
-
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
 
   return (
     <div className={styles.section}>
