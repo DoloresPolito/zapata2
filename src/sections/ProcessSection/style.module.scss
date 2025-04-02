@@ -6,7 +6,7 @@
   align-items: center;
   margin-top: 10vh;
   @media (max-width: 800px) {
-    margin-top:5vh;
+    margin-top: 5vh;
   }
 
   .container {
@@ -27,19 +27,18 @@
 
       p {
         max-width: 130vh;
- 
       }
       h2 {
         max-width: 130vh;
-       
+
         @media (max-width: 800px) {
-          margin-bottom:5vh;
-          margin-top:5vh;
-         }
+          margin-bottom: 5vh;
+          margin-top: 5vh;
+        }
       }
 
       @media (max-width: 800px) {
-        height:auto;
+        height: auto;
       }
     }
 
@@ -54,17 +53,25 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1vh;
 
       // Cada fila tiene dos columnas: texto e imagen
       .textContainer {
-        flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 1vh;
-        height: 50vh;
+        height: 60vh;
         justify-content: space-around;
         padding: 2vh;
+        width: 50%;
+
+        @media (max-width: 800px) {
+          width: 100%;
+        }
+      }
+
+      .notnumber {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       span {
@@ -81,9 +88,9 @@
       }
 
       .imageContainer {
-        flex: 1;
         display: flex;
         justify-content: center;
+        width: 50%;
       }
 
       .image {
@@ -98,16 +105,16 @@
 
     // 🔹 Responsive: Cambia a una sola columna en pantallas pequeñas
     @media (max-width: 800px) {
-        .row {
-            flex-direction: column !important; // 🔹 Forzamos columna en todas
-            text-align: center;
-        
-            .imageContainer {
-              order: -1; // Imagen arriba cuando es columna
-              height: 30vh;
-              width: 100%;
-            }
-          }
+      .row {
+        flex-direction: column !important; // 🔹 Forzamos columna en todas
+        text-align: center;
+
+        .imageContainer {
+          order: -1; // Imagen arriba cuando es columna
+          height: auto;
+          width: 100%;
+        }
+      }
     }
   }
 }

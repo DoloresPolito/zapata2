@@ -72,7 +72,7 @@
       "title": "Cara",
       "treatments": [
         {
-          "id":"nariz",
+          "id": "nariz",
           "name": "Nariz",
           "name2": "Rinoplastia",
           "description": "Tratamiento de punta nasal, del dorso y huesos. Y la vía aérea, mediante la corrección de insuficiencia respiratoria (tratamiento de tabique, cornetes, válvulas)",
@@ -88,12 +88,12 @@
               "answer": "7 a 10 días con férulas nasales"
             }
           ],
-          "image":"/assets/home/t1.png",
+          "image": "/assets/home/t1.png",
           "path": "/tratamientos/nariz"
         },
 
         {
-          "id":"lifting-facial",
+          "id": "lifting-facial",
           "name": "Lifting Facial",
           "name2": "",
           "description": "Tratamiento del sistema músculo aponeurótico profundo, para corrección de signos de envejecimiento, tanto en cara como en cuello. Siguiendo como objetivo la naturalidad del resultado final.",
@@ -113,12 +113,12 @@
               "answer": "10 a 12 días"
             }
           ],
-          "image":"/assets/home/t1.png",
+          "image": "/assets/home/t1.png",
           "path": "/tratamientos/lifting-facial"
         },
 
         {
-          "id":"parpados",
+          "id": "parpados",
           "name": "Parpados",
           "name2": "Blefaroplastia",
           "description": "Como objetivo eliminamos excedente de piel en el superior y bolsas en el inferior. A esto se agrega corrección del surco lagrimal cuando está profundizado. No perder la expresión de la mirada es lo importante",
@@ -134,12 +134,12 @@
               "answer": "En el párpado superior en el surco palpebral y en el párpado inferior es vía la conjuntiva y no se colocan puntos"
             }
           ],
-          "image":"/assets/home/t1.png",
+          "image": "/assets/home/t1.png",
           "path": "/tratamientos/parpados"
         },
 
         {
-          "id":"cejas",
+          "id": "cejas",
           "name": "Frente",
           "name2": "Reposicionamiento de las cejas",
           "description": "Reposicionar cejas y como objetivo obtener expresión de la mirada joven y fresca.",
@@ -155,12 +155,12 @@
               "answer": "Para grados mínimos, se puede realizar un lifting con cicatrices reducidas; en casos muy avanzados, puede optarse por el lifting frontal completo. Son el zona intra pilosa temporal."
             }
           ],
-          "image":"/assets/home/t1.png",
+          "image": "/assets/home/t1.png",
           "path": "/tratamientos/cejas"
         },
 
         {
-          "id":"menton",
+          "id": "menton",
           "name": "Menton",
           "name2": "Mentoplastia Aumentativa",
           "description": "Se puede tratar con la colocación de un implante de silicona o mediante la reinyección de tejido graso del mismo paciente.",
@@ -172,12 +172,12 @@
               "answer": " 3 a 5 días"
             }
           ],
-          "image":"/assets/home/t1.png",
+          "image": "/assets/home/t1.png",
           "path": "/tratamientos/menton"
         },
 
         {
-          "id":"orejas",
+          "id": "orejas",
           "name": "Orejas",
           "name2": "Auriculoplastia",
           "description": "Está indicada cuando el pabellón de la oreja se encuentra más proyectado o prominente.",
@@ -198,12 +198,12 @@
               "answer": "En el surco posterior de la oreja."
             }
           ],
-          "image":"/assets/home/t1.png",
+          "image": "/assets/home/t1.png",
           "path": "/tratamientos/orejas"
         },
 
         {
-          "id":"piel",
+          "id": "piel",
           "name": "Piel",
           "name2": "Resección de lesiones malignas de piel",
           "description": "Se tratan con los protocolos indicados en cada caso, dejando los márgenes libres de la lesión con células normales. Se hace estudio histopatológico simultáneo (con congelación con Patólogo), y estudio histopatológico diferido.",
@@ -218,7 +218,7 @@
               "answer": "3 a 5 días, lesiones sencillas, y hasta 30 días lesiones con injertos de piel necesario."
             }
           ],
-          "image":"/assets/home/t1.png",
+          "image": "/assets/home/t1.png",
           "path": "/tratamientos/piel"
         }
       ]
@@ -228,7 +228,7 @@
 
       "treatments": [
         {
-          "id":"aumento-mamario",
+          "id": "aumento-mamario",
           "name": "Aumento mamario",
           "name2": " Mamas (Mastoplastia aumentativa)",
           "description": "Parta tratamiento de poco volumen mamario, con o sin asimetrías. Se busca proveer volumen con naturalidad",
@@ -249,12 +249,12 @@
               "answer": "En el surco sub mamario."
             }
           ],
-          "image":"/assets/home/t2.png",
+          "image": "/assets/home/t2.png",
           "path": "/tratamientos/aumento-mamario"
         },
 
         {
-          "id":"levantamiento-mamario",
+          "id": "levantamiento-mamario",
           "name": "Levantamieto mamario ",
           "name2": "Mamas (Mastopexia)",
           "description": "Es para tratar el descenso mamario producto del paso del tiempo, lactancias, cambios de peso o todos ellos asociados. El objetivo es el levantamiento y a  veces la reducción de areolas y, también, de volumen mamario sí estuviera indicado.",
@@ -275,12 +275,12 @@
               "answer": "Cuando están indicados los implantes se colocan conjuntamente con un procedimiento de levantamiento y pueden aumentar firmeza y tamaño."
             }
           ],
-          "image":"/assets/home/t2.png",
+          "image": "/assets/home/t2.png",
           "path": "/tratamientos/levantamiento-mamario"
         },
 
         {
-          "id":"reduccion-mamaria",
+          "id": "reduccion-mamaria",
           "name": "Reducción mamaria",
           "name2": "Mamas",
           "description": "Es para tratar las mamas voluminosas y sus consecuencias (dolores de espalda, etc.) El objetivo es reducción del volumen (tamaño) y levantamiento asociado, a veces, a la reducción del diámetro areolar.",
@@ -296,12 +296,12 @@
               "answer": "Periareolar, vertical y horizontal."
             }
           ],
-          "image":"/assets/home/t2.png",
+          "image": "/assets/home/t2.png",
           "path": "/tratamientos/reduccion-mamaria"
         },
 
         {
-          "id":"abdomen",
+          "id": "abdomen",
           "name": "Abdomen",
           "name2": "Abdominoplastia o Dermolipectomia abdominal",
           "description": "Es para tratar la flaccidez de piel y eventualmente trastornos de la musculatura (separación de músculos, hernias, etc.) El objetivo es devolver al abdomen su estética, eliminando excedentes de piel, manteniendo naturalidad del ombligo y resolviendo problemas de la musculatura",
@@ -318,7 +318,7 @@
               "answer": "Se usará una faja de contención durante 30 días o más sí estuviera indicado."
             }
           ],
-          "image":"/assets/home/t2.png",
+          "image": "/assets/home/t2.png",
           "path": "/tratamientos/abdomen"
         }
       ]
@@ -328,83 +328,104 @@
 
       "treatments": [
         {
-          "id":"botox-cara-cuello",
+          "id": "botox-cara-cuello",
           "name": "BOTOX® en cara y cuello",
           "name2": "",
           "description": "Es para tratar arrugas de expresión o arrugas estáticas (generadas por la caída y laxitud de la piel). Las áreas a tratar son las arrugas peri orbiculares o “patas de gallo”, las líneas horizontales en la frente, las líneas verticales en el entrecejo y las arrugas/bandas del cuello",
           "items": [
-            { "title": "PROCEDIMIENTO", "answer": "Se aplica en el músculo responsable de la formación de la línea o arruga de expresión. No requiere ningún test previo. Permite reincorporarse de inmediato a la vida habitual sin inconvenientes." },
+            {
+              "title": "PROCEDIMIENTO",
+              "answer": "Se aplica en el músculo responsable de la formación de la línea o arruga de expresión. No requiere ningún test previo. Permite reincorporarse de inmediato a la vida habitual sin inconvenientes."
+            },
             {
               "title": "EFECTO",
               "answer": "Aparecen entre los tres y diez días"
             },
-            { "title": "DURACIÓN", "answer": "Por un periodo aproximado de cuatro meses, de manera que el resultado es reversible y transitorio, " },
+            {
+              "title": "DURACIÓN",
+              "answer": "Por un periodo aproximado de cuatro meses, de manera que el resultado es reversible y transitorio, "
+            },
 
             {
               "title": "ES PREVENTIVO",
               "answer": "Las consecuentes aplicaciones evitan que la arruga se marque en la piel."
             }
           ],
-          "image":"/assets/home/t3.png",
+          "image": "/assets/home/t3.png",
           "path": "/tratamientos/botox-cara-cuello"
         },
 
         {
-          "id":"botox-hiperhidrosis",
+          "id": "botox-hiperhidrosis",
           "name": "BOTOX® y sudoración exesiva",
           "name2": "Hiperhidrosis",
           "description": "Es para tratar axilas y región inguinal.",
           "items": [
-            { "title": "QUE EFECTO SE LOGRA", "answer": "Actúa impidiendo temporalmente la sudoración." },
+            {
+              "title": "QUE EFECTO SE LOGRA",
+              "answer": "Actúa impidiendo temporalmente la sudoración."
+            },
             {
               "title": "EFECTO",
               "answer": "Aparecen entre los tres y diez días"
             },
-            { "title": "DURACIÓN", "answer": "Varía de cuatro a diez meses, dependiendo de la respuesta individual del paciente y de la dosis empleada." }
+            {
+              "title": "DURACIÓN",
+              "answer": "Varía de cuatro a diez meses, dependiendo de la respuesta individual del paciente y de la dosis empleada."
+            }
           ],
-          "image":"/assets/home/t3.png",
+          "image": "/assets/home/t3.png",
           "path": "/tratamientos/botox-hiperhidrosis"
         },
 
         {
-          "id":"botox-bruxismo",
+          "id": "botox-bruxismo",
           "name": "BOTOX® y bruxismo",
           "name2": "",
           "description": "Es para relajar los músculos masticatorios que se contraen y afectan los dientes y la articulación temporomaxilar.",
           "items": [
-           
             {
               "title": "EFECTO",
               "answer": "Aparecen entre los tres y diez días"
             },
-            { "title": "DURACIÓN", "answer": "Por un periodo aproximado de cuatro a ocho meses." }
+            {
+              "title": "DURACIÓN",
+              "answer": "Por un periodo aproximado de cuatro a ocho meses."
+            }
           ],
-          "image":"/assets/home/t3.png",
+          "image": "/assets/home/t3.png",
           "path": "/tratamientos/botox-bruxismo"
         },
 
         {
-          "id":"acido-hialuronico",
+          "id": "acido-hialuronico",
           "name": "Ácido Hialurónico",
           "name2": "",
           "description": "Cómo relleno para surcos naso labiales, labios, entrecejo, mentón, pómulos. Y, eventuales depresiones en la cara por atrofia de panículos de grasa, por ejemplo e fosas temporales o comisuras. Se busca agregar volumen, restaurar la calidad de la piel (efecto hidratante)",
           "items": [
-           
             {
               "title": "QUÉ ES",
               "answer": "Es un gel cristalino, biodegradable y reabsorbible 100%. En la estructura de algunos tejidos de nuestro organismo se encuentra naturalmente."
             },
-            { "title": "DURACIÓN", "answer": "Es de larga duración, de nueve a doce meses, pero a la vez es NO permanente." },
-            { "title": "APLICACIÓN", "answer": "Se puede retomar su actividad laboral o diaria, inmediatamente después de la aplicación." },
-            { "title": "ANESTÉSICO", "answer": "Es un producto que posee anestésico dentro de sus componentes, ayudando a que sea mínima la molestia en la aplicación del mismo. Se aplica con crema anestésica previamente." }
+            {
+              "title": "DURACIÓN",
+              "answer": "Es de larga duración, de nueve a doce meses, pero a la vez es NO permanente."
+            },
+            {
+              "title": "APLICACIÓN",
+              "answer": "Se puede retomar su actividad laboral o diaria, inmediatamente después de la aplicación."
+            },
+            {
+              "title": "ANESTÉSICO",
+              "answer": "Es un producto que posee anestésico dentro de sus componentes, ayudando a que sea mínima la molestia en la aplicación del mismo. Se aplica con crema anestésica previamente."
+            }
           ],
-          "image":"/assets/home/t3.png",
+          "image": "/assets/home/t3.png",
           "path": "/tratamientos/acido-hialuronico"
         }
       ]
     }
-  }
-  ,
+  },
   "international": {
     "title": "Pacientes Internacionales",
     "description": "El Dr. Federico Zapata tiene un número importante de pacientes internacionales que llegan a Argentina desde todas partes del mundo, por lo que nuestra práctica es verdaderamente global y nuestro personal está muy familiarizado con las inquietudes comunes que puedan tener los pacientes que vienen del exterior.",
@@ -413,6 +434,41 @@
     "text1": "Cuidamos de nuestros clientes con excelencia, brindándoles soluciones a medida. Ya sea que el objetivo sea rejuvenecer y mejorar, o reparar y restaurar la función y la apariencia, nos enfocamos siempre en brindar una atención ejemplar y resultados satisfactorios.",
     "text2": "Normalmente, cuando un paciente que reside fuera de Buenos Aires está interesado en una consulta, se le recomienda enviar fotos de frente, de perfil, de tres cuartos y de perfil a la oficina. Al recibirlas, el Dr. Zapata programará una consulta virtual o le enviará un informe por correo electrónico con los detalles del tratamiento y el costo estimado. La privacidad es nuestra prioridad en cualquier conversación.",
     "text3": "La máxima prioridad de nuestra práctica es la seguridad del paciente. Optar por una intervención quirúrgica en el extranjero exige una planificación y una toma de decisiones cuidadosas."
+  },
 
+
+  "flyin": {
+    "label": "Programa de vuelo",
+    "title": "Los pacientes internacionales son más que bienvenidos en el consultorio del Dr. Zapata en Bs. As. El consultorio del Dr. Zapata hace que la experiencia sea fácil y placentera.",
+    "text1": "Estamos ubicados en Recoleta, uno de los barrios más lindos y seguros de la ciudad de Buenos Aires, la zona cuenta con muchos cafés de estilo europeo, restaurantes exclusivos y excelentes tiendas.",
+    "text2": "El Dr. Zapata mantendrá contacto regular con usted durante el período previo a su procedimiento y siempre estará a una llamada telefónica o un correo electrónico de distancia.",
+
+    "title2": "Cirugía y Recuperación",
+    "description1": "La cirugía se programa entre 24 y 48 horas después de su llegada. Generalmente, recomendamos a nuestros pacientes permanecer en Buenos Aires aproximadamente 10 días para garantizar una recuperación segura. Todos los procedimientos de cirugía plástica se realizan en un centro quirúrgico certificado y reconocido.",
+    "description2": "Si viaja solo, también ofrecemos servicio de asistencia personal para acompañarlo a su habitación de hotel. Su seguridad es nuestra prioridad. Recibirá el alta de la clínica solo después de que se haya estabilizado completamente y cumpla con los requisitos de alta.",
+    "description3": "Normalmente, se requiere una autorización médica en su país, que suele incluir al menos análisis de sangre, radiografía de tórax y electrocardiograma. Esto lo exige la clínica que cumple con los más altos estándares de calidad para pacientes de cirugía plástica. Esto se realiza antes de la cirugía y debe enviarse por correo electrónico.",
+    "description4": "En caso de cirugía de mama, podría requerirse una ecografía. Las pruebas médicas también se pueden realizar fácilmente en Buenos Aires, pero tenga en cuenta que se necesitarán algunos días adicionales para obtener los resultados.",
+  
+    "title3": "Planificación de su viaje de cirugía plástica",
+    "text3":"La cirugía plástica estética requiere que elija un cirujano plástico altamente capacitado y cualificado. Si planea viajar fuera de su país de origen para una cirugía plástica, elija un miembro de ISAPS.",
+
+    "list":"Lista de verificación de planificación",
+    "l1":"Programe una preconsulta con el Dr. Zapata que puede realizarse mediante un servicio virtual por internet.",
+    "l2":"Obtenga un precio para su cirugía y asegúrese de comprender claramente lo que está incluido.",
+    
+    "l3":"Descubra qué métodos de pago se aceptan",
+    "l4":"Programe su cirugía con la clínica. Determine las pruebas preoperatorias necesarias. Averigüe con cuánta anticipación debe llegar para su consulta presencial.",
+    "l5":"Para la continuidad de la atención, asegúrese de que su médico local esté informado sobre su cirugía y proporcione todos los registros médicos relevantes al consultorio del Dr. Zapata.",
+    "l6":"¿Dónde se alojará la noche de la cirugía y mientras se recupera? ¿Dónde están ubicadas la clínica y el consultorio del Dr. Zapata?",
+    "l7":"Determine sus posibles necesidades de recuperación y cuidados posteriores. ¿Cuánto tiempo tardará en regresar a casa? ¿Cuál es el cronograma de visitas de seguimiento?",
+    "l8":"Además de los suministros de viaje típicos recuerda:",
+    "l8a":"Protección solar como sombrero, bufanda o protector solar.",
+    "l8b":"Ropa que sea fácil de poner y quitar (camisas abotonadas por delante, pantalones con cintura elástica).",
+    "l8c":"Pregunte en el consultorio del Dr. Zapata sobre prendas de compresión especiales o un sostén quirúrgico.",
+
+    "title4": "¡Esperamos verte en Buenos Aires!",
+    "button":"Pautas preoperatorias"
+
+    
   }
 }

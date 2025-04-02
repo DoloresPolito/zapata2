@@ -2,11 +2,11 @@
 import { useEffect, useState } from "react";
 import { getTranslation } from "@/utils/getTranslation";
 import styles from "./style.module.scss";
-
 import Image from "next/image";
 import Lenis from "lenis";
 import AnimatedDiv from "@/components/AnimatedDiv";
-export default function ProcessSection({ locale }) {
+import RoundedButton from "@/components/RoundedButton";
+export default function FlyInSection({ locale }) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -22,24 +22,18 @@ export default function ProcessSection({ locale }) {
   const sections = [
     {
       index: "1",
-      title: getTranslation(locale, "process-section.title1"),
-      text: getTranslation(locale, "process-section.description1"),
+      text1: getTranslation(locale, "flyin.description1"),
+      text2: getTranslation(locale, "flyin.description2"),
+
       imgSrc: "/assets/process/process1.png",
       reverse: false,
     },
     {
       index: "2",
-      title: getTranslation(locale, "process-section.title2"),
-      text: getTranslation(locale, "process-section.description2"),
+      text1: getTranslation(locale, "flyin.description3"),
+      text2: getTranslation(locale, "flyin.description4"),
       imgSrc: "/assets/process/process2.png",
       reverse: true,
-    },
-    {
-      index: "3",
-      title: getTranslation(locale, "process-section.title3"),
-      text: getTranslation(locale, "process-section.description3"),
-      imgSrc: "/assets/process/process3.png",
-      reverse: false,
     },
   ];
 
@@ -61,7 +55,7 @@ export default function ProcessSection({ locale }) {
         <div className={styles.titlesection}>
           <AnimatedDiv>
             <h6 className={`typography-Ag-Camino-Label`}>
-              {getTranslation(locale, "process-section.label")}
+              {getTranslation(locale, "flyin.label")}
             </h6>
           </AnimatedDiv>
           <AnimatedDiv>
@@ -72,15 +66,20 @@ export default function ProcessSection({ locale }) {
                   : "typography-Ag-Camino-Final-H1"
               }
             >
-              {getTranslation(locale, "process-section.title")}
+              {getTranslation(locale, "flyin.title")}
             </h2>
           </AnimatedDiv>
           <AnimatedDiv delay={0.3}>
             <p className={`typography-Ag-P`}>
-              {getTranslation(locale, "process-section.description")}
+              {getTranslation(locale, "flyin.text1")}
+            </p>
+            <p className={`typography-Ag-P`}>
+              {getTranslation(locale, "flyin.text2")}
             </p>
           </AnimatedDiv>
         </div>
+
+        <h2> {getTranslation(locale, "flyin.title2")}</h2>
 
         <div className={styles.itemssection}>
           {sections.map((section, i) => (
@@ -91,17 +90,12 @@ export default function ProcessSection({ locale }) {
               }`}
             >
               <div className={styles.textContainer}>
-                <span className={`typography-Ag-Numbers`}>{section.index}</span>  
-                <div className={styles.notnumber}>
-                <h2 className={`typography-Ag-P ${styles.titulo}`}>
-                  {section.title}
-                </h2>
                 <p className={`typography-Ag-P ${styles.texto}`}>
-                  {section.text}
+                  {section.text1}
                 </p>
-
-                  </div>
-               
+                <p className={`typography-Ag-P ${styles.texto}`}>
+                  {section.text2}
+                </p>
               </div>
               <div className={styles.imageContainer}>
                 <Image
@@ -115,6 +109,21 @@ export default function ProcessSection({ locale }) {
             </div>
           ))}
         </div>
+
+        <h2> {getTranslation(locale, "flyin.title3")}</h2>
+
+        <div className={styles.itemscontainer}>
+              {[...Array(8)].map((_, i) => (
+                <div key={i} className={styles.item}>
+                  <p className={`typography-Ag-P`}>
+                    {getTranslation(locale, `flyin.l${i + 1}`)}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+        <h2> {getTranslation(locale, "flyin.title4")}</h2>
+        <RoundedButton text={getTranslation(locale, "flyin.button")} link="/" />
       </div>
     </div>
   );

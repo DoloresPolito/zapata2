@@ -47,7 +47,7 @@ export default function InternationalSection({ locale }) {
               hoverB="#281A0F"
               hoverC="#bcc090"
               hoverA="#BCC090"
-              link="/"
+              link="/fly-in"
             />
 
             <RoundedButton

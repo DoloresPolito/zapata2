@@ -13,7 +13,7 @@
     width: 97%;
     height: auto;
     margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-bottom: 5vh;
     @media (max-width: 768px) {
       width: 99%;
     }
@@ -23,8 +23,8 @@
       display: flex;
       flex-direction: column;
       width: 50%;
-      height: 80vh;
-      padding: 5vh;
+      height: auto;
+      padding-right: 2vh;
 
       @media (max-width: 768px) {
         width: 100%;
@@ -60,8 +60,7 @@
       .treatmentList {
         display: grid;
         grid-template-columns: 1fr; // Una columna en móviles
-        gap: 1rem;
-        margin-top: 1.5rem;
+        gap: 6vh;
 
         @media (min-width: 640px) {
           margin-top: 0.5rem;
@@ -84,8 +83,8 @@
         padding-right: 3vh;
 
         strong {
-          color: #281a0f;
-          font-weight: 600;
+          // color: #281a0f;
+          // font-weight: 600;
         }
 
         p {
