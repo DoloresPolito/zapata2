@@ -12,7 +12,7 @@ import Cv from "@/subsections/home/Cv";
 
 import Hero from "@/subsections/home/Hero";
 import Description from "@/subsections/home/Description";
-import RoundedButton from "@/components/RoundedButton";
+// import RoundedButton from "@/components/RoundedButton";
 import SectionEffectTop from "../../subsections/home/SectionEffectTop";
 
 import HeroMobile from "@/subsections/home/HeroMobile";
