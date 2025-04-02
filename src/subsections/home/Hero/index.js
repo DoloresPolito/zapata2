@@ -21,7 +21,7 @@ export default function Hero({ title, reserva }) {
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "300vh"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "100vh"]);
 
   const [buttonColor, setButtonColor] = useState("white");
   const [roundedButtonProps, setRoundedButtonProps] = useState({

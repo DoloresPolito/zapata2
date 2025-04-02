@@ -6,8 +6,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  // overflow: hidden;
-  overflow: visible;
+  overflow: hidden;
+  // overflow: visible;
   @media (max-width: 500px) {
     height: 130vh;
 
@@ -19,6 +19,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 800px) {
+      .motionDiv {
+        transform: none !important;
+        height: auto;
+      }
+    }
   }
 
   .home {
