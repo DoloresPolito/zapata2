@@ -95,7 +95,7 @@
                 "answer": "7 to 10 days with nasal splints"
               }
             ],
-            "image":"/assets/home/t1.png",
+            "image": "/assets/treatments/nariz.jpg",
             "path": "/tratamientos/nariz"
           },
   
@@ -122,7 +122,7 @@
               }
   
             ],
-            "image":"/assets/home/t1.png",
+            "image": "/assets/treatments/cara2.jpg",
             "path": "/tratamientos/lifting-facial"
           },
   
@@ -148,7 +148,7 @@
              
   
             ],
-            "image":"/assets/home/t1.png",
+            "image": "/assets/treatments/ojo.jpg",
             "path": "/tratamientos/parpados"
           },
   
@@ -174,7 +174,7 @@
              
   
             ],
-            "image":"/assets/home/t1.png",
+            "image": "/assets/treatments/cejas.jpg",
             "path": "/tratamientos/cejas"
           },
   
@@ -195,7 +195,7 @@
              
   
             ],
-            "image":"/assets/home/t1.png",
+            "image": "/assets/home/t1.png",
             "path": "/tratamientos/menton"
           },
   
@@ -221,7 +221,7 @@
              
   
             ],
-            "image":"/assets/home/t1.png",
+            "image": "/assets/treatments/nariz.jpg",
             "path": "/tratamientos/orejas"
           },
   
@@ -242,7 +242,7 @@
              
   
             ],
-            "image":"/assets/home/t1.png",
+            "image": "/assets/treatments/cara.jpg",
             "path": "/tratamientos/piel"
           }
         ]
@@ -272,7 +272,7 @@
                 "answer": "In the submammary fold."
               }
             ],
-            "image":"/assets/home/t2.png",
+            "image": "/assets/treatments/cuerpo.jpg",
             "path": "/tratamientos/aumento-mamario"
           },
   
@@ -301,7 +301,7 @@
       
         
             ],
-            "image":"/assets/home/t2.png",
+            "image": "/assets/home/t2.png",
             "path": "/tratamientos/levantamiento-mamario"
           },
   
@@ -326,7 +326,7 @@
       
         
             ],
-            "image":"/assets/home/t2.png",
+            "image": "/assets/treatments/cuerpo.jpg",
             "path": "/tratamientos/reduccion-mamaria"
           },
   
@@ -354,7 +354,7 @@
       
         
             ],
-            "image":"/assets/home/t2.png",
+            "image": "/assets/treatments/panza.jpg",
             "path": "/tratamientos/abdomen"
           }
   
@@ -385,7 +385,7 @@
                 "answer": "Consequent applications prevent the wrinkle from appearing on the skin."
               }
             ],
-            "image":"/assets/home/t3.png",
+            "image": "/assets/treatments/cara2.jpg",
             "path": "/tratamientos/botox-cara-cuello"
           },
   
@@ -402,7 +402,7 @@
               },
               { "title": "DURATION", "answer": "It varies from four to ten months, depending on the individual patient's response and the dose used." }
             ],
-            "image":"/assets/home/t3.png",
+            "image": "/assets/treatments/cuerpo.jpg",
             "path": "/tratamientos/botox-hiperhidrosis"
           },
   
@@ -419,7 +419,7 @@
               },
               { "title": "DURATION", "answer": "For a period of approximately four to eight months." }
             ],
-            "image":"/assets/home/t3.png",
+            "image": "/assets/treatments/cara2.jpg",
             "path": "/tratamientos/botox-bruxismo"
           },
   
@@ -438,7 +438,7 @@
               { "title": "APPLICATION", "answer": "You can resume your work or daily activities immediately after application." },
               { "title": "ANESTHETIC", "answer": "It's a product that contains anesthetic, helping to minimize discomfort during application. It's applied with anesthetic cream beforehand." }
             ],
-            "image":"/assets/home/t3.png",
+            "image": "/assets/treatments/boca.jpg",
             "path": "/tratamientos/acido-hialuronico"
           }
         ]

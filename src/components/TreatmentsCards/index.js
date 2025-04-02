@@ -80,15 +80,7 @@ export default function TreatmentsCards({ locale }) {
                   <ul>
                     {category.treatments.map((treatment, tIndex) => (
                       <div key={tIndex} className={styles.item}>
-                        {/* <li
-                        className={`${hoveredTreatment === tIndex ? styles.active : ""} typography-Ag-P`}
-                        onMouseEnter={() => setHoveredTreatment(tIndex)}
-                        onClick={() => router.push(treatment.path)}
-                      >
-                        {treatment.name}
-                        <Image className={styles.flecha}  src="/assets/icons/flecha.svg" alt="flecha" width={20} height={20} />
-                      
-                      </li> */}
+          
 
                         <li
                           className={`${
@@ -116,19 +108,12 @@ export default function TreatmentsCards({ locale }) {
               )}
 
               {/* 🔹 En mobile, el overlay con tratamientos siempre visible debajo */}
-              {isMobile && (
+              {/* {isMobile && (
                 <div className={styles.fixedOverlay}>
                   <ul>
                     {category.treatments.map((treatment, tIndex) => (
                       <div key={tIndex} className={styles.item}>
-                        {/* <li
-                        className={`${hoveredTreatment === tIndex ? styles.active : ""} typography-Ag-P`}
-                        onClick={() => router.push(treatment.path)}
-                      >
-                        {treatment.name}
-                        <Image  className={styles.flecha} src="/assets/icons/flecha.svg" alt="flecha" width={20} height={20} />
-                      
-                      </li> */}
+           
 
                         <li
                           className={`${
@@ -153,7 +138,32 @@ export default function TreatmentsCards({ locale }) {
                     ))}
                   </ul>
                 </div>
-              )}
+              )} */}
+
+
+{isMobile && (
+  <div className={styles.fixedOverlay}>
+    <ul>
+      {category.treatments.map((treatment, tIndex) => (
+        <div key={tIndex} className={styles.item}>
+          <li
+            className="typography-Ag-P"
+            onClick={() => router.push(treatment.path)}
+          >
+            {treatment.name}
+            <Image
+              className={styles.flecha} // La flecha siempre visible en mobile
+              src="/assets/icons/flecha.svg"
+              alt="flecha"
+              width={20}
+              height={20}
+            />
+          </li>
+        </div>
+      ))}
+    </ul>
+  </div>
+)}
             </AnimatedDiv>
           </div>
         ))}

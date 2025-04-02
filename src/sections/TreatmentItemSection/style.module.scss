@@ -10,7 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 97%;
+    width: 99%;
     height: auto;
     margin-top: 15vh;
     margin-bottom: 5vh;
@@ -29,7 +29,7 @@
       @media (max-width: 768px) {
         width: 100%;
         height: auto;
-        padding: 2vh;
+        padding: 1vh;
       }
 
       .button {
@@ -61,6 +61,12 @@
         display: grid;
         grid-template-columns: 1fr; // Una columna en móviles
         gap: 6vh;
+  
+
+        @media (max-width: 768px) {
+          margin-top: 3vh;
+    
+        }
 
         @media (min-width: 640px) {
           margin-top: 0.5rem;
@@ -81,6 +87,7 @@
         flex-direction: column;
         transition: transform 0.2s ease-in-out;
         padding-right: 3vh;
+ 
 
         strong {
           // color: #281a0f;

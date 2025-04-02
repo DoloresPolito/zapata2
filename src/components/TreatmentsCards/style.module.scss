@@ -100,6 +100,24 @@
     color: $font-color-black1;
 
     margin-top: 0.5vh; /* Espacio entre imagen y lista */
+
+
+    .flecha {
+      opacity: 0;
+      transform: translateX(-5px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    
+      @media only screen and (max-width: 600px) {
+        opacity: 1; // Siempre visible en mobile
+        transform: translateX(0);
+      }
+    }
+    
+    li:hover .flecha,
+    .flecha.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   /* 🔹 Lista de tratamientos en pantallas grandes */

@@ -14,9 +14,9 @@
     flex-direction: column;
     height: auto;
     width: 98%;
-    // @media (max-width: 800px) {
-    //   width: 96%;
-    // }
+    @media (max-width: 800px) {
+      width: 97%;
+    }
 
     .titlesection {
       display: flex;
@@ -92,11 +92,20 @@
       .titulo {
         margin-bottom: 4vh;
         text-align: start;
+
+        @media (max-width: 800px) {
+
+      margin-top: 2vh;
+      }
       }
 
       .texto {
         color: #666666;
         text-align: start;
+        @media (max-width: 800px) {
+    
+        margin-bottom: 2vh;
+        }
       }
 
       .imageContainer {

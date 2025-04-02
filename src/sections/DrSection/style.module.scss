@@ -15,7 +15,7 @@
     height: auto;
     width: 98%;
     @media (max-width: 800px) {
-      width: 95%;
+      width: 97%;
     }
 
     .titlesection {
@@ -61,6 +61,7 @@
       @media (max-width: 800px) {
         height: auto;
         flex-direction: column;
+        margin-bottom: 5vh;
       }
     }
 
@@ -81,7 +82,6 @@
         height: auto;
         flex-direction: column;
         margin-left: 0vh;
-        // margin-bottom: 10vh;
       }
 
       .itemscontainer {

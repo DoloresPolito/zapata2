@@ -88,7 +88,7 @@
               "answer": "7 a 10 días con férulas nasales"
             }
           ],
-          "image": "/assets/home/t1.png",
+          "image": "/assets/treatments/nariz.jpg",
           "path": "/tratamientos/nariz"
         },
 
@@ -113,7 +113,7 @@
               "answer": "10 a 12 días"
             }
           ],
-          "image": "/assets/home/t1.png",
+          "image": "/assets/treatments/cara2.jpg",
           "path": "/tratamientos/lifting-facial"
         },
 
@@ -134,7 +134,7 @@
               "answer": "En el párpado superior en el surco palpebral y en el párpado inferior es vía la conjuntiva y no se colocan puntos"
             }
           ],
-          "image": "/assets/home/t1.png",
+          "image": "/assets/treatments/ojo.jpg",
           "path": "/tratamientos/parpados"
         },
 
@@ -155,7 +155,7 @@
               "answer": "Para grados mínimos, se puede realizar un lifting con cicatrices reducidas; en casos muy avanzados, puede optarse por el lifting frontal completo. Son el zona intra pilosa temporal."
             }
           ],
-          "image": "/assets/home/t1.png",
+          "image": "/assets/treatments/cejas.jpg",
           "path": "/tratamientos/cejas"
         },
 
@@ -198,7 +198,7 @@
               "answer": "En el surco posterior de la oreja."
             }
           ],
-          "image": "/assets/home/t1.png",
+          "image": "/assets/treatments/nariz.jpg",
           "path": "/tratamientos/orejas"
         },
 
@@ -218,7 +218,7 @@
               "answer": "3 a 5 días, lesiones sencillas, y hasta 30 días lesiones con injertos de piel necesario."
             }
           ],
-          "image": "/assets/home/t1.png",
+          "image": "/assets/treatments/cara.jpg",
           "path": "/tratamientos/piel"
         }
       ]
@@ -249,7 +249,7 @@
               "answer": "En el surco sub mamario."
             }
           ],
-          "image": "/assets/home/t2.png",
+          "image": "/assets/treatments/cuerpo.jpg",
           "path": "/tratamientos/aumento-mamario"
         },
 
@@ -296,7 +296,7 @@
               "answer": "Periareolar, vertical y horizontal."
             }
           ],
-          "image": "/assets/home/t2.png",
+          "image": "/assets/treatments/cuerpo.jpg",
           "path": "/tratamientos/reduccion-mamaria"
         },
 
@@ -318,7 +318,7 @@
               "answer": "Se usará una faja de contención durante 30 días o más sí estuviera indicado."
             }
           ],
-          "image": "/assets/home/t2.png",
+          "image": "/assets/treatments/panza.jpg",
           "path": "/tratamientos/abdomen"
         }
       ]
@@ -351,13 +351,13 @@
               "answer": "Las consecuentes aplicaciones evitan que la arruga se marque en la piel."
             }
           ],
-          "image": "/assets/home/t3.png",
+          "image": "/assets/treatments/cara2.jpg",
           "path": "/tratamientos/botox-cara-cuello"
         },
 
         {
           "id": "botox-hiperhidrosis",
-          "name": "BOTOX® y sudoración exesiva",
+          "name": "BOTOX® y sudoración excesiva",
           "name2": "Hiperhidrosis",
           "description": "Es para tratar axilas y región inguinal.",
           "items": [
@@ -374,7 +374,7 @@
               "answer": "Varía de cuatro a diez meses, dependiendo de la respuesta individual del paciente y de la dosis empleada."
             }
           ],
-          "image": "/assets/home/t3.png",
+          "image": "/assets/treatments/cuerpo.jpg",
           "path": "/tratamientos/botox-hiperhidrosis"
         },
 
@@ -393,7 +393,7 @@
               "answer": "Por un periodo aproximado de cuatro a ocho meses."
             }
           ],
-          "image": "/assets/home/t3.png",
+          "image": "/assets/treatments/cara2.jpg",
           "path": "/tratamientos/botox-bruxismo"
         },
 
@@ -420,7 +420,7 @@
               "answer": "Es un producto que posee anestésico dentro de sus componentes, ayudando a que sea mínima la molestia en la aplicación del mismo. Se aplica con crema anestésica previamente."
             }
           ],
-          "image": "/assets/home/t3.png",
+          "image": "/assets/treatments/boca.jpg",
           "path": "/tratamientos/acido-hialuronico"
         }
       ]

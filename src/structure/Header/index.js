@@ -42,7 +42,7 @@ export default function Index({ locale }) {
           {showLanguageChanger && <LanguageChanger />}
 
           {/* No renderizar el logo si estamos en "/" y es mobile */}
-          {!isMobile || pathname !== "/" ? (
+          {/* {!isMobile || pathname !== "/" ? (
             <div className={styles.logo}>
               <Link href="/">
                 <Image src={logo} alt="logo" priority />
@@ -50,7 +50,15 @@ export default function Index({ locale }) {
             </div>
           ) :       <div className={styles.logo}>
          
-        </div>}
+        </div>} */}
+
+          {/* <div className={styles.logo}>   </div> */}
+
+          <div className={styles.logo}>
+            <Link href="/">
+              <Image src={logo} alt="logo" priority />
+            </Link>
+          </div>
 
           <div className={styles.headerButtonContainerMobile}>
             <button
