@@ -6,7 +6,7 @@ import Image from "next/image";
 import styles from "./styles.module.scss";
 
 // import image from "../../../../public/assets/home/clinicanocomp.png";
-import image from "../../../../public/assets/home/back1.png";
+import image from "../../../../public/assets/home/back2.png";
 
 export default function Clinic() {
   const container = useRef();
@@ -35,7 +35,7 @@ export default function Clinic() {
     <div ref={container} className={styles.section}>
       {isMobile ? (
         // Solo renderizar la imagen sin animación en pantallas pequeñas
-        <div className={styles.imagecontainer}>
+        <div className={styles.imagecontainermobile}>
           <Image src={image} alt="clinica" />
         </div>
       ) : (

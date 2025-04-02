@@ -14,6 +14,9 @@
     flex-direction: column;
     height: auto;
     width: 98%;
+    // @media (max-width: 800px) {
+    //   width: 96%;
+    // }
 
     .titlesection {
       display: flex;
@@ -53,18 +56,27 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      height: 60vh; // 🔹 Establece una altura fija para todos los items
+      @media (max-width: 800px) {
+        height: auto;
+      }
 
       // Cada fila tiene dos columnas: texto e imagen
       .textContainer {
         display: flex;
         flex-direction: column;
-        height: 60vh;
+    
         justify-content: space-around;
         padding: 2vh;
         width: 50%;
+        height: 100%; // 🔹 Mantiene la misma altura que la fila
+
+
 
         @media (max-width: 800px) {
           width: 100%;
+          padding: 0vh;
+          margin-top: 3vh;
         }
       }
 
@@ -91,11 +103,14 @@
         display: flex;
         justify-content: center;
         width: 50%;
+        height: 100%; // 🔹 Mantiene la misma altura que la fila
+        overflow: hidden; // 🔹 Evita deformaciones
       }
 
       .image {
-        width: 100%;
-        height: auto;
+        width: 100%; // 🔹 La imagen ocupa todo el ancho disponible
+        height: 100%; // 🔹 Mantiene la altura
+        object-fit: cover; // 🔹 Ajusta la imagen sin deformarla
       }
 
       &.reverse {

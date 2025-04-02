@@ -1,11 +1,29 @@
 @import "@/styles/base/_variables.scss";
 .section {
   display: flex;
-  background-color: $background-color-foot;
+  background-color: white;
   height: 100vh;
   width: 100vw;
   justify-content: center;
   overflow: hidden;
+
+  @media (max-width: 500px) {
+  
+    height: 80vh;
+  }
+
+  .imagecontainermobile {
+    height: 70vh;
+    width: auto;
+
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+    }
+  }
 
   .motionDiv {
     position: relative;
@@ -14,22 +32,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    will-change: transform; 
+    will-change: transform;
   }
 
   .container {
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
     align-items: center;
+
+    @media (max-width: 500px) {
   
+      height: 80vh;
+    }
 
     .imagecontainer {
       height: 100vh;
       width: auto;
-
 
       img {
         height: 100%;
