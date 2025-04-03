@@ -10,6 +10,7 @@ export default function ContactButtons({ locale }) {
     {
       id: 1,
       text1: "WhatsApp: +54 11 4807 7889",
+
       text2: getTranslation(locale, "book.button1"),
       link: "https://api.whatsapp.com/send/?phone=541148077889",
       icon: "/icons/whatsapp.svg",
@@ -23,7 +24,8 @@ export default function ContactButtons({ locale }) {
     },
     {
       id: 3,
-      text1: "Tel: +54 11 4807 4040",
+      text1: "Tel: +54 11 4807 4040", 
+
       text2: getTranslation(locale, "book.button3"),
       link: "https://api.whatsapp.com/send/?phone=541148074040",
       icon: "/icons/phone.svg",

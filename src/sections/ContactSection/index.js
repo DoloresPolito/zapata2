@@ -100,7 +100,8 @@ export default function ContactSection({ locale }) {
                 </p>
               </div>
 
-              <p className={`typography-Ag-camino-2-P  `}>Tel: 011 4562 9283</p>
+              <p className={`typography-Ag-camino-2-P  `}>Tel: 011 7567-6123 / <br />
+            011 4807-4040</p>
 
               <p className={`typography-Ag-camino-2-P  `}>
                 WhatsApp:{" "}
