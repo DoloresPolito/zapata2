@@ -14,7 +14,9 @@ body {
   margin: 0;
   // background-color: $background-color;
   font-family: $font-inter;
-
+overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Estilos de fuentes
