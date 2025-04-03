@@ -9,6 +9,9 @@ import RoundedButton from "@/components/RoundedButton";
 
 import image from "../../../public/assets/contact/contactnocompress.png";
 import image1 from "../../../public/assets/home/fly.png";
+import image2 from "../../../public/assets/home/flyp1.png";
+import image3 from "../../../public/assets/home/flyp2.png";
+
 export default function FlyInSection({ locale }) {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -28,14 +31,14 @@ export default function FlyInSection({ locale }) {
       text1: getTranslation(locale, "flyin.description1"),
       text2: getTranslation(locale, "flyin.description2"),
 
-      imgSrc: "/assets/process/process1.png",
+      imgSrc: image2,
       reverse: false,
     },
     {
       index: "2",
       text1: getTranslation(locale, "flyin.description3"),
       text2: getTranslation(locale, "flyin.description4"),
-      imgSrc: "/assets/process/process2.png",
+      imgSrc: image3,
       reverse: true,
     },
   ];
@@ -91,67 +94,85 @@ export default function FlyInSection({ locale }) {
               </AnimatedDiv>
             </div>
             <div className={styles.imagecontainer}>
-
-            <Image src={image1} alt="contact" />
+              <Image src={image1} alt="contact" />
             </div>
           </div>
         </div>
+        <div className={styles.section2}>
+          <h2 className={`typography-Ag-Camino-Final-H1`}>
+            {" "}
+            {getTranslation(locale, "flyin.title2")}
+          </h2>
 
-        <h2 className={`typography-Ag-Camino-Final-H1`}>
-          {" "}
-          {getTranslation(locale, "flyin.title2")}
-        </h2>
-
-        <div className={styles.itemssection}>
-          {sections.map((section, i) => (
-            <div
-              key={i}
-              className={`${styles.row} ${
-                section.reverse ? styles.reverse : ""
-              }`}
-            >
-              <div className={styles.textContainer}>
-                <p className={`typography-Ag-P ${styles.texto}`}>
-                  {section.text1}
-                </p>
-                <p className={`typography-Ag-P ${styles.texto}`}>
-                  {section.text2}
-                </p>
+          <div className={styles.itemssection}>
+            {sections.map((section, i) => (
+              <div
+                key={i}
+                className={`${styles.row} ${
+                  section.reverse ? styles.reverse : ""
+                }`}
+              >
+                <div className={styles.textContainer}>
+                  <p className={`typography-Ag-P ${styles.texto}`}>
+                    {section.text1}
+                  </p>
+                  <p className={`typography-Ag-P ${styles.texto}`}>
+                    {section.text2}
+                  </p>
+                </div>
+                <div className={styles.imageContainer}>
+                  <Image
+                    src={section.imgSrc}
+                    alt={section.title}
+                    width={500}
+                    height={300}
+                    className={styles.image}
+                  />
+                </div>
               </div>
-              <div className={styles.imageContainer}>
-                <Image
-                  src={section.imgSrc}
-                  alt={section.title}
-                  width={500}
-                  height={300}
-                  className={styles.image}
-                />
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        <h2 className={`typography-Ag-Camino-Final-H1`}>
-          {" "}
-          {getTranslation(locale, "flyin.title3")}
-        </h2>
+        <div className={styles.section3}>
+          <h2 className={`typography-Ag-Camino-Final-H1`}>
+            {" "}
+            {getTranslation(locale, "flyin.title3")}
+          </h2>
 
-        <div className={styles.itemscontainer}>
-          {[...Array(8)].map((_, i) => (
-            <div key={i} className={styles.item}>
+          <div className={styles.content3}>
+            <div className={styles.right}>
               <p className={`typography-Ag-P`}>
-                {getTranslation(locale, `flyin.l${i + 1}`)}
+                {" "}
+                {getTranslation(locale, "flyin.text3")}
               </p>
             </div>
-          ))}
+            <div className={styles.left}>
+            <p className={`typography-Ag-P`}>
+                {" "}
+            PLANNING CHECKLIST
+              </p>
+              <div className={styles.itemscontainer}>
+                {[...Array(8)].map((_, i) => (
+                  <div key={i} className={styles.item}>
+                    <p className={`typography-Ag-P`}>
+                      {getTranslation(locale, `flyin.l${i + 1}`)}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-
+        <div className={styles.section4}>
         <h2 className={`typography-Ag-Camino-Final-H1`}>
           {" "}
           {getTranslation(locale, "flyin.title4")}
         </h2>
-        <RoundedButton text={getTranslation(locale, "flyin.button")} link="/" />
+        {/* <RoundedButton text={getTranslation(locale, "flyin.button")} link="/" /> */}
       </div>
+        </div>
+       
     </div>
   );
 }
