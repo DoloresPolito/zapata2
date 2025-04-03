@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  // overflow: hidden;
+  overflow-x: hidden;
 
   @media (max-width: 500px) {
     height: 130vh;
