@@ -100,7 +100,7 @@
           "items": [
             { "title": "ANESTESIA", "answer": "Local y sedación intravenosa" },
             { "title": "DURACIÓN", "answer": "3horas" },
-    
+
             {
               "title": "INTERNACIÓN",
               "answer": "1 día"
@@ -437,7 +437,6 @@
     "text3": "La máxima prioridad de nuestra práctica es la seguridad del paciente. Optar por una intervención quirúrgica en el extranjero exige una planificación y una toma de decisiones cuidadosas."
   },
 
-
   "flyin": {
     "label": "Programa de vuelo",
     "title": "Los pacientes internacionales son más que bienvenidos en el consultorio del Dr. Zapata en Bs. As. El consultorio del Dr. Zapata hace que la experiencia sea fácil y placentera.",
@@ -449,37 +448,98 @@
     "description2": "Si viaja solo, también ofrecemos servicio de asistencia personal para acompañarlo a su habitación de hotel. Su seguridad es nuestra prioridad. Recibirá el alta de la clínica solo después de que se haya estabilizado completamente y cumpla con los requisitos de alta.",
     "description3": "Normalmente, se requiere una autorización médica en su país, que suele incluir al menos análisis de sangre, radiografía de tórax y electrocardiograma. Esto lo exige la clínica que cumple con los más altos estándares de calidad para pacientes de cirugía plástica. Esto se realiza antes de la cirugía y debe enviarse por correo electrónico.",
     "description4": "En caso de cirugía de mama, podría requerirse una ecografía. Las pruebas médicas también se pueden realizar fácilmente en Buenos Aires, pero tenga en cuenta que se necesitarán algunos días adicionales para obtener los resultados.",
-  
-    "title3": "Planificación de su viaje de cirugía plástica",
-    "text3":"La cirugía plástica estética requiere que elija un cirujano plástico altamente capacitado y cualificado. Si planea viajar fuera de su país de origen para una cirugía plástica, elija un miembro de ISAPS.",
 
-    "list":"Lista de verificación de planificación",
-    "l1":"Programe una preconsulta con el Dr. Zapata que puede realizarse mediante un servicio virtual por internet.",
-    "l2":"Obtenga un precio para su cirugía y asegúrese de comprender claramente lo que está incluido.",
-    
-    "l3":"Descubra qué métodos de pago se aceptan",
-    "l4":"Programe su cirugía con la clínica. Determine las pruebas preoperatorias necesarias. Averigüe con cuánta anticipación debe llegar para su consulta presencial.",
-    "l5":"Para la continuidad de la atención, asegúrese de que su médico local esté informado sobre su cirugía y proporcione todos los registros médicos relevantes al consultorio del Dr. Zapata.",
-    "l6":"¿Dónde se alojará la noche de la cirugía y mientras se recupera? ¿Dónde están ubicadas la clínica y el consultorio del Dr. Zapata?",
-    "l7":"Determine sus posibles necesidades de recuperación y cuidados posteriores. ¿Cuánto tiempo tardará en regresar a casa? ¿Cuál es el cronograma de visitas de seguimiento?",
-    "l8":"Además de los suministros de viaje típicos recuerda:",
-    "l8a":"Protección solar como sombrero, bufanda o protector solar.",
-    "l8b":"Ropa que sea fácil de poner y quitar (camisas abotonadas por delante, pantalones con cintura elástica).",
-    "l8c":"Pregunte en el consultorio del Dr. Zapata sobre prendas de compresión especiales o un sostén quirúrgico.",
+    "title3": "Planificación de su viaje de cirugía plástica",
+    "text3": "La cirugía plástica estética requiere que elija un cirujano plástico altamente capacitado y cualificado. Si planea viajar fuera de su país de origen para una cirugía plástica, elija un miembro de ISAPS.",
+
+    "list": "Lista de verificación de planificación",
+    "l1": "Programe una preconsulta con el Dr. Zapata que puede realizarse mediante un servicio virtual por internet.",
+    "l2": "Obtenga un precio para su cirugía y asegúrese de comprender claramente lo que está incluido.",
+
+    "l3": "Descubra qué métodos de pago se aceptan",
+    "l4": "Programe su cirugía con la clínica. Determine las pruebas preoperatorias necesarias. Averigüe con cuánta anticipación debe llegar para su consulta presencial.",
+    "l5": "Para la continuidad de la atención, asegúrese de que su médico local esté informado sobre su cirugía y proporcione todos los registros médicos relevantes al consultorio del Dr. Zapata.",
+    "l6": "¿Dónde se alojará la noche de la cirugía y mientras se recupera? ¿Dónde están ubicadas la clínica y el consultorio del Dr. Zapata?",
+    "l7": "Determine sus posibles necesidades de recuperación y cuidados posteriores. ¿Cuánto tiempo tardará en regresar a casa? ¿Cuál es el cronograma de visitas de seguimiento?",
+    "l8": "Además de los suministros de viaje típicos recuerda:",
+    "l8a": "Protección solar como sombrero, bufanda o protector solar.",
+    "l8b": "Ropa que sea fácil de poner y quitar (camisas abotonadas por delante, pantalones con cintura elástica).",
+    "l8c": "Pregunte en el consultorio del Dr. Zapata sobre prendas de compresión especiales o un sostén quirúrgico.",
 
     "title4": "¡Esperamos verte en Buenos Aires!",
-    "button":"Pautas preoperatorias"
-
-    
+    "button": "Pautas preoperatorias"
   },
-  "extras":{
-    
-    "button-contact":"Solicitar un turno",
- 
-    "button-home-cv":"Ver CV completo",
-    "subtitle-home-avalado":"Avalado por"
+  "extras": {
+    "button-contact": "Solicitar un turno",
 
+    "button-home-cv": "Ver CV completo",
+    "subtitle-home-avalado": "Avalado por"
+  },
+  "guidelines": {
+    "title": "Pautas preoperatorias",
+    "list1": [
+      "NO COMA NI BEBA NADA (INCLUYENDO CARAMELOS O CHICLES) 8 HORAS ANTES DE LA HORA PROGRAMADA DE SU CIRUGÍA.",
+      "ORGANICE A UN ADULTO RESPONSABLE PARA QUE LO LLEVE A CASA Y PERMANEZCA CON USTED DURANTE 24 HORAS después de la cirugía. Si bien cada persona se recupera de forma diferente y tiene distintos umbrales de dolor, es posible que sienta algo de dolor, fatiga, cambios de humor y confusión mental durante al menos una semana después de la operación. La hinchazón y los hematomas suelen alcanzar su punto máximo entre el cuarto y quinto día después de la operación, durante el proceso normal de recuperación.",
+      "LAS MUJERES QUE ESTÁN EN SU CICLO MENSTRUAL NO SE PREOCUPEN, NO CONTRAINDICA LA CIRUGÍA. ES NORMAL QUE SE PRODUZCA UN CAMBIO EN EL PRIMER CICLO MENSTRUAL DESPUÉS DE LA CIRUGÍA. Puede ser más leve y corto. La irregularidad menstrual suele durar solo un ciclo.",
+      "EL ESTREÑIMIENTO ES NORMAL DESPUÉS DE LA CIRUGÍA. La anestesia general ralentiza el tracto gastrointestinal y los analgésicos narcóticos aumentan la probabilidad de estreñimiento. Beba mucha agua y asegúrese de llevar una dieta equilibrada que incluya frutas y verduras los días previos y posteriores a la cirugía.",
+      "Si es propenso a sufrir náuseas o mareos, informe a su médico. Se le administrarán medicamentos antináuseas de rutina por vía intravenosa en el quirófano para prevenir las náuseas. También se le pueden administrar antibióticos, esteroides para la inflamación y analgésicos antes de que se despierte de la cirugía. Si es necesario, también se le pueden recetar medicamentos para prevenir las náuseas en casa."
+    ],
+    "finishlist1": "POR FAVOR, no dude en comunicarse con la oficina o con el Dr. Zapata al +54 11 4807 4040 / WhatsApp: +54 11 4807 7889. Estamos aquí para que su experiencia quirúrgica sea lo más cómoda posible.",
 
-  
+    "subtitle2": "Advertencia sobre los medicamentos anticoagulantes",
+    "text2-1": "Los productos anticoagulantes pueden causar sangrado excesivo durante y después de la cirugía. Tanto los medicamentos con receta como los de venta libre pueden tener propiedades anticoagulantes. Si actualmente toma alguno de los medicamentos o preparados herbales que se enumeran a continuación, asegúrese de suspender su uso una semana antes del procedimiento. Recuerde que esta es solo una lista parcial. Si tiene alguna pregunta, comuníquese con su farmacéutico local. Si un médico le indicó que tomara un medicamento anticoagulante regularmente para prevenir un derrame cerebral o un ataque cardíaco, artritis grave, fibrilación auricular o una válvula cardíaca protésica, pregunte al Dr. Zapata cuándo debe suspenderlo. Lea las etiquetas de todos los medicamentos que toma habitualmente. Muchos productos contienen aspirina (AAS o ácido acetilsalicílico) y deben suspenderse 7 días antes de la cirugía.",
+    "text2-2": "Lea la etiqueta de cualquier medicamento nuevo que tome durante los 14 días previos a la cirugía. Muchos remedios para el dolor de cabeza, la tos y el resfriado contienen aspirina (AAS o ácido acetilsalicílico) y no deben usarse.",
+
+    "subtitle3": "A continuación se muestra una lista de medicamentos que deben suspenderse durante los 7 días previos a la cirugía:",
+    "list3": [
+      "Aspirina (AAS o ácido acetilsalicílico)",
+      "Ticlid",
+      "Cumadina",
+      "Ajo",
+      "Gingko",
+      "Ginseng",
+      "Heparina",
+      "Ibuprofeno",
+      "Lovenox",
+      "Naproxeno",
+      "Plavix",
+      "Hierba de San Juan",
+      "Vitamina E"
+    ],
+    "finishlist3": "Si necesita medicamentos para el dolor, dolor de cabeza, tos o resfriado durante los 7 a 14 días previos a la cirugía, puede tomar productos que contengan acetaminofén (Tylenol).",
+
+    "subtitle4": "El día de su cirugía",
+    "text4": "Tenga en cuenta lo siguiente el día de su procedimiento: No coma ni beba. No consuma dulces ni chicles.",
+    "list4": [
+      "Acude a la clínica con tiempo. Siempre es mejor temprano que tarde.",
+      "Planifique usar ropa holgada y no usar maquillaje ni joyas.",
+      "Trae todas las pruebas preoperatorias",
+      "Traer pasaporte/identificación",
+      "Traer las prendas de compresión si están indicadas",
+      "LAS ENFERMERAS LO EXAMINARÁN Y LE PEDIRÁS QUE SE CAMBIE A UNA BATA.",
+      "El Dr. Zapata lo visitará justo antes del procedimiento para hacer las marcas y tomar las imágenes necesarias.",
+      "Lo llevarán suavemente al quirófano.",
+      "UNA VEZ QUE ESTÉ EN LA SALA DE OPERACIONES, se le pedirá que se recueste en la mesa.",
+      "El anestesiólogo le administrará medicamentos por vía intravenosa para que se relaje en cuanto se recueste. Estos medicamentos también le ayudarán a olvidarse de estar en el quirófano.",
+      "SE LE COLOCARÁ UNA VÍA INTRAVENOSA EN LA MANO O EL ANTEBRAZO en el área preoperatoria y una enfermera lo acompañará en el quirófano durante toda la cirugía.",
+      "Se le colocarán MONITORES Y EQUIPOS en el cuerpo. Estos pueden incluir un tensiómetro en el brazo, un oxímetro de pulso en el dedo, tres electrodos de electrocardiograma en el torso, medias de presión SCD en las pantorrillas (para reducir los coágulos sanguíneos) y una almohadilla de tierra en el muslo (para el electrocauterio quirúrgico).",
+      "SE DORMIRARÁ MUY CÓMODAMENTE. Se le colocará un tubo en la garganta DESPUÉS de que se duerma y se lo retirarán ANTES de que despierte. Es posible que solo sienta dolor y picazón en la garganta después de la cirugía. Si la cirugía está programada para durar más de 3 horas, es posible que también tenga una SONDA FOLEY en la vejiga. Esta también se le insertará DESPUÉS de que se duerma y se le retirará antes de que despierte. Si pasa la noche en el hospital, la sonda se le retirará por la mañana. Debería poder orinar con normalidad después de que se la retiren."
+    ],
+
+    "subtitle5": "Pautas postoperatorias",
+    "text5": "El Dr. Zapata le guiará cuidadosamente durante su procedimiento cosmético mientras se recupera. Es importante tener en cuenta que cada persona se recupera a un ritmo diferente, así que reserve un tiempo adecuado de recuperación del trabajo y la actividad intensa para que su cuerpo pueda sanar. Esto garantizará una recuperación sin complicaciones y una reincorporación más rápida a sus actividades normales.",
+    "list5": [
+      "LO MÁS IMPORTANTE: RECUERDA ESCUCHAR A TU CUERPO… Descansa cuando sientas dolor o fatiga. TEN PACIENCIA durante el proceso de recuperación y recuerda que puedes tener días buenos y malos.",
+      "TOME SUS MEDICAMENTOS SEGÚN LAS INDICACIONES. La tolerancia al dolor varía de una persona a otra. Controle su dolor tomando sus medicamentos regularmente durante los primeros días. Tome sus medicamentos con alimentos para reducir la probabilidad de náuseas.",
+      "DESCANSAR DURANTE LAS PRIMERAS 24 HORAS después de la cirugía.",
+      "NO conduzca ni beba alcohol mientras esté tomando analgésicos narcóticos.",
+      "Puedes caminar y subir escaleras lentamente.",
+      "No levantar objetos pesados ​​ni realizar ningún ejercicio durante un mínimo de 2 semanas.",
+      "¡ESCUCHA TU CUERPO!",
+      "PUEDE DUCHARSE ENTRE 24 Y 48 HORAS después de la cirugía.",
+      "Mantenga sus incisiones limpias y secas. El Dr. Zapata podría retirarle los apósitos en su visita posoperatoria.",
+      "RECUERDA QUE LAS CICATRICES TARDAN UN AÑO EN SANAR POR COMPLETO.",
+      "Use protector solar (FPS 50) sobre las cicatrices después de que se curen."
+    ]
   }
 }

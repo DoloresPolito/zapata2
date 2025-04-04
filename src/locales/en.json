@@ -1,513 +1,506 @@
 {
-    "contact": {
-      "title": "Contact Us",
-      "description": "We're here to answer all your questions. Schedule your appointment or write to us for more personalized information. We're located in the heart of Buenos Aires.",
-      "visit": "Visit Us",
-      "contact": "Contact Us",
-      "formtitle":"Or leave us a message and we will contact you shortly.",
-      "name":"Complete name",
-      "message": "Your message...",
-      "send": "Send"
+  "contact": {
+    "title": "Contact Us",
+    "description": "We're here to answer all your questions. Schedule your appointment or write to us for more personalized information. We're located in the heart of Buenos Aires.",
+    "visit": "Visit Us",
+    "contact": "Contact Us",
+    "formtitle": "Or leave us a message and we will contact you shortly.",
+    "name": "Complete name",
+    "message": "Your message...",
+    "send": "Send"
+  },
+
+  "cv-home": {
+    "description": "Dr. Federico E. Zapata is a renowned plastic surgeon, a graduate of the University of Buenos Aires and with postgraduate training at prestigious institutions in the United States. He also completed fellowships with renowned masters who taught him surgical craftsmanship in various areas of plastic surgery, both aesthetic and reconstructive."
+  },
+
+  "book": {
+    "title": "Request appointments or consultations:",
+    "button1": "Write to us",
+    "button2": "Send e-mail",
+    "button3": "Call us"
+  },
+
+  "footer": {
+    "column1": { "title": "Location", "button": "See on Google Maps" },
+    "column2": { "title": "Contact us" },
+    "column3": { "title": "Follow us on social media" },
+    "column4": { "title": "Center enabled by" },
+    "form": { "title": "Leave us a message and we will contact you shortly." }
+  },
+
+  "process-section": {
+    "label": "We accompany you throughout the entire process",
+    "title": "Comprehensive Care in Surgery and Postoperative Care",
+    "description": "At our clinic, your well-being is our priority. From surgery to postoperative follow-up, you'll be in the hands of a highly qualified team who will take care of every detail of your health and safety.",
+
+    "title1": "Surgery",
+    "description1": "Your health and safety are our primary concern. You will be cared for by a highly qualified and trained team throughout your stay at the clinic. During surgery, you will be constantly monitored by the cardiologist and anesthesiologist, who will remain by your side throughout the procedure.",
+
+    "title2": "Immediate postoperative",
+    "description2": "After surgery, the patient is taken to their room where they will recover under the care of the team nurse. Every effort is made to ensure you feel as relaxed and comfortable as possible. Dr. Zapata will visit you immediately after surgery and monitor you until discharge, remaining in close communication with the nurse.",
+
+    "title3": "Postoperative follow-up",
+    "description3": "A surgical procedure includes not only the surgery itself but also postoperative care. You will have the private numbers of the entire medical team in case of any eventuality; we will be with you and care for you 24 hours a day. Generally, the initial postoperative treatment takes place within 24 to 48 hours in the office. Subsequent follow-ups will be performed every 2 or 3 days during the first 2 weeks, and at 1 month, 3 months, 6 months, and 1 year after surgery. However, you will be seen more frequently if necessary."
+  },
+
+  "about": {
+    "subtitle": "Director of the Dr. Zapata Plastic, Aesthetic and Reconstructive Surgery Clinic",
+
+    "text1": "Dr. Federico E. Zapata is a renowned plastic surgeon, a graduate of the University of Buenos Aires and with postgraduate training at prestigious national and American institutions. He also completed fellowships with renowned masters who taught him surgical craftsmanship in various areas of plastic surgery, both aesthetic and reconstructive.",
+    "text2": "Dr. Zapata currently dedicates his time to his private practice, supporting it with ongoing training. He has continuously earned the Certificate of Advanced Education in Cosmetic Surgery from The American Society for Aesthetic Plastic Surgery, a society of which he is a member, in addition to those of Argentina and Buenos Aires.",
+
+    "item1": "Doctor graduated from the Faculty of Medicine (UBA)",
+    "item2": "University Specialist in General Surgery",
+    "item3": "Specialist in Plastic, Aesthetic and Reconstructive Surgery",
+    "item4": "Fellow Post Grade University California Irvine, UCI (USA)",
+    "item5": "Full Member of the Argentine Medical Association",
+    "item6": "Full Member of the Buenos Aires Society of Plastic Surgery",
+    "item7": "Full Member of the Argentine Plastic Surgery Society",
+
+    "item8": "Member The American Society for Aesthetic Plastic Surgery",
+    "item9": "Member The Rhinoplasty Society",
+    "item10": "Medical Director of a Plastic Surgery Clinic",
+    "item11": "Community service (honorary) at the Adventist Sanatorium of the Plata – Puigari, E. Ríos",
+    "item12": "Community work (honorary) at The Natuvu Mission – Fiji Islands"
+  },
+  "treatments": {
+    "title": "Treatments",
+    "subtitle": "Our specialized team offers a wide range of plastic surgery treatments designed to improve your well-being and confidence. Each procedure is carefully customized to meet your expectations, using the most advanced and safest techniques available.",
+    "t1": {
+      "title": "Face",
+      "treatments": [
+        {
+          "id": "nariz",
+          "name": "Nose",
+          "name2": "Rhinoplasty",
+          "description": "Treatment of the nasal tip, dorsum, and bones. And the airway, by correcting respiratory insufficiency (treatment of the septum, turbinates, and valves).",
+          "items": [
+            {
+              "title": "PATIENT AGE",
+              "answer": "Have completed bone development"
+            },
+            { "title": "ANESTHESIA", "answer": "General and local" },
+            { "title": "INTERNMENT", "answer": "Outpatient or 1 day" },
+            {
+              "title": "RECOVERY",
+              "answer": "7 to 10 days with nasal splints"
+            }
+          ],
+          "image": "/assets/treatments/nariz.jpg",
+          "path": "/tratamientos/nariz"
+        },
+
+        {
+          "id": "lifting-facial",
+          "name": "Face Lift",
+          "name2": "",
+          "description": "Treatment of the deep musculoaponeurotic system to correct signs of aging on both the face and neck. The goal is to achieve a natural-looking final result.",
+          "items": [
+            {
+              "title": "ANESTHESIA",
+              "answer": "Local and intravenous sedation"
+            },
+            { "title": "DURATION", "answer": "3 hours" },
+            {
+              "title": "INCISIONS",
+              "answer": "In front of the temporal or intrapilous hairy area, depending on the previous evaluation, then it goes around the ear and the auricular lobe, passing through the retroauricular groove and again in front of the occipital hairy area"
+            },
+            {
+              "title": "INTERNMENT",
+              "answer": "1 day"
+            },
+            {
+              "title": "RECOVERY",
+              "answer": "10 to 12 days"
+            }
+          ],
+          "image": "/assets/treatments/cara2.jpg",
+          "path": "/tratamientos/lifting-facial"
+        },
+
+        {
+          "id": "parpados",
+          "name": "Eyelids",
+          "name2": "Blepharoplasty",
+          "description": "Our goal is to remove excess skin on the upper lip and bags on the lower lip. This is also complemented by correction of the tear trough when it's deepened. Maintaining the expression of the eyes is key.",
+          "items": [
+            { "title": "ANESTHESIA", "answer": "Sedation and local" },
+            { "title": "DURATION", "answer": "1 to 2,5 hours" },
+            {
+              "title": "RECOVERY",
+              "answer": "3 to 7 days"
+            },
+            {
+              "title": "SCAR",
+              "answer": "In the upper eyelid in the palpebral groove and in the lower eyelid it is via the conjunctiva and no stitches are placed"
+            }
+          ],
+          "image": "/assets/treatments/ojo.jpg",
+          "path": "/tratamientos/parpados"
+        },
+
+        {
+          "id": "cejas",
+          "name": "Forehead",
+          "name2": "Eyebrow Repositioning",
+          "description": "Reposition eyebrows and aim to obtain a youthful and fresh look expression.",
+          "items": [
+            { "title": "ANESTHESIA", "answer": "Sedation and local" },
+            { "title": "DURATION", "answer": "1,5 hours" },
+            {
+              "title": "RECOVERY",
+              "answer": "3 to 5 days"
+            },
+            {
+              "title": "SCAR",
+              "answer": "For minimally severe cases, a facelift with reduced scarring can be performed; in very advanced cases, a full forehead lift may be chosen. These include the temporal intrapilous area."
+            }
+          ],
+          "image": "/assets/treatments/cejas.jpg",
+          "path": "/tratamientos/cejas"
+        },
+
+        {
+          "id": "menton",
+          "name": "Chin",
+          "name2": "Augmentative Mentoplasty",
+          "description": "It can be treated by placing a silicone implant or by reinjecting the patient's own fatty tissue.",
+          "items": [
+            { "title": "ANESTHESIA", "answer": "Sedation and local" },
+            { "title": "DURATION", "answer": "1 hour" },
+            {
+              "title": "RECOVERY",
+              "answer": "3 to 5 days"
+            }
+          ],
+          "image": "/assets/home/t1.png",
+          "path": "/tratamientos/menton"
+        },
+
+        {
+          "id": "orejas",
+          "name": "Ears",
+          "name2": "Auriculoplasty",
+          "description": "It is indicated when the auricle is more projected or prominent.",
+          "items": [
+            {
+              "title": "PATIENT AGE",
+              "answer": "It can be done from a very early age"
+            },
+
+            { "title": "ANESTHESIA", "answer": "Sedation and local" },
+            { "title": "INTERNMENT", "answer": "Outpatient" },
+            {
+              "title": "RECOVERY",
+              "answer": "7 to 10 days"
+            },
+            {
+              "title": "SCAR",
+              "answer": "In the posterior groove of the ear."
+            }
+          ],
+          "image": "/assets/treatments/nariz.jpg",
+          "path": "/tratamientos/orejas"
+        },
+
+        {
+          "id": "piel",
+          "name": "Skin",
+          "name2": "Resection of malignant skin lesions",
+          "description": "They are treated with the protocols indicated for each case, leaving the margins of the lesion free of normal cells. A simultaneous histopathological study (with freezing by a pathologist) and a deferred histopathological study are performed.",
+          "items": [
+            {
+              "title": "ANESTHESIA",
+              "answer": "Local, or sedation and local, as the case may be."
+            },
+            {
+              "title": "DURATION",
+              "answer": "1 to 2,5 hours, depending on the case."
+            },
+            {
+              "title": "RECOVERY",
+              "answer": "3 to 5 days, simple injuries, and up to 30 days for injuries with skin grafts necessary."
+            }
+          ],
+          "image": "/assets/treatments/cara.jpg",
+          "path": "/tratamientos/piel"
+        }
+      ]
     },
+    "t2": {
+      "title": "Body",
 
-    "cv-home":{
-      "description":"Dr. Federico E. Zapata is a renowned plastic surgeon, a graduate of the University of Buenos Aires and with postgraduate training at prestigious institutions in the United States. He also completed fellowships with renowned masters who taught him surgical craftsmanship in various areas of plastic surgery, both aesthetic and reconstructive."
+      "treatments": [
+        {
+          "id": "aumento-mamario",
+          "name": "Breast augmentation",
+          "name2": "Moms (Augmentative mastoplasty)",
+          "description": "For treatment of small breast volume, with or without asymmetries. The goal is to provide volume naturally.",
+          "items": [
+            { "title": "ANESTHESIA", "answer": "Sedation and local" },
+            {
+              "title": "IMPLANTS",
+              "answer": "Placed in a retropectoral position."
+            },
+            { "title": "DURATION", "answer": "1,5 hours" },
+
+            {
+              "title": "RECOVERY",
+              "answer": "5 days"
+            },
+            {
+              "title": "SCAR",
+              "answer": "In the submammary fold."
+            }
+          ],
+          "image": "/assets/treatments/cuerpo.jpg",
+          "path": "/tratamientos/aumento-mamario"
+        },
+
+        {
+          "id": "levantamiento-mamario",
+          "name": "Breast lift ",
+          "name2": "Moms (Mastopexy)",
+          "description": "It is used to treat breast sagging due to the passage of time, breastfeeding, weight changes, or all of the above. The goal is to lift and sometimes reduce the areolas and, if indicated, reduce breast volume.",
+          "items": [
+            { "title": "ANESTHESIA", "answer": "Sedation and local" },
+            { "title": "DURATION", "answer": "2 hours" },
+            {
+              "title": "RECOVERY",
+              "answer": "5 to 10 days"
+            },
+            {
+              "title": "SCAR",
+              "answer": "Depending on the case, only areolas, or areola and vertical incision, or both and horizontal scar."
+            },
+
+            {
+              "title": "IMPLANTS",
+              "answer": "When indicated, implants are placed in conjunction with a lifting procedure and can increase firmness and size."
+            }
+          ],
+          "image": "/assets/home/t2.png",
+          "path": "/tratamientos/levantamiento-mamario"
+        },
+
+        {
+          "id": "reduccion-mamaria",
+          "name": "Breast reduction",
+          "name2": "Moms",
+          "description": "It is used to treat large breasts and their consequences (back pain, etc.). The objective is to reduce the volume (size) and lift, sometimes associated with a reduction in areolar diameter.",
+          "items": [
+            { "title": "ANESTHESIA", "answer": "General and local" },
+            { "title": "DURATION", "answer": "2 hours" },
+            {
+              "title": "RECOVERY",
+              "answer": "7 days"
+            },
+            {
+              "title": "SCAR",
+              "answer": "Periareolar, vertical and horizontal."
+            }
+          ],
+          "image": "/assets/treatments/cuerpo.jpg",
+          "path": "/tratamientos/reduccion-mamaria"
+        },
+
+        {
+          "id": "abdomen",
+          "name": "Abdomen",
+          "name2": "Abdominoplasty or abdominal dermolipectomy",
+          "description": "It is used to treat sagging skin and eventually muscle disorders (muscle separation, hernias, etc.). The objective is to restore the abdomen's aesthetics, eliminating excess skin, maintaining the natural look of the navel and resolving muscle problems.",
+          "items": [
+            { "title": "ANESTHESIA", "answer": "General y local" },
+            { "title": "INTERNMENT", "answer": "1 day" },
+            { "title": "DURATION", "answer": "2,5 hours" },
+            {
+              "title": "RECOVERY",
+              "answer": "20 to 30 days"
+            },
+            {
+              "title": "POST-OPERATIVE TIME",
+              "answer": "A containment belt will be used for 30 days or more if indicated."
+            }
+          ],
+          "image": "/assets/treatments/panza.jpg",
+          "path": "/tratamientos/abdomen"
+        }
+      ]
     },
+    "t3": {
+      "title": "No Invasive",
 
-    "book":{
-      "title":"Request appointments or consultations:",
-      "button1":"Write to us",
-      "button2":"Send e-mail",
-      "button3":"Call us"
-    },
+      "treatments": [
+        {
+          "id": "botox-cara-cuello",
+          "name": "BOTOX® on face and neck",
+          "name2": "",
+          "description": "It is used to treat expression lines or static wrinkles (caused by sagging and laxity of the skin). The areas to be treated are periorbicularis oculi wrinkles or 'crow's feet,' horizontal lines on the forehead, vertical lines between the eyebrows, and wrinkles/bands on the neck.",
+          "items": [
+            {
+              "title": "PROCEDURE",
+              "answer": "It is applied to the muscle responsible for the formation of expression lines or wrinkles. No prior testing is required. It allows you to return to your normal life immediately without any problems."
+            },
+            {
+              "title": "EFFECT",
+              "answer": "They appear between three and ten days"
+            },
+            {
+              "title": "DURATION",
+              "answer": "For a period of approximately four months, so the result is reversible and temporary."
+            },
 
-    "footer":{
-      "column1":{"title":"Location", "button":"See on Google Maps"},
-      "column2":{"title":"Contact us"},
-      "column3":{"title":"Follow us on social media"},
-      "column4":{"title":"Center enabled by"},
-      "form":{"title":"Leave us a message and we will contact you shortly."}
+            {
+              "title": "IT IS PREVENTIVE",
+              "answer": "Consequent applications prevent the wrinkle from appearing on the skin."
+            }
+          ],
+          "image": "/assets/treatments/cara2.jpg",
+          "path": "/tratamientos/botox-cara-cuello"
+        },
 
-    },
+        {
+          "id": "botox-hiperhidrosis",
+          "name": "BOTOX® and excessive sweating",
+          "name2": "Hyperhidrosis",
+          "description": "It is used to treat armpits and inguinal region.",
+          "items": [
+            {
+              "title": "WHAT EFFECT IS ACHIEVED",
+              "answer": "It works by temporarily preventing sweating."
+            },
+            {
+              "title": "EFFECT",
+              "answer": "They appear between three and ten days"
+            },
+            {
+              "title": "DURATION",
+              "answer": "It varies from four to ten months, depending on the individual patient's response and the dose used."
+            }
+          ],
+          "image": "/assets/treatments/cuerpo.jpg",
+          "path": "/tratamientos/botox-hiperhidrosis"
+        },
 
+        {
+          "id": "botox-bruxismo",
+          "name": "BOTOX® and bruxism",
+          "name2": "",
+          "description": "It is used to relax the masticatory muscles that contract and affect the teeth and temporomandibular joint.",
+          "items": [
+            {
+              "title": "EFFECT",
+              "answer": "They appear between three and ten days"
+            },
+            {
+              "title": "DURATION",
+              "answer": "For a period of approximately four to eight months."
+            }
+          ],
+          "image": "/assets/treatments/cara2.jpg",
+          "path": "/tratamientos/botox-bruxismo"
+        },
 
-    "process-section":{
-      "label": "We accompany you throughout the entire process",
-      "title":"Comprehensive Care in Surgery and Postoperative Care",
-      "description":"At our clinic, your well-being is our priority. From surgery to postoperative follow-up, you'll be in the hands of a highly qualified team who will take care of every detail of your health and safety.",
-
-      "title1":"Surgery",
-      "description1":"Your health and safety are our primary concern. You will be cared for by a highly qualified and trained team throughout your stay at the clinic. During surgery, you will be constantly monitored by the cardiologist and anesthesiologist, who will remain by your side throughout the procedure.",
-
-     
-      "title2":"Immediate postoperative",
-      "description2":"After surgery, the patient is taken to their room where they will recover under the care of the team nurse. Every effort is made to ensure you feel as relaxed and comfortable as possible. Dr. Zapata will visit you immediately after surgery and monitor you until discharge, remaining in close communication with the nurse.",
-
-      "title3":"Postoperative follow-up",
-      "description3":"A surgical procedure includes not only the surgery itself but also postoperative care. You will have the private numbers of the entire medical team in case of any eventuality; we will be with you and care for you 24 hours a day. Generally, the initial postoperative treatment takes place within 24 to 48 hours in the office. Subsequent follow-ups will be performed every 2 or 3 days during the first 2 weeks, and at 1 month, 3 months, 6 months, and 1 year after surgery. However, you will be seen more frequently if necessary."
-    },
-
-
-    "about":{
-    
-      "subtitle":"Director of the Dr. Zapata Plastic, Aesthetic and Reconstructive Surgery Clinic",
-   
-      "text1":"Dr. Federico E. Zapata is a renowned plastic surgeon, a graduate of the University of Buenos Aires and with postgraduate training at prestigious national and American institutions. He also completed fellowships with renowned masters who taught him surgical craftsmanship in various areas of plastic surgery, both aesthetic and reconstructive.",
-      "text2":"Dr. Zapata currently dedicates his time to his private practice, supporting it with ongoing training. He has continuously earned the Certificate of Advanced Education in Cosmetic Surgery from The American Society for Aesthetic Plastic Surgery, a society of which he is a member, in addition to those of Argentina and Buenos Aires.",
-
-     
-    
-      "item1":"Doctor graduated from the Faculty of Medicine (UBA)",
-      "item2":"University Specialist in General Surgery",
-      "item3":"Specialist in Plastic, Aesthetic and Reconstructive Surgery",
-      "item4":"Fellow Post Grade University California Irvine, UCI (USA)",
-      "item5":"Full Member of the Argentine Medical Association",
-      "item6":"Full Member of the Buenos Aires Society of Plastic Surgery",
-      "item7":"Full Member of the Argentine Plastic Surgery Society",
-
-      "item8":"Member The American Society for Aesthetic Plastic Surgery",
-      "item9":"Member The Rhinoplasty Society",
-      "item10":"Medical Director of a Plastic Surgery Clinic",
-      "item11":"Community service (honorary) at the Adventist Sanatorium of the Plata – Puigari, E. Ríos",
-      "item12":"Community work (honorary) at The Natuvu Mission – Fiji Islands"
-    
-    },
-    "treatments": {
-      "title": "Treatments",
-      "subtitle": "Our specialized team offers a wide range of plastic surgery treatments designed to improve your well-being and confidence. Each procedure is carefully customized to meet your expectations, using the most advanced and safest techniques available.",
-      "t1": {
-        "title": "Face",
-        "treatments": [
-          {
-            "id":"nariz",
-            "name": "Nose",
-            "name2": "Rhinoplasty",
-            "description": "Treatment of the nasal tip, dorsum, and bones. And the airway, by correcting respiratory insufficiency (treatment of the septum, turbinates, and valves).",
-            "items": [
-              {
-                "title": "PATIENT AGE",
-                "answer": "Have completed bone development"
-              },
-              { "title": "ANESTHESIA", "answer": "General and local" },
-              { "title": "INTERNMENT", "answer": "Outpatient or 1 day" },
-              {
-                "title": "RECOVERY",
-                "answer": "7 to 10 days with nasal splints"
-              }
-            ],
-            "image": "/assets/treatments/nariz.jpg",
-            "path": "/tratamientos/nariz"
-          },
-  
-          {
-            "id":"lifting-facial",
-            "name": "Face Lift",
-            "name2": "",
-            "description": "Treatment of the deep musculoaponeurotic system to correct signs of aging on both the face and neck. The goal is to achieve a natural-looking final result.",
-            "items": [
-    
-              { "title": "ANESTHESIA", "answer": "Local and intravenous sedation" },
-              { "title": "DURATION", "answer": "3 hours" },
-              {
-                "title": "INCISIONS",
-                "answer": "In front of the temporal or intrapilous hairy area, depending on the previous evaluation, then it goes around the ear and the auricular lobe, passing through the retroauricular groove and again in front of the occipital hairy area"
-              },
-              {
-                "title": "INTERNMENT",
-                "answer": "1 day"
-              },
-              {
-                "title": "RECOVERY",
-                "answer": "10 to 12 days"
-              }
-  
-            ],
-            "image": "/assets/treatments/cara2.jpg",
-            "path": "/tratamientos/lifting-facial"
-          },
-  
-  
-  
-          {
-            "id":"parpados",
-            "name": "Eyelids",
-            "name2": "Blepharoplasty",
-            "description": "Our goal is to remove excess skin on the upper lip and bags on the lower lip. This is also complemented by correction of the tear trough when it's deepened. Maintaining the expression of the eyes is key.",
-            "items": [
-    
-              { "title": "ANESTHESIA", "answer": "Sedation and local" },
-              { "title": "DURATION", "answer": "1 to 2,5 hours" },
-              {
-                "title": "RECOVERY",
-                "answer": "3 to 7 days"
-              },
-              {
-                "title": "SCAR",
-                "answer": "In the upper eyelid in the palpebral groove and in the lower eyelid it is via the conjunctiva and no stitches are placed"
-              }
-             
-  
-            ],
-            "image": "/assets/treatments/ojo.jpg",
-            "path": "/tratamientos/parpados"
-          },
-  
-  
-  
-          {
-            "id":"cejas",
-            "name": "Forehead",
-            "name2": "Eyebrow Repositioning",
-            "description": "Reposition eyebrows and aim to obtain a youthful and fresh look expression.",
-            "items": [
-    
-              { "title": "ANESTHESIA", "answer": "Sedation and local" },
-              { "title": "DURATION", "answer": "1,5 hours" },
-              {
-                "title": "RECOVERY",
-                "answer": "3 to 5 days"
-              },
-              {
-                "title": "SCAR",
-                "answer": "For minimally severe cases, a facelift with reduced scarring can be performed; in very advanced cases, a full forehead lift may be chosen. These include the temporal intrapilous area."
-              }
-             
-  
-            ],
-            "image": "/assets/treatments/cejas.jpg",
-            "path": "/tratamientos/cejas"
-          },
-  
-          {
-            "id":"menton",
-            "name": "Chin",
-            "name2": "Augmentative Mentoplasty",
-            "description": "It can be treated by placing a silicone implant or by reinjecting the patient's own fatty tissue.",
-            "items": [
-    
-              { "title": "ANESTHESIA", "answer": "Sedation and local" },
-              { "title": "DURATION", "answer": "1 hour" },
-              {
-                "title": "RECOVERY",
-                "answer": "3 to 5 days"
-              }
-             
-             
-  
-            ],
-            "image": "/assets/home/t1.png",
-            "path": "/tratamientos/menton"
-          },
-  
-          {
-            "id":"orejas",
-            "name": "Ears",
-            "name2": "Auriculoplasty",
-            "description": "It is indicated when the auricle is more projected or prominent.",
-            "items": [
-              { "title": "PATIENT AGE", "answer": "It can be done from a very early age" },
-    
-              { "title": "ANESTHESIA", "answer": "Sedation and local" },
-              { "title": "INTERNMENT", "answer": "Outpatient" },
-              {
-                "title": "RECOVERY",
-                "answer": "7 to 10 days"
-              },
-              {
-                "title": "SCAR",
-                "answer": "In the posterior groove of the ear."
-              }
-             
-             
-  
-            ],
-            "image": "/assets/treatments/nariz.jpg",
-            "path": "/tratamientos/orejas"
-          },
-  
-          {
-            "id":"piel",
-            "name": "Skin",
-            "name2": "Resection of malignant skin lesions",
-            "description": "They are treated with the protocols indicated for each case, leaving the margins of the lesion free of normal cells. A simultaneous histopathological study (with freezing by a pathologist) and a deferred histopathological study are performed.",
-            "items": [
-           
-    
-              { "title": "ANESTHESIA", "answer": "Local, or sedation and local, as the case may be." },
-              { "title": "DURATION", "answer": "1 to 2,5 hours, depending on the case." },
-              {
-                "title": "RECOVERY",
-                "answer": "3 to 5 days, simple injuries, and up to 30 days for injuries with skin grafts necessary."
-              }
-             
-  
-            ],
-            "image": "/assets/treatments/cara.jpg",
-            "path": "/tratamientos/piel"
-          }
-        ]
-      },
-      "t2": {
-        "title": "Body",
-  
-        "treatments": [
-          {
-            "id":"aumento-mamario",
-            "name": "Breast augmentation",
-            "name2": "Moms (Augmentative mastoplasty)",
-            "description": "For treatment of small breast volume, with or without asymmetries. The goal is to provide volume naturally.",
-            "items": [
-  
-              { "title": "ANESTHESIA", "answer": "Sedation and local" },
-              { "title": "IMPLANTS", "answer": "Placed in a retropectoral position." },
-              { "title": "DURATION", "answer": "1,5 hours" },
-  
-  
-              {
-                "title": "RECOVERY",
-                "answer": "5 days"
-              },
-              {
-                "title": "SCAR",
-                "answer": "In the submammary fold."
-              }
-            ],
-            "image": "/assets/treatments/cuerpo.jpg",
-            "path": "/tratamientos/aumento-mamario"
-          },
-  
-  
-          {
-            "id":"levantamiento-mamario",
-            "name": "Breast lift ",
-            "name2": "Moms (Mastopexy)",
-            "description": "It is used to treat breast sagging due to the passage of time, breastfeeding, weight changes, or all of the above. The goal is to lift and sometimes reduce the areolas and, if indicated, reduce breast volume.",
-            "items": [
-  
-              { "title": "ANESTHESIA", "answer": "Sedation and local" },
-              { "title": "DURATION", "answer": "2 hours" },
-              {
-                "title": "RECOVERY",
-                "answer": "5 to 10 days"
-              },      
-              {
-                "title": "SCAR",
-                "answer": "Depending on the case, only areolas, or areola and vertical incision, or both and horizontal scar."
-              },
-  
-              { "title": "IMPLANTS", "answer": "When indicated, implants are placed in conjunction with a lifting procedure and can increase firmness and size." }
-  
-  
-      
-        
-            ],
-            "image": "/assets/home/t2.png",
-            "path": "/tratamientos/levantamiento-mamario"
-          },
-  
-          {
-            "id":"reduccion-mamaria",
-            "name": "Breast reduction",
-            "name2": "Moms",
-            "description": "It is used to treat large breasts and their consequences (back pain, etc.). The objective is to reduce the volume (size) and lift, sometimes associated with a reduction in areolar diameter.",
-            "items": [
-  
-              { "title": "ANESTHESIA", "answer": "General and local" },
-              { "title": "DURATION", "answer": "2 hours" },
-              {
-                "title": "RECOVERY",
-                "answer": "7 days"
-              },      
-              {
-                "title": "SCAR",
-                "answer": "Periareolar, vertical and horizontal."
-              }
-  
-      
-        
-            ],
-            "image": "/assets/treatments/cuerpo.jpg",
-            "path": "/tratamientos/reduccion-mamaria"
-          },
-  
-  
-  
-          {
-            "id":"abdomen",
-            "name": "Abdomen",
-            "name2": "Abdominoplasty or abdominal dermolipectomy",
-            "description": "It is used to treat sagging skin and eventually muscle disorders (muscle separation, hernias, etc.). The objective is to restore the abdomen's aesthetics, eliminating excess skin, maintaining the natural look of the navel and resolving muscle problems.",
-            "items": [
-  
-              { "title": "ANESTHESIA", "answer": "General y local" },
-              { "title": "INTERNMENT", "answer": "1 day" },
-              { "title": "DURATION", "answer": "2,5 hours" },
-              {
-                "title": "RECOVERY",
-                "answer": "20 to 30 days"
-              },      
-              {
-                "title": "POST-OPERATIVE TIME",
-                "answer": "A containment belt will be used for 30 days or more if indicated."
-              }
-  
-      
-        
-            ],
-            "image": "/assets/treatments/panza.jpg",
-            "path": "/tratamientos/abdomen"
-          }
-  
-  
-  
-  
-        ]
-      },
-      "t3": {
-        "title": "No Invasive",
-  
-        "treatments": [
-          {
-            "id":"botox-cara-cuello",
-            "name": "BOTOX® on face and neck",
-            "name2": "",
-            "description": "It is used to treat expression lines or static wrinkles (caused by sagging and laxity of the skin). The areas to be treated are periorbicularis oculi wrinkles or 'crow's feet,' horizontal lines on the forehead, vertical lines between the eyebrows, and wrinkles/bands on the neck.",
-            "items": [
-              { "title": "PROCEDURE", "answer": "It is applied to the muscle responsible for the formation of expression lines or wrinkles. No prior testing is required. It allows you to return to your normal life immediately without any problems." },
-              {
-                "title": "EFFECT",
-                "answer": "They appear between three and ten days"
-              },
-              { "title": "DURATION", "answer": "For a period of approximately four months, so the result is reversible and temporary." },
-  
-              {
-                "title": "IT IS PREVENTIVE",
-                "answer": "Consequent applications prevent the wrinkle from appearing on the skin."
-              }
-            ],
-            "image": "/assets/treatments/cara2.jpg",
-            "path": "/tratamientos/botox-cara-cuello"
-          },
-  
-          {
-            "id":"botox-hiperhidrosis",
-            "name": "BOTOX® and excessive sweating",
-            "name2": "Hyperhidrosis",
-            "description": "It is used to treat armpits and inguinal region.",
-            "items": [
-              { "title": "WHAT EFFECT IS ACHIEVED", "answer": "It works by temporarily preventing sweating." },
-              {
-                "title": "EFFECT",
-                "answer": "They appear between three and ten days"
-              },
-              { "title": "DURATION", "answer": "It varies from four to ten months, depending on the individual patient's response and the dose used." }
-            ],
-            "image": "/assets/treatments/cuerpo.jpg",
-            "path": "/tratamientos/botox-hiperhidrosis"
-          },
-  
-          {
-            "id":"botox-bruxismo",
-            "name": "BOTOX® and bruxism",
-            "name2": "",
-            "description": "It is used to relax the masticatory muscles that contract and affect the teeth and temporomandibular joint.",
-            "items": [
-             
-              {
-                "title": "EFFECT",
-                "answer": "They appear between three and ten days"
-              },
-              { "title": "DURATION", "answer": "For a period of approximately four to eight months." }
-            ],
-            "image": "/assets/treatments/cara2.jpg",
-            "path": "/tratamientos/botox-bruxismo"
-          },
-  
-          {
-            "id":"acido-hialuronico",
-            "name": "Hyaluronic Acid",
-            "name2": "",
-            "description": "As a filler for nasolabial folds, lips, between the eyebrows, chin, cheekbones, and any depressions in the face due to atrophy of fat pads, for example in the temporal fossae or corners of the mouth. The goal is to add volume and restore skin quality (hydrating effect).",
-            "items": [
-             
-              {
-                "title": "WHAT IS",
-                "answer": "It is a crystalline, biodegradable, and 100% absorbable gel. It is found naturally in the structure of some tissues in our bodies."
-              },
-              { "title": "DURATION", "answer": "It is long-lasting, nine to twelve months, but at the same time it is NOT permanent." },
-              { "title": "APPLICATION", "answer": "You can resume your work or daily activities immediately after application." },
-              { "title": "ANESTHETIC", "answer": "It's a product that contains anesthetic, helping to minimize discomfort during application. It's applied with anesthetic cream beforehand." }
-            ],
-            "image": "/assets/treatments/boca.jpg",
-            "path": "/tratamientos/acido-hialuronico"
-          }
-        ]
-  
-       
-      }
+        {
+          "id": "acido-hialuronico",
+          "name": "Hyaluronic Acid",
+          "name2": "",
+          "description": "As a filler for nasolabial folds, lips, between the eyebrows, chin, cheekbones, and any depressions in the face due to atrophy of fat pads, for example in the temporal fossae or corners of the mouth. The goal is to add volume and restore skin quality (hydrating effect).",
+          "items": [
+            {
+              "title": "WHAT IS",
+              "answer": "It is a crystalline, biodegradable, and 100% absorbable gel. It is found naturally in the structure of some tissues in our bodies."
+            },
+            {
+              "title": "DURATION",
+              "answer": "It is long-lasting, nine to twelve months, but at the same time it is NOT permanent."
+            },
+            {
+              "title": "APPLICATION",
+              "answer": "You can resume your work or daily activities immediately after application."
+            },
+            {
+              "title": "ANESTHETIC",
+              "answer": "It's a product that contains anesthetic, helping to minimize discomfort during application. It's applied with anesthetic cream beforehand."
+            }
+          ],
+          "image": "/assets/treatments/boca.jpg",
+          "path": "/tratamientos/acido-hialuronico"
+        }
+      ]
     }
-    ,
-    "international": {
-      "title": "International Patients",
-      "description": "Dr. Federico Zapata has a significant number of international patients who come to Argentina from all over the world, so that our practice is truly global and our staff is very familiar with common concerns patients coming from abroad may have.",
-      "button1": "Fly-in Program",
-      "button2": "Pre-operative guidelines",
-      "text1": "We take excellent care of our clients, providing tailor-made solutions. Whether the goal is to rejuvenate and enhance or to repair and restore function and appearance, our focus is always on providing exemplary care and gratifying results.",
-      "text2": "Typically, when a patient located outside of Buenos Aries is interested in a consultation, she/he is advised to send frontal, side, three-quarter view and profile photos to the office. Upon receipt, Dr. Zapata will schedule a virtual consultation or an email report with treatment’s details and estimated costs. Privacy is always our foremost consideration in any discussion.",
-      "text3": "The highest priority of our practice is patient safety. Choosing to have a surgical procedure abroad demands careful planning and decision making."
-  
-    },
+  },
+  "international": {
+    "title": "International Patients",
+    "description": "Dr. Federico Zapata has a significant number of international patients who come to Argentina from all over the world, so that our practice is truly global and our staff is very familiar with common concerns patients coming from abroad may have.",
+    "button1": "Fly-in Program",
+    "button2": "Pre-operative guidelines",
+    "text1": "We take excellent care of our clients, providing tailor-made solutions. Whether the goal is to rejuvenate and enhance or to repair and restore function and appearance, our focus is always on providing exemplary care and gratifying results.",
+    "text2": "Typically, when a patient located outside of Buenos Aries is interested in a consultation, she/he is advised to send frontal, side, three-quarter view and profile photos to the office. Upon receipt, Dr. Zapata will schedule a virtual consultation or an email report with treatment’s details and estimated costs. Privacy is always our foremost consideration in any discussion.",
+    "text3": "The highest priority of our practice is patient safety. Choosing to have a surgical procedure abroad demands careful planning and decision making."
+  },
 
-    "flyin": {
-      "label": "Fly-in Program",
-      "title": "International Patients are more than welcome at Dr. Zapata’s office in Bs. As. Dr. Zapata’s office makes the experience easy and enjoyable.",
-      "text1": "We are located in Recoleta, one of the most beautiful and safest neighbourhoods in the city of Buenos Aires, the area features many European style cafes, upscale restaurants, and great shopping.",
-      "text2": "Dr. Zapata will maintain regular contact in the lead up to your procedure and is always a phone call or email away.",
-  
-      "title2": "Surgery and Recovery",
-      "description1": "Surgery is scheduled 24-48 hours after your arrival. We usually advise our patients to remain in the city of Buenos Aires approximately 10 days to ensure a safe recovery. All plastic surgery procedures are done in a certified and recognized Surgery Centre.",
-      "description2": "If you are traveling alone, we also offer personal aid service to escort you to the hotel room. Your safety is our number one priority. You will be discharged from the clinic only after you have been completely stabilized and have meet the standards for discharge. ",
-      "description3": "Typically, medical clearance is required in your country and usually includes at least blood work, XRay torax and EKG (electrocardiogram). This is required by the clinic which meets the highest standards in plastic surgery patients. This is done prior to your surgery and is need to be emailed to us.",
-      "description4": "In the case of breasts surgery an ultrasound may be required. The medical tests can be also done very easily in Buenos Aires, but keep in mind you will need some extra days to get the medical results.",
-    
-      "title3": "Planning Your Plastic Surgery Travel",
-      "text3":"Aesthetic plastic surgery requires that you choose a highly trained and qualified plastic surgeon. If you plan to travel outside your home country for plastic surgery, select an ISAPS member.",
-  
-      "list":"Planning checklist",
-      "l1":"Schedule a pre-consultation with Dr. Zapata that may be conducted using a virtual internet service",
-      "l2":"Obtain a price for your surgery and ensure that you have a clear understanding of what is included.",
-      
-      "l3":"Find out which payment methods are accepted",
-      "l4":"Schedule your surgery with the practice. Determine pre operation test requiered. Find out how far in advance you need to arrive to have your consultation in person.",
-      "l5":"For continuity of care, make sure your local doctor is informed about your surgery and provides any relevant medical records to Dr. Zapata’s office.",
-      "l6":"Where will you stay the night of the surgery and while you recover? Where is the clinic and Dr. Zapata’s office located?",
-      "l7":"Determine your potential recovery and aftercare needs. How long will it be before you can return home? What is the schedule for follow-up visits?",
-      "l8":"In addition to typical travel supplies remember:",
-      "l8a":"Sun protection such as a hat, scarf or sunscreen.",
-      "l8b":"Clothing that is easy to put on/take off (shirts that button in front, pants with elastic waist).",
-      "l8c":"Ask Dr Zapata’s office about special compression garments or a surgical bra.",
-  
-      "title4": "Looking forward to seeing you in Buenos Aires!",
-      "button":"Pre-operative guidelines"
-  
-      
-    },
+  "flyin": {
+    "label": "Fly-in Program",
+    "title": "International Patients are more than welcome at Dr. Zapata’s office in Bs. As. Dr. Zapata’s office makes the experience easy and enjoyable.",
+    "text1": "We are located in Recoleta, one of the most beautiful and safest neighbourhoods in the city of Buenos Aires, the area features many European style cafes, upscale restaurants, and great shopping.",
+    "text2": "Dr. Zapata will maintain regular contact in the lead up to your procedure and is always a phone call or email away.",
 
-    
+    "title2": "Surgery and Recovery",
+    "description1": "Surgery is scheduled 24-48 hours after your arrival. We usually advise our patients to remain in the city of Buenos Aires approximately 10 days to ensure a safe recovery. All plastic surgery procedures are done in a certified and recognized Surgery Centre.",
+    "description2": "If you are traveling alone, we also offer personal aid service to escort you to the hotel room. Your safety is our number one priority. You will be discharged from the clinic only after you have been completely stabilized and have meet the standards for discharge. ",
+    "description3": "Typically, medical clearance is required in your country and usually includes at least blood work, XRay torax and EKG (electrocardiogram). This is required by the clinic which meets the highest standards in plastic surgery patients. This is done prior to your surgery and is need to be emailed to us.",
+    "description4": "In the case of breasts surgery an ultrasound may be required. The medical tests can be also done very easily in Buenos Aires, but keep in mind you will need some extra days to get the medical results.",
 
-    "extras":{
-    
-      "button-contact":"Request an appointment",
-   
-      "button-home-cv":"See full CV",
-      "subtitle-home-avalado":"Endorsed by"
+    "title3": "Planning Your Plastic Surgery Travel",
+    "text3": "Aesthetic plastic surgery requires that you choose a highly trained and qualified plastic surgeon. If you plan to travel outside your home country for plastic surgery, select an ISAPS member.",
 
-     
-    
+    "list": "Planning checklist",
+    "l1": "Schedule a pre-consultation with Dr. Zapata that may be conducted using a virtual internet service",
+    "l2": "Obtain a price for your surgery and ensure that you have a clear understanding of what is included.",
+
+    "l3": "Find out which payment methods are accepted",
+    "l4": "Schedule your surgery with the practice. Determine pre operation test requiered. Find out how far in advance you need to arrive to have your consultation in person.",
+    "l5": "For continuity of care, make sure your local doctor is informed about your surgery and provides any relevant medical records to Dr. Zapata’s office.",
+    "l6": "Where will you stay the night of the surgery and while you recover? Where is the clinic and Dr. Zapata’s office located?",
+    "l7": "Determine your potential recovery and aftercare needs. How long will it be before you can return home? What is the schedule for follow-up visits?",
+    "l8": "In addition to typical travel supplies remember:",
+    "l8a": "Sun protection such as a hat, scarf or sunscreen.",
+    "l8b": "Clothing that is easy to put on/take off (shirts that button in front, pants with elastic waist).",
+    "l8c": "Ask Dr Zapata’s office about special compression garments or a surgical bra.",
+
+    "title4": "Looking forward to seeing you in Buenos Aires!",
+    "button": "Pre-operative guidelines"
+  },
+
+  "extras": {
+    "button-contact": "Request an appointment",
+
+    "button-home-cv": "See full CV",
+    "subtitle-home-avalado": "Endorsed by"
+  },
 
 
+  "guidelines":{
+    "title":"Pre-operative guidelines",
+    "list1": ["DO NOT EAT OR DRINK ANYTHING (INCLUDING CANDIES OR GUMS) 8 HOURS PRIOR TO YOUR SCHEDULED SURGERY TIME.", "ARRANGE FOR A RESPONSIBLE ADULT TO TAKE YOU HOME AND STAY WITH YOU FOR 24 HOURS after surgery. Although everyone heals differently and has varied pain thresholds, expect some soreness, fatigue, mood swings and some fogginess for a minimum of 1 week post-op. Swelling and bruising typically peak at day 4-5 post-op during the normal healing process.", "WOMEN WHO ARE EXPERIENCING THEIR MENSTRUAL CYCLE DO NOT WORRY, IT DOES NOT CONTRAINDICATE THE SURGERY. A CHANGE IN THE FIRST MENSTRUAL CYCLE FOLLOWING SURGERY IS NORMAL. It may be lighter and shorter. Menstrual irregularity usually lasts just one cycle.", "CONSTIPATION IS NORMAL FOLLOWING SURGERY. General anesthesia slows down the gastrointestinal tract and narcotic pain medication increases the likelihood of constipation. Drink lots of water and be sure to eat a well balanced diet including fruits and vegetables the days before and after surgery.", "IF YOU ARE PRONE TO NAUSEA OR MOTION SICKNESS, let your physician know. Routine anti-nausea medications will be given through your IV in the operating room to prevent nausea. Antibiotics, steroids for swelling, and pain medications may be administered as well before you wake up from surgery. If necessary, medications can also be prescribed to prevent nausea at home."],
+    "finishlist1":"PLEASE, do not hesitate to contact the office or Dr. Zapata +54-11 4807-4040 / WhatsApp: +54 11 48077889. We are all here to make your surgical experience as comfortable as possible.",
 
-    
-    }
+    "subtitle2":"Warning about blood thinning medications",
+    "text2-1":"Blood thinning products can cause excessive bleeding during and after surgery. Both prescription and over the counter medications can have blood thinning properties. If you currently take any of the medications or herbal preparations listed below, make sure you discontinue use 1 week prior to your procedure. Remember this is only a partial list. If you have any questions, please contact your local pharmacist. If you were told by a doctor to take a blood thinning medicine on a regular basis for stroke or heart attack prevention, severe arthritis, atrial fibrillation, or a prosthetic heart valve, ask Dr. Zapata when this medicine should be discontinued. Read the labels on all the medications that you take on a regular basis. Many products contain Aspirin (ASA or acetylsalicylic acid) and must be stopped 7 days prior to surgery.",
+    "text2-2":"Read the label on any new medications you take during the 14 days prior to your surgery. Many headache, cough, and cold remedies contain Aspirin (ASA or acetylsalicylic acid) and should not be used.",
 
+    "subtitle3":"Below is a list of medications that must be stopped for the 7 days before surgery:",
+    "list3":["Aspirin (ASA or Acetylsalicylic Acid)", "Ticlid", "Coumadin", "Garlic", "Gingko", "Ginseng", "Heparin", "Ibuprofen", "Lovenox", "Naproxen", "Plavix", "St. John’s Wort", "Vitamin E"],
+    "finishlist3":"If you need pain, headache, cough, or cold medicine during the 7 to 14 days prior to surgery, you may take products containing Acetaminophen (Tylenol).",
+
+    "subtitle4":"The day of your surgery",
+    "text4":"Keep the following in mind for the day of your procedure: Remember do not eat or drink. No candies, no gums.",
+    "list4":["Go to the clinic enough time. Always better sooner than later", "Plan to wear loose fitting clothing, and do no wear any make-up or jewelry", "Bring all the preop. tests", "Bring Passport / ID", "Bring the compression garments if indicated", "YOU WILL BE CHECKED BY THE NURSES AND ASKED TO CHANGE INTO A GOWN.", "Dr. Zapata will visit you right before the procedure to do the markings and pictures as needed.", "You will be gently carry to the O.R.", "ONCE YOU’RE IN THE OPERATING ROOM you will be asked to lie on the table.", "The anesthesiologist will give you medication through your I.V. to relax you as soon as you are lying down. These medications also help you to forget being in the operating room.", "AN IV WILL BE STARTED IN YOUR HAND OR FOREARM in the pre-op area and a nurse will accompany you in the operating room throughout your surgery.", "MONITORS AND EQUIPMENT will be applied to your body. This may include a blood pressure cuff on your arm, a pulse oximeter on your finger, 3 EKG pads on your torso, SCD pressure stockings to your calves (to reduce blood clots), and a grounding pad to your thigh (for surgical electro-cautery machine).", "YOU WILL DRIFT OFF TO SLEEP VERY COMFORTABLY. A tube will be placed in your throat AFTER you are asleep and will be removed BEFORE you wake up. The only awareness you may have of the tube could be a sore, scratchy throat following surgery. If your surgery is planned for more than 3 hours, you may also have a FOLEY CATHETER in your bladder. This will also be inserted AFTER you are asleep and removed before you wake up. If you are staying overnight, the catheter will be removed in the morning. You should be able to urinate normally after its removal."],
+
+    "subtitle5":"Post-operative guidelines",
+    "text5":"Dr. Zapata will carefully guide you through your cosmetic procedure as you heal. It is important to recognize that each person recovers at a different rate so set aside adequate recovery time from work and strenuous activity to allow your body to heal. This will ensure a smooth recovery and a more rapid return to normal activities.",
+    "list5":["MOST IMPORTANTLY, REMEMBER TO LISTEN TO YOUR BODY…Rest when you feel pain or fatigue. BE PATIENT with the healing process, and remember you may have good and bad days.", "TAKE YOUR MEDICATIONS AS DIRECTED. Pain tolerance varies from one person to the next. Stay on top of your pain by taking your medication regularly for the first few days. Take your medications with food to decrease the chances of nausea.", "REST FOR THE FIRST 24 HOURS following surgery. ", "DO NOT drive or drink alcohol while taking narcotic pain medication.", "You may walk and climb stairs slowly.", "No heavy lifting or any exercising for a minimum of 2+ weeks. ", "LISTEN TO YOUR BODY!", "YOU MAY SHOWER 24-48 HOURS after surgery.", "Keep your incisions clean and dry. Dr. Zapata may remove your dressings at your post-op visit.", "REMEMBER SCARS TAKE A YEAR TO FULLY HEAL.", "Wear Sunscreen (SPF 50) over your scars after they heal."]
   }
+}

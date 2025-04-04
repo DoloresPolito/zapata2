@@ -52,7 +52,7 @@ export default function InternationalSection({ locale }) {
 
             <RoundedButton
               text={getTranslation(locale, "international.button2")}
-              link="/"
+              link="/guidelines"
               color="black"
               background="transparent"
               border="black"

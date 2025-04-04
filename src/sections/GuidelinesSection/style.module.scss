@@ -1,0 +1,73 @@
+@import '../../styles/base/variables'; 
+
+.section {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  @media (max-width: 800px) {
+    margin-top: 5vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+    @media (max-width: 800px) {
+      width: 95%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+    }
+
+
+    h4{
+        margin-bottom: 3vh; 
+        font-size: 3vh;
+        font-family: $font-inter;
+    }
+
+    .strong{
+        font-weight: 600;
+
+    }
+
+    .customList {
+      list-style-type: disc;
+      padding-left: 2.5vh; 
+      margin: 0;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+
+    }
+
+    .listItem {
+      margin-bottom: 0.6vh; 
+      line-height: 1.6;
+    }
+    .section1 {
+      margin-bottom: 10vh;
+    }
+
+    .section2 {
+      margin-bottom: 10vh;
+    }
+
+    .section3 {
+      margin-bottom: 10vh;
+    }
+
+    .section4 {
+      margin-bottom: 10vh;
+    }
+    .section5 {
+      margin-bottom: 10vh;
+    }
+  }
+}
