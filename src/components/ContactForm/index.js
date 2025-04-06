@@ -9,7 +9,6 @@ const ContactForm = ({locale}) => {
   const { register, handleSubmit } = useForm();
 
   function onSubmit(data) {
-    console.log(data);
     sendEmail(data);
   }
 
@@ -42,9 +41,14 @@ const ContactForm = ({locale}) => {
             {...register("message", { required: true })}
           ></textarea>
         </div>
+        <button className={styles.button}>
+
+   
         <div className={styles.buttoncontainer}>
           <LinkButton text={getTranslation(locale, "contact.send")} color="black" link="/" />
         </div>
+        </button>
+        {/* <button>send</button> */}
       </form>
     </div>
   );

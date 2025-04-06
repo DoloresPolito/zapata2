@@ -20,6 +20,7 @@ export async function POST(request) {
         user: process.env.MY_EMAIL,
         pass: process.env.MY_PASSWORD,
       },
+
     });
   
     const mailOptions = {
