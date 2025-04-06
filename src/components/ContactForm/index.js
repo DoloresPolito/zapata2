@@ -41,14 +41,14 @@ const ContactForm = ({locale}) => {
             {...register("message", { required: true })}
           ></textarea>
         </div>
-        <button className={styles.button}>
+        {/* <button className={styles.button}> */}
 
    
-        <div className={styles.buttoncontainer}>
+        {/* <div className={styles.buttoncontainer}>
           <LinkButton text={getTranslation(locale, "contact.send")} color="black" link="/" />
         </div>
-        </button>
-        {/* <button>send</button> */}
+        </button> */}
+        <button className={styles.button}>{getTranslation(locale, "contact.send")} </button>
       </form>
     </div>
   );
