@@ -10,6 +10,10 @@ export function sendEmail(data) {
       .then((res) => res.json())
       .then((response) => {
         // alert(response.message);
+
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
       })
       .catch((err) => {
         alert(err);
