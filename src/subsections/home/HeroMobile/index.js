@@ -1,7 +1,7 @@
 "use client";
 import styles from "./styles.module.scss";
 import { slideUp, slideUp2 } from "../Hero/animation";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion} from "framer-motion";
 import React, { useRef, useEffect, useState } from "react";
 import background from "../../../../public/assets/home/hero.svg";
 import Image from "next/image";
